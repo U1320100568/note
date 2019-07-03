@@ -11,4 +11,4 @@
   直接用script產生DOM，沒有做檢查就插入DOM
   常見手法：element.innerHTML ＝ （惡意代碼）
   
-React 可以避免某些injection attack，但有些攻擊還是需要注意，(example)[https://stackoverflow.com/a/51852579]
+> React 可以避免某些injection attack，但有些攻擊還是需要注意，[example](https://stackoverflow.com/a/51852579)
