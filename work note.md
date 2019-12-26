@@ -1,3 +1,3 @@
 ### 2019 12 23
-youtube link need to transfer
-android reflect
+1. youtube link need to transfer
+2. android reflect
