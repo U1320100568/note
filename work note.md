@@ -1,4 +1,8 @@
- **2020 01 16**
+**2020 01 31**
+1. 防止點兩下：[debounce, throttle](https://mropengate.blogspot.com/2017/12/dom-debounce-throttle.html)
+2. rev-cms-core form rating, textarea, styling
+
+**2020 01 16**
 1. [webview cache clear](https://github.com/react-native-community/react-native-webview/blob/master/docs/Reference.md)  
 `incognito` 這是無痕視窗模式
 2. [encodeURIComponent & encodeURI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)  
