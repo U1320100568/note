@@ -1,3 +1,7 @@
+**2020 02 04**
+1. fetching data moment(compile and bundle, build , run)
+
+
 **2020 01 31**
 1. 防止點兩下：[debounce, throttle](https://mropengate.blogspot.com/2017/12/dom-debounce-throttle.html)
 2. rev-cms-core form rating, textarea, styling
