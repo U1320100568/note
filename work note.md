@@ -1,7 +1,7 @@
 **2020 02 04**
 1. fetching data moment(compile and bundle, build , run)
 2. [return promise](https://github.com/U1320100568/note/issues/4)
-3. 「提問」直接require("cdn js file")
+3. 「提問」直接require("cdn js file")  
  `<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>`
 
 
