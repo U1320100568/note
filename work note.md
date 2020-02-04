@@ -1,6 +1,7 @@
 **2020 02 04**
 1. fetching data moment(compile and bundle, build , run)
 2. [return promise](https://github.com/U1320100568/note/issues/4)
+3. 「提問」直接require("cdn js file")
 
 
 **2020 01 31**
