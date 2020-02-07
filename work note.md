@@ -3,6 +3,7 @@
 2. [return promise](https://github.com/U1320100568/note/issues/4)
 3. 「提問」直接require("cdn js file")  
  `<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>`
+4. npx: 暫時載入需要的cli libaray(暫存當下的folder)，結束後自動除掉，常用於cmd react-native, gatsby...
 
 
 **2020 01 31**
