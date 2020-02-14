@@ -4,6 +4,7 @@
 3. 「提問」直接require("cdn js file")  
  `<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>`
 4. `npx`: 暫時載入需要的cli libaray(暫存當下的folder)，結束後自動除掉，常用於cmd react-native, gatsby...
+5. `tree` command 
 
 
 **2020 01 31**
