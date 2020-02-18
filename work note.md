@@ -1,5 +1,25 @@
-**2020 02 14**
-1. 
+**2020 02 18**
+1. react native animated interpolate, stagger 
+
+**interpolate**
+```js
+let imageOffset = this.state.secctionOneOpacity.interpolate({
+      inputRange: [0, 1],
+      outputRange: [0, 10],
+      extrapolate: "clamp" //prevent input out of range, lead to output out of range
+    })
+```
+**stagger**
+``` js
+Animated.stagger( 300, // first param is delay from previous animation
+      [
+        Animated.timing(...),
+        Animated.timing(...),
+        Animated.timing(...)
+      ]
+    ).start();
+```
+
 
 **2020 02 04**
 1. [fetching data moment(compile and bundle, build , run)](https://github.com/U1320100568/note/issues/6)
