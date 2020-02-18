@@ -19,6 +19,7 @@ Animated.stagger( 300, // first param is delay from previous animation
       ]
     ).start();
 ```
+2. bash command: `cp 123 (1).png` -> `cp 123\ \(1\).png`
 
 
 **2020 02 04**
