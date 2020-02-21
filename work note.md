@@ -20,6 +20,8 @@ Animated.stagger( 300, // first param is delay from previous animation
     ).start();
 ```
 2. bash command: `cp 123 (1).png` -> `cp 123\ \(1\).png`
+3. [requestAnimationFrame](https://developer.mozilla.org/zh-TW/docs/Web/API/Window.requestAnimationFrame)
+4. web assembly, web worker：js背景執行
 
 
 **2020 02 04**
