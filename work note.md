@@ -1,6 +1,13 @@
 **2020 02 26**
 1. rev-cms-core  Select stlying
 2. [call qragphql by fetch](https://github.com/graphql/graphql-js/issues/960)
+serverless faas, continaer
+blob :use case file store
+in memory: global variable , use case chat ,  cached
+
+static Timer.XXX
+class method Timer.prototype.XXX
+instance method timer.XXX, arrow function in class
 
 **2020 02 18**
 1. react native animated interpolate, stagger 
