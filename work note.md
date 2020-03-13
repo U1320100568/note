@@ -1,5 +1,6 @@
 **2020 02 26**
 1. rev-cms-core  Select stlying
+2. [call qragphql by fetch](https://github.com/graphql/graphql-js/issues/960)
 
 **2020 02 18**
 1. react native animated interpolate, stagger 
