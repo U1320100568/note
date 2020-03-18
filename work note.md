@@ -1,3 +1,9 @@
+**2020 03 18**
+1. cli tool from devDependency
+  - add npm script { "appcenter": "appcenter" }
+  - use: `npm run appcenter -- param1 param2...`
+  
+  
 **2020 02 26**
 1. rev-cms-core  Select stlying
 2. [call qragphql by fetch](https://github.com/graphql/graphql-js/issues/960)
