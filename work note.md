@@ -1,12 +1,15 @@
 **2020 03 18**
-1. cli tool from devDependency
-  - add npm script { "appcenter": "appcenter" }
-  - use: `npm run appcenter -- param1 param2...`
-2. fork library
-  - fork to github repo
-  - checkout to specific tag (to XX version)
-  - git checkout -b new_branch
-  
+- cli tool from devDependency
+    1. add npm script { "appcenter": "appcenter" }
+    2. use: `npm run appcenter -- param1 param2...`
+- fork library  
+> code-push need to patch (non-build)  
+
+      1. fork to github repo
+      2. checkout to specific tag (to XX version)
+      3. git checkout -b new_branch (branch out)
+      4. edit & git push
+      5. npm i revtel/repo_name#tag_or_branch_name
   
 **2020 02 26**
 1. rev-cms-core  Select stlying
