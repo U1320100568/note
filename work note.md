@@ -2,6 +2,10 @@
 1. cli tool from devDependency
   - add npm script { "appcenter": "appcenter" }
   - use: `npm run appcenter -- param1 param2...`
+2. fork library
+  - fork to github repo
+  - checkout to specific tag (to XX version)
+  - git checkout -b new_branch
   
   
 **2020 02 26**
