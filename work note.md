@@ -10,6 +10,7 @@
       3. git checkout -b new_branch (branch out)
       4. edit & git push
       5. npm i revtel/repo_name#tag_or_branch_name
+- https://github.com/microsoft/react-native-code-push/blob/v5.4.2/docs/api-js.md#codepushgetcurrentpackage
   
 **2020 02 26**
 1. rev-cms-core  Select stlying
