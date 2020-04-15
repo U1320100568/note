@@ -1,5 +1,10 @@
 **2020 04 06**
 - [Http without Encrypt](https://github.com/U1320100568/note/issues/10)
+- rn60 font family
+    1. [Steps](https://github.com/facebook/react-native/issues/25852#issuecomment-521044060) (mkdir ./assets/fonts 字體丟進去)
+    2. .ttf測試成功
+    3. 因為vector icon pod install已經有連結，造成 `Multiple commands produce`，所以[刪掉link的關聯](https://github.com/oblador/react-native-vector-icons/issues/1074)
+
 
 **2020 03 18**
 - cli tool from devDependency
