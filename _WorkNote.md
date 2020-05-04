@@ -1,3 +1,10 @@
+**2020 05 04**
+- [change bundle id](https://github.com/revtel/rev-cms-app/wiki/Change-Package-Name)
+- [ant grid vs flexbox](https://ant.design/components/grid/) 
+- web font family
+    1. font file
+    2. web font(just font)
+
 **2020 04 06**
 - [Http without Encrypt](https://github.com/U1320100568/note/issues/10)
 - rn60 font family
