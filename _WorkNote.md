@@ -5,7 +5,7 @@
     1. font file
     2. web font(just font)
 - OAuth JWT token, access token, client id,api key
-- google facebook signin SDK
+- google facebook signin SDK and account 
 - 自己網路的andriod emulator nework fail
 
 **2020 04 06**
