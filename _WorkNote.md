@@ -5,6 +5,8 @@
     1. font file
     2. web font(just font)
 - OAuth JWT token, access token, client id,api key
+- google facebook signin SDK
+- 自己網路的
 
 **2020 04 06**
 - [Http without Encrypt](https://github.com/U1320100568/note/issues/10)
