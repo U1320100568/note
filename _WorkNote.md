@@ -4,7 +4,7 @@
 - web font family
     1. font file
     2. web font(just font)
-- OAuth JWT token, access token, client id,api key
+- OAuth JWT token, access token, client id,api key https://blog.yorkxin.org/2013/09/30/oauth2-1-introduction.html
 - google facebook signin SDK and account 
 - 自己網路的andriod emulator nework fail
 
