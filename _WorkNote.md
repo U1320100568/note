@@ -1,7 +1,11 @@
 **2020 05 18**
 - [cp google service cli](https://github.com/revtel/rev-cms-core/commit/21dd63baf64b19ac88676a01069603d730f4f8ec)
 - [setting bitbucket ssh](https://github.com/revtel/adenovo-aifian-app/wiki/Bitbucket-Setting)
-- React native Dimension window長寬會隨著orietation 改變
+- React native Dimension window長寬會隨著orietation 改變  
+- shell script `awk`  
+    `wc -c 123.jpg | awk '{print $1}'` -> `4192  123.jpg` -> `4192`  
+      
+    `version: "v0.0.1"`  -> `...| awk -F'"' '{print $2}'` -> `v0.0.1`
 
 **2020 05 04**
 - [change bundle id](https://github.com/revtel/rev-cms-app/wiki/Change-Package-Name)
