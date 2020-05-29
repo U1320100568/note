@@ -6,6 +6,7 @@
     `wc -c 123.jpg | awk '{print $1}'` -> `4192  123.jpg` -> `4192`  
       
     `version: "v0.0.1"`  -> `...| awk -F'"' '{print $2}'` -> `v0.0.1`
+- <img/> max-width: 100% hieght: auto 
 
 **2020 05 04**
 - [change bundle id](https://github.com/revtel/rev-cms-app/wiki/Change-Package-Name)
