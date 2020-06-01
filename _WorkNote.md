@@ -1,3 +1,9 @@
+**2020 05 19**
+- [RN] [back and refresh](https://stackoverflow.com/a/54550032) 
+    1. callback by props, on pop or unmount
+    2. `onWillFocus from react-navigation` 適合用在太多地方返回，且每次回來都觸發
+
+
 **2020 05 18**
 - [cp google service cli](https://github.com/revtel/rev-cms-core/commit/21dd63baf64b19ac88676a01069603d730f4f8ec)
 - [setting bitbucket ssh](https://github.com/revtel/adenovo-aifian-app/wiki/Bitbucket-Setting)
