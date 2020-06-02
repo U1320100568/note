@@ -2,6 +2,7 @@
 - [RN] [back and refresh](https://stackoverflow.com/a/54550032) 
     1. callback by props, on pop or unmount
     2. `onWillFocus from react-navigation` 適合用在太多地方返回，且每次回來都觸發
+    3. write null into sharedKey -> 高ios version crash
 
 
 **2020 05 18**
