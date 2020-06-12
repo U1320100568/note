@@ -3,6 +3,7 @@
     1. callback by props, on pop or unmount
     2. `onWillFocus from react-navigation` 適合用在太多地方返回，且每次回來都觸發，version 4.X use event listner instead of component
 - write null into sharedKey -> 高ios version crash
+- github cli and [mongodb](https://github.com/revtel/how-to/blob/master/rd-meeting-note/200602.md)
 
 
 **2020 05 18**
