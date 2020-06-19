@@ -1,3 +1,14 @@
+git log ..origin/master //see what's in origin/master but not in your current branch
+dns? 
+aws > Route53
+godaddy : buy domain name
+cname > name map to name
+a record (ipv4) > ip map to name 
+a record also name map to map for low balance(scalibility)
+real device always use a record
+
+
+
 **2020 05 19**
 - [RN] [back and refresh](https://stackoverflow.com/a/54550032) 
     1. callback by props, on pop or unmount
