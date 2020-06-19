@@ -6,6 +6,7 @@ cname > name map to name
 a record (ipv4) > ip map to name 
 a record also name map to map for low balance(scalibility)
 real device always use a record
+serverless web use cname(netlify)
 
 
 
