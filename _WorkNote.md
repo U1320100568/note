@@ -1,6 +1,7 @@
 **2020 06 23**
 - [gif in react native](https://github.com/U1320100568/note/issues/12)
 - animation in react js
+    - trigger all the time https://stackoverflow.com/questions/52231320/how-to-replay-a-css3-animation-in-reactjs
 
 **2020 06 16**
 - git log ..origin/master //see what's in origin/master but not in your current branch
