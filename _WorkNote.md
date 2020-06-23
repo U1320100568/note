@@ -1,12 +1,17 @@
-git log ..origin/master //see what's in origin/master but not in your current branch
-dns? 
-aws > Route53
-godaddy : buy domain name
-cname > name map to name
-a record (ipv4) > ip map to name 
-a record also name map to map for low balance(scalibility)
-real device always use a record
-serverless web use cname(netlify)
+**2020 06 23**
+- [gif in react native](https://github.com/U1320100568/note/issues/12)
+- animation in react js
+
+**2020 06 16**
+- git log ..origin/master //see what's in origin/master but not in your current branch
+- dns? 
+- aws > Route53
+- godaddy : buy domain name
+- cname > name map to name
+- a record (ipv4) > ip map to name 
+- a record also name map to map for low balance(scalibility)
+- real device always use a record
+- serverless web use cname(netlify)
 
 
 
