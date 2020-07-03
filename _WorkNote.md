@@ -1,6 +1,10 @@
 **2020 07 03**
 - jest / mock test tool/ jest.fn / fn.mock
 - react-messenger-customer-chat configuration
+- aws s3 gatsby-s3-?
+~/.aws/credential 
+AWS_PROFILE 
+CDN Route3 cloudfront pchome goDaddy ,or netlify domain manage
 
 **2020 06 23**
 - [gif in react native](https://github.com/U1320100568/note/issues/12)
