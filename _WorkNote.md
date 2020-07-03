@@ -1,3 +1,7 @@
+**2020 07 03**
+- jest / mock test tool/ jest.fn / fn.mock
+- react-messenger-customer-chat configuration
+
 **2020 06 23**
 - [gif in react native](https://github.com/U1320100568/note/issues/12)
 - animation in react js
