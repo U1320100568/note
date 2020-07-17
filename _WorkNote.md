@@ -1,3 +1,6 @@
+**2020 07 20**
+- react-csv async onClick not working [workaround](https://github.com/react-csv/react-csv/issues/189#issue-525778778)
+
 **2020 07 17**
 - react native fetch url path 最後面是數字，會自動加slash而出錯
 - discuss 地區選擇mirco service
