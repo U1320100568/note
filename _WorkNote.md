@@ -1,3 +1,6 @@
+**2020 07 17**
+- react native fetch url path 最後面是數字，會自動加slash而出錯
+
 **2020 07 03**
 - jest / mock test tool/ jest.fn / fn.mock
 - react-messenger-customer-chat configuration
