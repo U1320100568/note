@@ -1,5 +1,6 @@
 **2020 07 17**
 - react native fetch url path 最後面是數字，會自動加slash而出錯
+- discuss 地區選擇mirco service
 
 **2020 07 03**
 - jest / mock test tool/ jest.fn / fn.mock
