@@ -1,5 +1,17 @@
 **2020 07 20**
 - react-csv async onClick not working [workaround](https://github.com/react-csv/react-csv/issues/189#issue-525778778)
+- bash ex. bigsnag-cli
+    - 空白很重要, -f file 檢察檔案是否存在
+    - source file : apply file 
+    - echo "Enter something"
+    - read VarName < 讀input到變數
+    - curl 'url path' > 'path/filename.xx' > 取的request file store to other path
+    - assert $? 0 'error message': $? 前一行指令的resp , 0 if 指令完成 return 0
+    - 帶入變數方式：1. session define 2.source file 3. 執行指令時帶入
+    - **jq**(third party) bash 讀取json file, ex. cat package.json | jq .version
+- requestAnimationFrame [CDN](https://developer.cdn.mozilla.net/pl/docs/Web/API/Window/requestAnimationFrame)
+- [web socket in react native](https://reactnative.dev/docs/network#websocket-support) 
+- [placeimg.com](http://placeimg.com/)
 
 **2020 07 17**
 - react native fetch url path 最後面是數字，會自動加slash而出錯
