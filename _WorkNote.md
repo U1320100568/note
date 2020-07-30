@@ -1,3 +1,7 @@
+**2020 07 30**
+- react native [image blur](https://stackoverflow.com/a/40776982/13797221) : `blurRadius={10}` (image.props)
+
+
 **2020 07 20**
 - react-csv async onClick not working [workaround](https://github.com/react-csv/react-csv/issues/189#issue-525778778)
 - bash ex. bigsnag-cli
