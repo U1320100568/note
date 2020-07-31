@@ -1,5 +1,8 @@
 **2020 07 30**
+- [css filter] (https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur)
 - react native [image blur](https://stackoverflow.com/a/40776982/13797221) : `blurRadius={10}` (image.props)
+- [css content](https://stackoverflow.com/questions/10393462/placing-unicode-character-in-css-content-value)
+
 
 
 **2020 07 20**
