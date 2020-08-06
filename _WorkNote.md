@@ -1,3 +1,22 @@
+**2020 08 06**
+- Ant design theme color: *gatsby-config*
+  ```
+  plugins: [
+    {
+      resolve: `gatsby-plugin-less`,
+      options: {
+        javascriptEnabled: true,
+        modifyVars: {
+          'primary-color': '#da3043',
+          'font-family': 'Arial',
+          'layout-body-background': '#66ff79'
+        }
+      }
+    }
+  ]
+  ```
+- 賽斯影片
+
 **2020 07 30**
 - [css filter] (https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur)
 - react native [image blur](https://stackoverflow.com/a/40776982/13797221) : `blurRadius={10}` (image.props)
