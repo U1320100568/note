@@ -1,6 +1,7 @@
 **2020 08 13**
 - console.table
 - 詢問 expect 不會因為某個fail就停止
+- react native Spinner 
 
 **2020 08 06**
 - Ant design theme color: *gatsby-config*
