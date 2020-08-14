@@ -2,7 +2,22 @@
 - console.table
 - 詢問 expect 不會因為某個fail就停止
 - react native Spinner 
+- 賽斯導fastlane
+  - brew 安裝
+  - 準備RevtleTech ios and apple distibution key
+  - generate App專用密碼 on develop site, and input at fastlane config phase
+- react hook
+  - 用來封裝單一的邏輯
+  - useEffect ```
+  //執行render 都會執行這function，可以有多個
+  useEffect(() => { // function as arg , not async, because return value
+    do something
+    return function cleanup () {} //若return function，有想要清除的東西可以在這解決，像是listener
+  }, [props.id]) 
+  // 帶入第2參數是dependency array，如果變數有變動就會乎叫一次，所以componentDidMount 就要帶這參數，componentDidUpdate就不用帶
+  ```
 
+ 
 **2020 08 06**
 - Ant design theme color: *gatsby-config*
   ```
