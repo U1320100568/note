@@ -1,6 +1,6 @@
 **2020 08 13**
 - console.table
-- 詢問 expect 不會因為某個fail就停止
+- 詢問 expect 不會因為某個fail就停止: 用某個test function 撈資料，資料存在describe scope
 - react native Spinner 
 - 賽斯導fastlane
   - brew 安裝
@@ -8,7 +8,8 @@
   - generate App專用密碼 on develop site, and input at fastlane config phase
 - react hook
   - 用來封裝單一的邏輯
-  - useEffect ```
+  - useEffect 
+  ```
   //執行render 都會執行這function，可以有多個
   useEffect(() => { // function as arg , not async, because return value
     do something
@@ -16,6 +17,8 @@
   }, [props.id]) 
   // 帶入第2參數是dependency array，如果變數有變動就會乎叫一次，所以componentDidMount 就要帶這參數，componentDidUpdate就不用帶
   ```
+  - decorator: 在function 執行前後可以執行的 function 例如 logger(js 也有)
+  - `git stash`: 可以將修改的東西暫存，轉移到別的branch，到另一個branch `git pop`, `git reflog`: reset 後還是可以看到原本的commit 
 
  
 **2020 08 06**
