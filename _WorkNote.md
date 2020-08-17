@@ -1,3 +1,6 @@
+**2020 08 17**
+- set env variable (token , apihost
+
 **2020 08 13**
 - console.table
 - 詢問 expect 不會因為某個fail就停止: 用某個test function 撈資料，資料存在describe scope
