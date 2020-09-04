@@ -11,6 +11,24 @@ Expiring Daemon because JVM heap space is exhausted
 Execution failed for task ':app:transformClassesWithMultidexlistForRelease'.
 > GC overhead limit exceeded
 ```
+- js getter 結構上轉換的 interface
+1 不確定api會不會調整 2 前後端同時進行，所以model長不一樣  
+```
+return item ; //no
+return new itemModel(item);
+...
+item.id
+...
+class itemModel {
+  constructor(data) {
+    this._data = data;
+  }
+  
+  get id() { //getter
+    return this._data.trans_id
+  }
+}
+```
 
 **2020 08 13**
 - console.table
