@@ -1,5 +1,16 @@
 **2020 08 17**
 - set env variable (token , apihost
+- android release: [multidex over heap](https://stackoverflow.com/a/25013822/13797221)
+```
+> Task :app:processReleaseGoogleServices
+...
+Expiring Daemon because JVM heap space is exhausted
+
+> Task :app:transformClassesWithMultidexlistForRelease FAILED
+* What went wrong:
+Execution failed for task ':app:transformClassesWithMultidexlistForRelease'.
+> GC overhead limit exceeded
+```
 
 **2020 08 13**
 - console.table
