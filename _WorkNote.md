@@ -1,3 +1,20 @@
+**2020 09 07**
+- useEffect [return nested](https://codesandbox.io/embed/optimistic-sky-0x0b2)
+會拿到之前的props
+```
+const Component = ({ prop1, prop2 }) => {
+  useEffect(() => {
+    console.log("prop1 has changed", prop1);
+  }, [prop1]);
+  useEffect(() => () => {
+    console.log("prop2 has changed", prop2);
+  }, [prop2]);
+
+  return <div>...</div>;
+};
+```
+
+
 **2020 08 17**
 - set env variable (token , apihost
 - android release: [multidex over heap](https://stackoverflow.com/a/25013822/13797221)
