@@ -14,7 +14,7 @@ const Component = ({ prop1, prop2 }) => {
 };
 ```
 - [mbps](https://github.com/U1320100568/note/issues/13)
-- build and develop 的 web css差異
+- 🙅‍ build and 🆗develop 的 web css差異
 ![image](https://user-images.githubusercontent.com/35591116/92459435-47160e80-f1f9-11ea-8eb9-5dd690597bf3.png)
 算完再render會比較好
 
