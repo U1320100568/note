@@ -1,6 +1,5 @@
 **2020 09 07**
-- useEffect [return nested](https://codesandbox.io/embed/optimistic-sky-0x0b2)
-會拿到之前的props
+- useEffect 
 ```
 const Component = ({ prop1, prop2 }) => {
   useEffect(() => {
