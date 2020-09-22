@@ -1,3 +1,29 @@
+**2020 09 22**
+- keyboard avoiding
+```jsx
+<KeyboardAvoidingView
+      style={{
+        // flex: 1 // it will hide the fields
+        ...props.style,
+      }}
+      {...Platform.select({
+        ios: {behavior: 'position'},
+        android: {behavior: 'height'},
+      })}
+      keyboardVerticalOffset={Platform.select({ios: 0 , android: 0})}>
+      <ScrollView
+        contentContainerStyle={{flexGrow: 1}}
+        keyboardShouldPersistTaps="handled" //to dismiss keyboard
+      >
+        {props.children}
+      </ScrollView>
+</KeyboardAvoidingView>
+```
+    1. keyboardavoiding 不能加flex:1，android input 會消失
+    2. 只有不想要被擋到的東西，才需放在children (本來包在abstract form
+    3. behavior ios position, android height (測很久
+    4. scroll view keyboardShouldPersistTaps="handled" 點空白處隱藏keyboard
+
 **2020 09 07**
 - useEffect 
 ```
