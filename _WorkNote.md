@@ -23,6 +23,22 @@
     2. 只有不想要被擋到的東西，才需放在children (本來包在abstract form
     3. behavior ios position, android height (測很久
     4. scroll view keyboardShouldPersistTaps="handled" 點空白處隱藏keyboard
+    
+- Deeplinking
+1. [跳到detail，被reset home] 
+   - get url at AppLinking, but reset home at Landing，兩個同步在跑
+   - 情況：從web or 其他app 跳至 product detail
+   - getInitialURL, addEventListener 一般都設置在Applinking
+   - 解法: 把getInitialURL提到 autologin & reset home 之後
+   
+2. [inital url = null] Linking.getInitalUrl in react native debug mode : get null
+   - debug on XCode 設置中斷點，觀察有無值帶入native
+   - 中斷在intital time and lanuch by deeplinking: 不能直接Xcode run, 需run完後，以deeplinking 開啟  
+     Project > Scheme > edit > Wait for executable to be launched  
+    ![image](https://user-images.githubusercontent.com/35591116/93989546-9d1fb000-fdbc-11ea-86b7-1e945df48dd6.png)  
+3. [deeplinking 跳2次] react-navigation 2.X 4.X 預設handle deeplinking: disable it by  `<AppNavigator enableURLHandling={false} `  
+
+- push registry 也會有[跳到detail，被reset home]問題。
 
 **2020 09 07**
 - useEffect 
