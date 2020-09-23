@@ -24,7 +24,7 @@
     3. behavior ios position, android height (測很久
     4. scroll view keyboardShouldPersistTaps="handled" 點空白處隱藏keyboard
     
-- Deeplinking
+- Deeplinking   [ # commit](https://github.com/revtel/sethtv-app/commit/8987d344399137978786acd30a8d8b2feefc12ea)
 1. [跳到detail，被reset home] 
    - get url at AppLinking, but reset home at Landing，兩個同步在跑
    - 情況：從web or 其他app 跳至 product detail
