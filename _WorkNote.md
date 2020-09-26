@@ -39,6 +39,8 @@
 3. [deeplinking 跳2次] react-navigation 2.X 4.X 預設handle deeplinking: disable it by  `<AppNavigator enableURLHandling={false} `  
 
 - push registry 也會有[跳到detail，被reset home]問題。
+- Content-Length: size in decimal number of OCTETs ? bytes `13851`
+- Ant.Upload `action`, `beforeUpload` 不直接上傳 return false ,`onChange`, `fileList`
 
 **2020 09 07**
 - useEffect 
