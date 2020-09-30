@@ -42,6 +42,14 @@
 - Content-Length: size in decimal number of OCTETs ? bytes `13851`
 - Ant.Upload `action`, `beforeUpload` 不直接上傳 return false ,`onChange`, `fileList`
 
+- DEBUD
+    ![image](https://user-images.githubusercontent.com/35591116/94637846-21b58580-030b-11eb-8ce3-2ebf25376097.png)
+    1. UnhandledPromiseRejectionWarning: 沒有catch 的error
+    2. gatsby build error沒有標明在哪位置: 1. 全域搜尋（數量少的話）2. 夾擊法（import 也要拿掉）
+- ❌ if(window)  ✔️ if(type window !== undefined)
+- componentWillMount 裡有用到 window, document 也是會報錯
+- 使用 thirt party 有可能在import 時，他就使用documnet or window，造成gatsby build error
+
 **2020 09 07**
 - useEffect 
 ```
