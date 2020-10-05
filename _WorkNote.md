@@ -1,3 +1,29 @@
+**2020 10 05**
+- ref 
+```react
+<Comp ref={this.onRef}  />
+...
+onRef = ref => {this._comp = ref}
+```
+使用此Comp this的function or variable
+> ⚠️ 使用redux connect，無法取得內容（沒有傳遞到上層
+
+export Comp|export connect(Comp) 
+-|- 
+![image](https://user-images.githubusercontent.com/35591116/95060510-efea5780-072c-11eb-8871-d04b61f9720b.png)|![image](https://user-images.githubusercontent.com/35591116/95060559-042e5480-072d-11eb-9025-0d47a4c9d8c6.png)
+
+兩種方法：
+1. [redux connect refforward](https://react-redux.js.org/api/connect#forwardref-boolean) //react-redux >= 6.0
+2. 將ref function pass to Comp (要注意life-cycle)
+   ```js
+   class Comp ...
+     componentDidMount() {
+      if (this.props.onMyRef) {
+        this.props.onMyRef(this);
+      }
+     }
+   ```
+
 **2020 09 22**
 - keyboard avoiding
 ```jsx
