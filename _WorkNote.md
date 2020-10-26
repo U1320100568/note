@@ -1,3 +1,9 @@
+**2020 10 23**
+- next.js 和 gatsby 一樣 可以static build, 還可以server rendering
+- window.open () 開的new window 可以取道原本的window global variable: window.opener.variable
+- cloud coding : codeSandbox(web), expo snake(app)
+- electron: web porject turn to desktop app 
+
 **2020 10 05**
 - ref 
 ```react
