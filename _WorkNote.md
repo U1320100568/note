@@ -1,3 +1,8 @@
+**2020 10 30**
+- dummy picture: https://unsplash.com/
+- [html5] js multiple thread : web-worker
+- [html5] web db: indexedDB (worker無法使用localStorgae)
+
 **2020 10 23**
 - next.js 和 gatsby 一樣 可以static build, 還可以server rendering
 - window.open () 開的new window 可以取道原本的window global variable: window.opener.variable
@@ -56,6 +61,17 @@ export Comp|export connect(Comp)
     3. behavior ios position, android height (測很久
     4. scroll view keyboardShouldPersistTaps="handled" 點空白處隱藏keyboard
     
+- Content-Length: size in decimal number of OCTETs ? bytes `13851`
+- Ant.Upload `action`, `beforeUpload` 不直接上傳 return false ,`onChange`, `fileList`
+
+- DEBUD
+    ![image](https://user-images.githubusercontent.com/35591116/94637846-21b58580-030b-11eb-8ce3-2ebf25376097.png)
+    1. UnhandledPromiseRejectionWarning: 沒有catch 的error
+    2. gatsby build error沒有標明在哪位置: 1. 全域搜尋（數量少的話）2. 夾擊法（import 也要拿掉）
+- ❌ if(window)  ✔️ if(typeof window !== undefined)
+- componentWillMount 裡有用到 window, document 也是會報錯
+- 使用 thirt party 有可能在import 時，他就使用documnet or window，造成gatsby build error
+    
 - Deeplinking   [ # commit](https://github.com/revtel/sethtv-app/commit/8987d344399137978786acd30a8d8b2feefc12ea)
 1. [跳到detail，被reset home] 
    - get url at AppLinking, but reset home at Landing，兩個同步在跑
@@ -71,16 +87,8 @@ export Comp|export connect(Comp)
 3. [deeplinking 跳2次] react-navigation 2.X 4.X 預設handle deeplinking: disable it by  `<AppNavigator enableURLHandling={false} `  
 
 - push registry 也會有[跳到detail，被reset home]問題。
-- Content-Length: size in decimal number of OCTETs ? bytes `13851`
-- Ant.Upload `action`, `beforeUpload` 不直接上傳 return false ,`onChange`, `fileList`
+  
 
-- DEBUD
-    ![image](https://user-images.githubusercontent.com/35591116/94637846-21b58580-030b-11eb-8ce3-2ebf25376097.png)
-    1. UnhandledPromiseRejectionWarning: 沒有catch 的error
-    2. gatsby build error沒有標明在哪位置: 1. 全域搜尋（數量少的話）2. 夾擊法（import 也要拿掉）
-- ❌ if(window)  ✔️ if(type window !== undefined)
-- componentWillMount 裡有用到 window, document 也是會報錯
-- 使用 thirt party 有可能在import 時，他就使用documnet or window，造成gatsby build error
 
 **2020 09 07**
 - useEffect 
