@@ -1,7 +1,7 @@
 **2020 11 06**
-serve backend server: 看app在哪個port serve(process_id) > 砍掉process > 重新 serve
-gitbook
-css: flex-order
+serve backend server: 看app在哪個port serve(process_id) > 砍掉process > 重新 serve  
+gitbook  
+css: flex-order  
 
 
 **2020 10 30**
