@@ -1,3 +1,9 @@
+**2020 11 09**
+android sdk 需要升級至 29 https://github.com/revtel/revtel-app-62/commit/c7c2e4d5d55e5ec369fbc8b3292eff1599add946
+
+
+
+
 **2020 11 06**
 serve backend server: 看app在哪個port serve(process_id) > 砍掉process > 重新 serve  
 gitbook  
