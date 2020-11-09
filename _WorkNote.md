@@ -1,5 +1,13 @@
-**2020 11 09**
-android sdk 需要升級至 29 https://github.com/revtel/revtel-app-62/commit/c7c2e4d5d55e5ec369fbc8b3292eff1599add946
+**2020 11 09**  
+- android sdk 需要升級至 29 https://github.com/revtel/revtel-app-62/commit/c7c2e4d5d55e5ec369fbc8b3292eff1599add946
+- Ant.Table 設置 empty comp: 
+```jsx
+<Ant.Table 
+   locale={{
+       emptyText: ( <img src="/images/empty-order.svg" height="80" width="80" /> )
+   }}
+...
+```
 
 
 
