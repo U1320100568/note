@@ -8,6 +8,8 @@
    }}
 ...
 ```
+- google login ERROR code 10: key的sha1 or package_name 對應不到firebase config，原因：app/build.gradle 改成debug key 在 project某處，但是我沒有產生，而sha1由global debug key 而來，所以把build.gradle的debug config拿掉，就會用global debug key。
+![image](https://user-images.githubusercontent.com/35591116/98626293-5e35c180-234c-11eb-91c7-9402f4b17119.png)
 
 
 
