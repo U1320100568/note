@@ -11,7 +11,7 @@
 - google login ERROR code 10: key的sha1 or package_name 對應不到firebase config，原因：app/build.gradle 改成debug key 在 project某處，但是我沒有產生，而sha1由global debug key 而來，所以把build.gradle的debug config拿掉，就會用global debug key。
 ![image](https://user-images.githubusercontent.com/35591116/98626293-5e35c180-234c-11eb-91c7-9402f4b17119.png)
 - apple login 有些設定跟之前不一樣 https://github.com/revtel/how-to/blob/master/social-signin/Apple%20Signin%20SDK.md
-
+- appDelegate.m import googlesign or fbsign.h 時，注意要在Flipper.h 下面，因為他前面有個if debug，會在archive and release fail 
 
 
 
