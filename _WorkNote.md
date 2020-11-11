@@ -12,7 +12,7 @@
 ![image](https://user-images.githubusercontent.com/35591116/98626293-5e35c180-234c-11eb-91c7-9402f4b17119.png)
 - apple login 有些設定跟之前不一樣 https://github.com/revtel/how-to/blob/master/social-signin/Apple%20Signin%20SDK.md
 - appDelegate.m import googlesign or fbsign.h 時，注意要在Flipper.h 下面，因為他前面有個if debug，會在archive and release fail 
-
+- webClientId 有設定android 才會return idToken(JWT), 設定後android, ios會是同一把, 可直接取用web client的那把
 
 
 **2020 11 06**
