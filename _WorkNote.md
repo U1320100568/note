@@ -1,5 +1,5 @@
 **2020 11 09**  
-- android sdk 需要升級至 29 https://github.com/revtel/revtel-app-62/commit/c7c2e4d5d55e5ec369fbc8b3292eff1599add946
+- android sdk 需要升級至 29，才能上google play https://github.com/revtel/revtel-app-62/commit/c7c2e4d5d55e5ec369fbc8b3292eff1599add946
 - Ant.Table 設置 empty comp: 
 ```jsx
 <Ant.Table 
@@ -13,6 +13,12 @@
 - apple login 有些設定跟之前不一樣 https://github.com/revtel/how-to/blob/master/social-signin/Apple%20Signin%20SDK.md
 - appDelegate.m import googlesign or fbsign.h 時，注意要在Flipper.h 下面，因為他前面有個if debug，會在archive and release fail 
 - webClientId 有設定android 才會return idToken(JWT), 設定後android, ios會是同一把, 可直接取用web client的那把
+
+ Revtel Doamin規則：
+ - GoDaddy: 只買domain,  
+ - AWS: Route53 產生record,
+ - netlify: 新增record get nameserver(4個) 貼到godaddy
+ DNS
 
 
 **2020 11 06**
