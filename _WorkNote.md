@@ -1,7 +1,9 @@
 **2020 11 17**
 - [push notification certificate](https://github.com/revtel/how-to/blob/master/push-notification/create-certificate.md)
 - aps.cer & p12 ?
+> The .p12 contains both the private and the public key, and also information about the owner (name, email address, etc. ) all being certified by a third party. With such certificate, a user can identify himself and authenticate himself to any organization trusting the third party.
 - android push notification [文件更新 ](https://github.com/revtel/how-to/blob/master/push-notification/push-notification-v2.md)
+
 
 
 **2020 11 09**  
