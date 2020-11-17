@@ -1,3 +1,9 @@
+**2020 11 17**
+- [push notification certificate](https://github.com/revtel/how-to/blob/master/push-notification/create-certificate.md)
+- aps.cer & p12 ?
+- android push notification [文件更新 ](https://github.com/revtel/how-to/blob/master/push-notification/push-notification-v2.md)
+
+
 **2020 11 09**  
 - android sdk 需要升級至 29，才能上google play https://github.com/revtel/revtel-app-62/commit/c7c2e4d5d55e5ec369fbc8b3292eff1599add946
 - Ant.Table 設置 empty comp: 
