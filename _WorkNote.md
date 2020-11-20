@@ -4,6 +4,13 @@
 > The .p12 contains both the private and the public key, and also information about the owner (name, email address, etc. ) all being certified by a third party. With such certificate, a user can identify himself and authenticate himself to any organization trusting the third party.
 - android push notification [文件更新 ](https://github.com/revtel/how-to/blob/master/push-notification/push-notification-v2.md)
 
+- vscode extension 
+1. glean : 幫助refactor extracting for react 
+2. easy motion: 快速移動游標
+- bash, vim, node: `option + click` 快速移動游標
+- code-snippet vscode 快捷
+- html input for
+
 
 
 **2020 11 09**  
