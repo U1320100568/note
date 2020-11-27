@@ -1,3 +1,20 @@
+**2020 11 26**  
+Revtel Dashboard: https://console.revtel2.com/
+- article service
+
+前情提要：  
+> 傳大檔導致server當掉，所以傳檔改成傳到micro service(lambda/serverless)  
+>  藉由 lambda 傳檔會有size、traffic、timeout的問題，所以我們是由lambda給我們一個合法的s3 url，直接上傳到s3  
+
+一般小檔的傳檔 micro service，已經有此api     
+大型檔案（10M up），apply uppy   
+uppy 可支援大型檔案分割上傳至s3   
+需整 `@uppy/aws-s3-multipart` `@uppy/core`   
+大致步驟： 建立"上傳事件" > 分割成不同parts、取得各自sign過的url > 各自上傳 > 通知aws完成 > 取得file path   
+   
+優點：較快、不會導致server當掉、沒有檔案大小限制
+
+
 **2020 11 17**
 - [push notification certificate](https://github.com/revtel/how-to/blob/master/push-notification/create-certificate.md)
 - aps.cer & p12 ?
