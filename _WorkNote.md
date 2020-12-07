@@ -1,3 +1,7 @@
+**2020 12 07**
+[intelligence only oneline](https://stackoverflow.com/a/64817846/13797221)
+
+
 **2020 11 26**  
 Revtel Dashboard: https://console.revtel2.com/
 - article service
