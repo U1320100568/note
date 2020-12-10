@@ -1,5 +1,34 @@
-**2020 12 07**
-[intelligence only oneline](https://stackoverflow.com/a/64817846/13797221)
+**2020 12 07**  
+- [intelligence only oneline](https://stackoverflow.com/a/64817846/13797221)  
+- setState - updater 最常使用在 toggle  
+大多使用在event function closure，真正執行時的value可能不是當下的，所以可能錯誤。  
+<table>
+   <tr>
+      <th>class</th>
+      <th>hook</th>
+   </tr>
+   <tr>
+      <td>
+         <pre>
+const { show } = this.props;
+...
+this.setState({ show: !show })
+// updater
+this.setState(state => { show: !state.show })
+         </pre>
+      </td>
+      <td>
+         <pre>
+const [show, setShow] = useState(false);
+...
+setShow(show)
+// updater 
+setShow(preShow => !preShow)
+         </pre>
+      </td>
+   </tr>
+</table>
+
 
 
 **2020 11 26**  
