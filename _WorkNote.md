@@ -11,8 +11,6 @@
       <td>
          <pre>
 const { show } = this.props;
-
-- vsCode: Color hightlight plugin
 ...
 this.setState({ show: !show })
 // updater
@@ -30,6 +28,12 @@ setShow(preShow => !preShow)
       </td>
    </tr>
 </table>
+- vsCode: Color hightlight plugin
+- [zsh](https://github.com/revtel/zsh): mac shell 逐漸從bash轉換成 zsh
+- base64: 用 64 字元 編碼（像Hex的概念） 
+- 多國語系 library：react.i18next
+- 中文 regex `/\p{Script=Han}/`
+- GMT(有時區的概念，相對的) UTC(沒有時區的概念，絕對的時間)
 
 
 
