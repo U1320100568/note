@@ -11,6 +11,8 @@
       <td>
          <pre>
 const { show } = this.props;
+
+- vsCode: Color hightlight plugin
 ...
 this.setState({ show: !show })
 // updater
