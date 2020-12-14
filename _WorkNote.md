@@ -1,3 +1,28 @@
+### 2020 12 14
+- android multi dex: app or 函式庫的 function over 65536 個就會 ERROR `Too many field references: 131000; max is 65536. You may try using --multi-dex option.`  
+- allow multidex ， build time 可能還是會遇到可使用記憶體不足的情況，可加入下面設定：
+- *android/app/build.gradle*
+```
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+```
+- 近期 ERROR:
+<pre>
+* What went wrong:
+Execution failed for task ':app:multiDexListRelease'.
+> A failure occurred while executing com.android.build.gradle.internal.tasks.Workers$ActionFacade
+   > GC overhead limit exceeded
+</pre>
+
+  
+- 還要在加 *android/gradle.properties*   [參考](https://stackoverflow.com/a/57607026/13797221)  
+```
+    /// java machine build time 帶入 args 大小極限設定
+    org.gradle.jvmargs=-Xmx4608m
+```
+
+
 **2020 12 07**  
 - [intelligence only oneline](https://stackoverflow.com/a/64817846/13797221)  
 - setState - updater 最常使用在 toggle  
