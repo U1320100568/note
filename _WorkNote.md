@@ -14,6 +14,8 @@ Execution failed for task ':app:multiDexListRelease'.
 > A failure occurred while executing com.android.build.gradle.internal.tasks.Workers$ActionFacade
    > GC overhead limit exceeded
 </pre>
+  
+- 分享inigma spinner
 
   
 - 還要在加 *android/gradle.properties*   [參考](https://stackoverflow.com/a/57607026/13797221)  
