@@ -16,7 +16,9 @@ Execution failed for task ':app:multiDexListRelease'.
 </pre>
   
 - 分享inigma spinner
-
+- run xcode > unable to install RevtelApp > detail > `The executable was signed with invalid entitlement`  
+解決： 檢查 RevtelApp & RevtelAppTests develop team is the same.  
+  
   
 - 還要在加 *android/gradle.properties*   [參考](https://stackoverflow.com/a/57607026/13797221)  
 ```
