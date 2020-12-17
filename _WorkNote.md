@@ -25,6 +25,9 @@ Execution failed for task ':app:multiDexListRelease'.
 - run xcode > unable to install RevtelApp > detail > `The executable was signed with invalid entitlement`  
 解決： 檢查 RevtelApp & RevtelAppTests develop team is the same.  
 
+- lint
+- static variable in hook? useRef()  快速assign，不會造成re-render
+- componentDidMount() 很難實現
   
 
 
