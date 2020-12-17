@@ -24,7 +24,7 @@ Execution failed for task ':app:multiDexListRelease'.
 - 分享inigma spinner
 - run xcode > unable to install RevtelApp > detail > `The executable was signed with invalid entitlement`  
 解決： 檢查 RevtelApp & RevtelAppTests develop team is the same.  
-  
+
   
 
 
