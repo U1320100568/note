@@ -1,3 +1,8 @@
+### 2020 12 18
+- keyboard: 如果KeyboardAvoiding 在 ScrollView 外面 會整個往上推，蓋住Header  
+https://github.com/revtel/how-to/blob/master/component-sharing/KeyboardAvoiding.js  
+
+
 ### 2020 12 14
 - android multi dex: app or 函式庫的 function over 65536 個就會 ERROR `Too many field references: 131000; max is 65536. You may try using --multi-dex option.`  
 - allow multidex ， build time 可能還是會遇到可使用記憶體不足的情況，可加入下面設定：
