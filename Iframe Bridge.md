@@ -61,6 +61,6 @@ if (event.data.hasOwnProperty("FrameHeight")) {
 方法2: useRef (不確定react or html which load early)  
 
 ### ⚠ when outer onload, inner site component not ready
-Q: 如何從inner通知 outer re-render?
-方法1: 將source暫存起來，involke postMessage
-方法2: polling state protocal
+Q: 如何從inner通知 outer re-render?  
+方法1: 將source暫存起來，involke postMessage  
+方法2: polling state protocal  
