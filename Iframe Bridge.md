@@ -59,5 +59,7 @@ if (event.data.hasOwnProperty("FrameHeight")) {
 ### ⚠ react hook no this, contentWindow is undefined  
 `document.getElementById("frame1").contentWindow`
 
+可測試useRef
+
 ### ⚠ when outer onload, inner site component not ready
 Q: 如何從inner通知 outer re-render?
