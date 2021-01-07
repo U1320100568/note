@@ -62,5 +62,7 @@ if (event.data.hasOwnProperty("FrameHeight")) {
 
 ### ⚠ when outer onload, inner site component not ready
 Q: 如何從inner通知 outer re-render?  
-方法1: 將source暫存起來，involke postMessage  
-方法2: polling state protocal  
+- 方法1: 將source暫存起來，involke postMessage  
+outer load完成後，會對inner打第一次postMessage，inner 可接收到時候將source暫存，假如內容會刷新（api 取得資料、loading），也可以再次利用source.postMessage，傳遞height給outer。但是，若遇到第一次都沒有接到source的情況，outer loaded，inner 的React尚未set起來，此方法就會fail。
+- 方法2: polling state protocal  
+outer設置timer post message給inner，若收到時回給outer確定溝通建立。
