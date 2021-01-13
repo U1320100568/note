@@ -4,7 +4,11 @@
   - useRef( ).current; 可以不用一直取 current
   - getBoundClientRect() DOM api，取得element的位置，相對於viewport
   - scrollBy({ top: x, ...}) window api，相對滑動位置
-
+  
+- vscode shortcut
+  - ctrl + shift + 左右：選取目前的scope
+  - alt + 左右：游標快速移動至下一個word 位置
+  
 ### 2021 01 04
 - iframe resizer
 - github project(archive)
