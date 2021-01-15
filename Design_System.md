@@ -6,3 +6,16 @@
 
 # Purpose
 一個表單可以設定完所有的design
+
+# Ant 
+- breakpoint 依照 bootstrap 
+```
+xs	screen < 576px
+sm	screen ≥ 576px
+md	screen ≥ 768px
+lg	screen ≥ 992px
+xl	screen ≥ 1200px
+xxl	screen ≥ 1600px
+```
+
+[theme config](https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less)
