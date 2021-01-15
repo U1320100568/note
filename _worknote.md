@@ -9,6 +9,8 @@
   - ctrl + shift + 左右：選取目前的scope
   - alt + 左右：游標快速移動至下一個word 位置
   
+- react native debugger 可以看到 Network api 
+  
 ### 2021 01 04
 - iframe resizer
 - github project(archive)
