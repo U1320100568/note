@@ -1,3 +1,17 @@
+### 2021 01 20
+**step 1. build**  
+Build webpack  
+**step 2. copy**  
+Copy file to public  
+**step 3. serve**  
+https-server public  
+  
+`nodemon` thirdparty to develop watchfile change
+- 如何用pure js 實作 global state 更新觸發re-render?   
+用 state manager 管理state提供subscribe 供各comp 傳入render function，  
+提供manipulate state function (add, delete) 裡面會觸發notify，  
+Notify 執行所有的subscribe。  
+
 ### 2021 01 13
 - react scroll to invalid input
   - forwardRef((props, ref) => ) 可以不用手動binding Ref
