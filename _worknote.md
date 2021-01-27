@@ -1,3 +1,18 @@
+###
+css variable 會找最近scope 定義的數值
+```
+//shared key frame
+keyframe {
+...
+transfrom: translate(var(--ball-offset));
+
+//在使用的 element 定義css variable
+& .ball-1 {
+--ball-offset=1000px;
+
+
+```
+
 ### 2021 01 20
 - a js application  
 **step 1. build**  
