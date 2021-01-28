@@ -1,4 +1,4 @@
-###
+### 2020 01 28
 css variable 會找最近scope 定義的數值
 ```
 //shared key frame
@@ -11,6 +11,17 @@ transfrom: translate(var(--ball-offset));
 --ball-offset=1000px;
 
 
+```
+
+- RegExp - find the match word
+```
+1.
+result = "I love JavaScript".match(/Java(Script)/)
+result[0] = JavaScript
+result[1] = Script
+2.
+valid = /(Y+)/.test("YYYY-MM")
+RegExp.$1 = YYYY
 ```
 
 ### 2021 01 20
