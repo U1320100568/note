@@ -1,5 +1,5 @@
 ### 2020 01 28
-css variable 會找最近scope 定義的數值
+- css variable 會找最近scope 定義的數值
 ```
 //shared key frame
 keyframe {
@@ -9,15 +9,13 @@ transfrom: translate(var(--ball-offset));
 //在使用的 element 定義css variable
 & .ball-1 {
 --ball-offset=1000px;
-
-
 ```
 
 - RegExp - find the match word
 ```
 1.
 result = "I love JavaScript".match(/Java(Script)/)
-result[0] = JavaScript
+result[0] = JavaScript 
 result[1] = Script
 2.
 valid = /(Y+)/.test("YYYY-MM")
