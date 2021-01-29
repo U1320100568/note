@@ -20,6 +20,10 @@ result[1] = Script
 2.
 valid = /(Y+)/.test("YYYY-MM")
 RegExp.$1 = YYYY
+3. 
+"Amy Bob".replace(/(\w+)\s(\w+)/, '$2, $1') = Bob, Amy
+
+
 ```
 
 ### 2021 01 20
