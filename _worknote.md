@@ -25,6 +25,11 @@ RegExp.$1 = YYYY
 
 
 ```
+- react native animated 中斷後 start(callback) 可以實作回復最終狀態
+- functional programing
+- js invocation pattern: this
+- arrow function 會freeze當下的this (bind)
+
 
 ### 2021 01 20
 - a js application  
