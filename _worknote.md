@@ -1,3 +1,9 @@
+### 2020 02 02
+- <input type="checkbox" /> default value : checked={}
+Ant design
+defaultChecked 不管是否被選到的初始值
+group 的 value, defaultValue
+
 ### 2020 01 28
 - css variable 會找最近scope 定義的數值
 ```
