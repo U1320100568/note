@@ -1,8 +1,15 @@
 ### 2020 02 02
-- <input type="checkbox" /> default value : checked={}
-Ant design
-defaultChecked 不管是否被選到的初始值
-group 的 value, defaultValue
+- <input type="checkbox" /> default value : checked={}   
+Ant design  
+defaultChecked 不管是否被選到的初始值  
+group 的 value, defaultValue  
+
+- custom static component  
+條件：容許不同project有不同內容，內容只有靜態的純文字的呈現，由我們自己編輯  
+可考慮使用  
+  1. 寫成html file，直接import "xxx.html"  
+      不確定能否這樣使用  
+  2. 寫成html file，build script將html讀取轉成字串存成json，需要用的時候import，塞入`dangerouslysetinnerhtml`  
 
 ### 2020 01 28
 - css variable 會找最近scope 定義的數值
