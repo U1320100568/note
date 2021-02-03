@@ -10,6 +10,12 @@ group 的 value, defaultValue
   1. 寫成html file，直接import "xxx.html"  
       不確定能否這樣使用  
   2. 寫成html file，build script將html讀取轉成字串存成json，需要用的時候import，塞入`dangerouslysetinnerhtml`  
+  
+- OAuth: 知道是哪個 user 在 access
+- api key: server secret, server to server, 不需要其他驗證了，還可以知道是哪個project
+- fs.readdirSync 取folder's files
+- timestamp當作snapshot filename
+- execa: node js 執行shell 
 
 ### 2020 01 28
 - css variable 會找最近scope 定義的數值
