@@ -9,7 +9,11 @@ group 的 value, defaultValue
 可考慮使用  
   1. 寫成html file，直接import "xxx.html"  
       不確定能否這樣使用  
-  2. 寫成html file，build script將html讀取轉成字串存成json，需要用的時候import，塞入`dangerouslysetinnerhtml`  
+  2. 寫成html file，build script將html讀取轉成字串存成json，需要用的時候import，塞入`dangerouslysetinnerhtml` 
+  ⚠ 需注意：generate `html.json` gatsby build 會 error，以其他名稱替代
+  
+- jump {}: `cmd + shift + \`  
+select scope: `ctrl + shift + →`. 
   
 - OAuth: 知道是哪個 user 在 access
 - api key: server secret, server to server, 不需要其他驗證了，還可以知道是哪個project
