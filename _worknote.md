@@ -1,6 +1,8 @@
 ### 2020 02 22
 - j storage(mongodb? unix?) date 格式 timestamp 數值單位是 秒  
 [parse to js date](https://stackoverflow.com/a/847196/13797221) 需乘1000為毫秒單位: `new Date(1613791932 * 1000)`
+- jstoarge dashboard
+list 可以看到部分資料（排除content, children, password, created, updated）
 
 
 ### 2020 02 02
