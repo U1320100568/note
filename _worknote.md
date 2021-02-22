@@ -3,6 +3,8 @@
 [parse to js date](https://stackoverflow.com/a/847196/13797221) 需乘1000為毫秒單位: `new Date(1613791932 * 1000)`
 - jstoarge dashboard
 list 可以看到部分資料（排除content, children, password, created, updated）
+- mongodb playground 
+https://mongoplayground.net/
 
 
 ### 2020 02 02
