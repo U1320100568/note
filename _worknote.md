@@ -6,6 +6,23 @@ list 可以看到部分資料（排除content, children, password, created, upda
 - mongodb playground 
 https://mongoplayground.net/
 
+- iterator & iterable & generator
+for of iterable (js)
+for in iterable (pyhton) 
+Iterable 包含 iterator 
+Iterator 包含Local state & next()
+Custom iteration protocol :  gerenetor
+```js
+// this is generator
+function* Iterable(data) {
+	for (let i =0; data.length; I++) {
+		yield	 data[I];
+	}
+}
+ 
+```
+
+
 
 ### 2020 02 02
 - <input type="checkbox" /> default value : checked={}   
