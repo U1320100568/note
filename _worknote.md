@@ -5,6 +5,12 @@
 list 可以看到部分資料（排除content, children, password, created, updated）
 - mongodb playground 
 https://mongoplayground.net/
+- Error Handle: Exception vs return error value
+	- Exception: `throw new Error(message) or ErrCustom(message) `
+	- Error Value: `return message`
+Exception 好處 Cross calls stack 時，不用特別處理Propagation，但要注意catch位置 
+	
+
 
 - iterator & iterable & generator
 for of iterable (js)
