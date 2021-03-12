@@ -1,3 +1,22 @@
+custom hook render component
+return Component(function) vs JSX Element
+render component: 每次call hook 裡的 render component(1) 會產生的 element 是不同的，所以如果有input text會loose focus
+```
+function useHook() {
+	const C = () => {} //1. component
+	return { C }
+	const D = <div/>  // 2. jsx Element
+	return { D }
+	
+}
+
+const {C} = useHook();
+<C/>
+<C'/>
+```
+原因：composite element 不同type(function reference) ，react 會認為是不同的component被re-render
+
+
 ### 2020 02 22
 - j storage(mongodb? unix?) date 格式 timestamp 數值單位是 秒  
 [parse to js date](https://stackoverflow.com/a/847196/13797221) 需乘1000為毫秒單位: `new Date(1613791932 * 1000)`
