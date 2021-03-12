@@ -1,6 +1,7 @@
-custom hook render component
-return Component(function) vs JSX Element
-render component: 每次call hook 裡的 render component(1) 會產生的 element 是不同的，所以如果有input text會loose focus
+### 2020 03 12
+- custom hook render component
+**return Component(function) vs JSX Element**  
+render component: 每次call hook 裡的 render component(1) 會產生的 element 是不同的，所以如果有input text會loose focus  
 ```
 function useHook() {
 	const C = () => {} //1. component
@@ -14,7 +15,7 @@ const {C} = useHook();
 <C/>
 <C'/>
 ```
-原因：composite element 不同type(function reference) ，react 會認為是不同的component被re-render
+原因：composite element 不同type(function reference) ，react 會認為是不同的component被re-render  
 
 
 ### 2020 02 22
