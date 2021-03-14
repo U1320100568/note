@@ -17,7 +17,7 @@ sudo apt install -f
 sudo apt autoremove
 ```
 
-### completely uninstall npm & node on windows
+### Completely uninstall npm & node on windows
 > 若沒有解除安裝，會遇到安裝node 完成，npm 怎樣也無法安裝。  
   
 https://stackoverflow.com/a/20711410
