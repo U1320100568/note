@@ -1,3 +1,10 @@
+### 2020 03 17
+實作global modal or message
+React.forwardRef 
+Modal Component 帶進 (props, ref)
+Modal Component ref.current = { 可供外部call的東西 } : 在useEffect 裡 assign
+外部 useRef 帶進ref={ref}，外部可以call ref 的 function
+
 ### 2020 03 12
 - custom hook render component
 **return Component(function) vs JSX Element**  
