@@ -1,3 +1,23 @@
+### 2020 03 19
+KEY=VALUE node (開啟一個獨立的process)
+Process.env.KEY  = ‘VALUE’;
+
+在外部 shell echo $KEY 拿不到
+但是在外部 (外部的shell，會另外開起一個root process)
+KEY=VALUE
+echo $KEY = ‘VALUE’  
+
+Js engine (js runtime)
+Web
+Chrome v8
+Firefox spider monkey
+Safari JSC (javascript core)
+React native 
+IOS build in OS JSC (每個OS 都不同)
+Android JSC package （每個OS 都是一樣的package）
+RN 0.64 Hermes (fb 官方推的runtime)
+
+
 ### 2020 03 17
 實作global modal or message
 React.forwardRef 
