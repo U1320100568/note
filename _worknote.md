@@ -3,6 +3,7 @@
 - prevent animate when preload https://github.com/U1320100568/note/issues/14  
 
 ### 2020 03 19
+- SHELL ENV VARIABLE 環境變數
 `KEY=VALUE node` (開啟一個獨立的process)  
 `Process.env.KEY  = ‘VALUE’;`  
   
@@ -13,7 +14,7 @@ KEY=VALUE
 echo $KEY = ‘VALUE’   
 ```
   
-Js engine (js runtime)    
+- Javascript engine (js runtime)    
 ┣ Web  
 ┃ ┣ Chrome v8  
 ┃ ┣Firefox spider monkey  
@@ -22,8 +23,8 @@ Js engine (js runtime)
   ┣ IOS build in OS JSC (每個OS 都不同)  
   ┣ Android JSC package （每個OS 都是一樣的package）  
   ┗ RN 0.64 Hermes (fb 官方推的runtime)  
+   
   
-
 ### 2020 03 17
 實作global modal or message
 React.forwardRef 
