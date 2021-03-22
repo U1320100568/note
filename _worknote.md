@@ -14,16 +14,17 @@ KEY=VALUE
 echo $KEY = ‘VALUE’   
 ```
   
-- Javascript engine (js runtime)    
+- Javascript engine (js runtime)   
+``` 
 ┣ Web  
 ┃ ┣ Chrome v8  
-┃ ┣Firefox spider monkey  
+┃ ┣ Firefox spider monkey  
 ┃ ┗ Safari JSC (javascript core)  
 ┗ React native   
   ┣ IOS build in OS JSC (每個OS 都不同)  
   ┣ Android JSC package （每個OS 都是一樣的package）  
   ┗ RN 0.64 Hermes (fb 官方推的runtime)  
-   
+```
   
 ### 2020 03 17
 實作global modal or message
