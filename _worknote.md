@@ -1,7 +1,13 @@
 
 ### 2020 03 22
 - prevent animate when preload https://github.com/U1320100568/note/issues/14  
-
+- class & prototype & this & functions
+Const t = new Test();  
+Prototype,  static 存在於 Class   
+一般function 會存到class .prototype. 
+Arrow function 是 該instance (this) 的function. 
+若呼叫instance.fn()，會去找this裡的function，找不到的話，會找產生他的constructor裡的 prototype function 。  
+  
 ### 2020 03 19
 - SHELL ENV VARIABLE 環境變數
 `KEY=VALUE node` (開啟一個獨立的process)  
