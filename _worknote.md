@@ -1,7 +1,7 @@
 
 ### 2020 03 22
 - prevent animate when preload https://github.com/U1320100568/note/issues/14  
-- class & prototype & this & functions
+- class & prototype & this & functions  
 Const t = new Test();  
 Prototype,  static 存在於 Class   
 一般function 會存到class .prototype. 
