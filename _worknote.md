@@ -1,6 +1,6 @@
 
 ### 2020 03 22
-- article service preview 最近會更新
+- article service preview 最近會更新（控制鈕固定在最上方、換行行距很大問題、粗體沒有apply）
 - gatsby 上一頁 https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/#how-to-use-the-navigate-helper-function
 ```
 if(typeof window !== “undefined” && window.history.length > 0) {
