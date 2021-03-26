@@ -1,12 +1,21 @@
 
 ### 2020 03 22
+- article service preview 最近會更新
+- gatsby 上一頁 https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/#how-to-use-the-navigate-helper-function
+```
+if(typeof window !== “undefined” && window.history.length > 0) {
+	navigate(-1);
+}
+```
 - prevent animate when preload https://github.com/U1320100568/note/issues/14  
 - class & prototype & this & functions  
 Const t = new Test();  
 Prototype,  static 存在於 Class   
 一般function 會存到class .prototype. 
 Arrow function 是 該instance (this) 的function. 
-若呼叫instance.fn()，會去找this裡的function，找不到的話，會找產生他的constructor裡的 prototype function 。  
+若呼叫instance.fn()，會去找this裡的function，找不到的話，會找產生他的constructor裡的 prototype function 。
+- checksum 特定規則驗證號碼對錯，例如：訊號輸入（硬體檢查）、身分證字號
+- 
   
 ### 2020 03 19
 - SHELL ENV VARIABLE 環境變數
