@@ -8,7 +8,8 @@
   
 ---
 # Resize Iframe (same domain)
-> 同個網站直接取得contentWindow即可
+> 同個網站直接取得contentWindow即可  
+
 [reference](https://stackoverflow.com/a/9976309/13797221)  
 ```html
 <script>
