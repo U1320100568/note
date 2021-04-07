@@ -1,15 +1,14 @@
-# 前情提要
-<img src="https://user-images.githubusercontent.com/35591116/103844760-8f750880-50d5-11eb-8581-11883fb0de3a.png" />  
-  
-### Article service 文章內容要如何在各個project display?  
+# 前情提要  
+### 情境：Article service 文章內容要如何在不同專案顯示一樣的preview?  
 1. 各 project 都 install slate.js & copy preview code into it
-2. 各 project 使用iframe 瀏覽 rev-dashboard preview page (console.revtel.com)
+2. 各 project 使用iframe 瀏覽 rev-dashboard preview page (console.revtel.com)(👈 今天主題)
 
 ### 使用iframe 瀏覽需克服難題  
 > iframe 不知道內容大小，造成太多內容會有scroll效果  
   
-
-# resize iframe (same domain)
+---
+# Resize Iframe (same domain)
+> 同個網站直接取得contentWindow即可
 [reference](https://stackoverflow.com/a/9976309/13797221)  
 ```html
 <script>
@@ -21,7 +20,11 @@
 <iframe src="..." frameborder="0" scrolling="no" onload="resizeIframe(this)" />
 ```
 
-# resize iframe (different Domain)
+# Resize Iframe (different Domain)
+> 不同網站的Iframe，需要用到postMessage  
+
+<img src="https://user-images.githubusercontent.com/35591116/103844760-8f750880-50d5-11eb-8581-11883fb0de3a.png" />    
+
 [reference](https://stackoverflow.com/a/42308842/13797221)  
 
 *outer*  
