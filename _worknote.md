@@ -10,7 +10,11 @@
 辨識是問題是出在react native 還是 native？  
 看某個react native app 的log ，就可以找到特定的process id & grep it  
 而 react native js engine 只會跑在某thread 下  
-
+- Netlify add new domain
+Netlify > revtel > Domains > Add or register domain  
+順著流程，最後把四台server名稱貼到godaddy > 該domain > DNS管理 > 我要用自己的名稱伺服器 下  
+如果遇到 您的連線不是私人連線問題：  
+Netlify > proj > domain settings >下面certificate要renew  
 
 
 ### 2020 03 22
