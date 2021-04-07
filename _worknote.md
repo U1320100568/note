@@ -5,11 +5,11 @@
 `adb tcpip <port>`  
 `adb connect <ip>:<port>`  
 `adb disconnect`  
-*log & process & thread*  
+   - *log & process & thread*  
 印出log或是儲存成檔案觀看  
 辨識是問題是出在react native 還是 native？  
-看某個react native app 的log ，就可以找到特定的process id & grep it
-而 react native js engine 只會跑在某thread 下
+看某個react native app 的log ，就可以找到特定的process id & grep it  
+而 react native js engine 只會跑在某thread 下  
 
 
 
