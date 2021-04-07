@@ -15,6 +15,7 @@ Netlify > revtel > Domains > Add or register domain
 順著流程，最後把四台server名稱貼到godaddy > 該domain > DNS管理 > 我要用自己的名稱伺服器 下  
 如果遇到 您的連線不是私人連線問題：  
 Netlify > proj > domain settings >下面certificate要renew  
+概念：sensationsprint.com.tw -> 找到godaddy 的dns, godaddy 跟browser說 這個ip 是在netlify的server上（netlify管的）  
 
 
 ### 2020 03 22
