@@ -1,3 +1,17 @@
+### 2020 04 07
+- Android debugging in release mode  
+`react-native run-android --variant=release`  
+   - *wireless debugging*  
+`adb tcpip <port>`  
+`adb connect <ip>:<port>`  
+`adb disconnect`  
+*log & process & thread*  
+印出log或是儲存成檔案觀看  
+辨識是問題是出在react native 還是 native？  
+看某個react native app 的log ，就可以找到特定的process id & grep it
+而 react native js engine 只會跑在某thread 下
+
+
 
 ### 2020 03 22
 - article service preview 最近會更新（控制鈕固定在最上方、換行行距很大問題、粗體沒有apply）
