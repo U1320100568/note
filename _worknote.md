@@ -1,6 +1,7 @@
 ### 2020 04 14
 - [設定企業帳號gmail](https://github.com/U1320100568/note/blob/master/Google%20Console/%E4%BC%81%E6%A5%AD%E6%9C%83%E5%93%A1email%20setting.md)
 - EventEmitter e.emit(“name”, data) or e.on / e.off / e.one
+- html <script async /> `async` attribute，不會等他載完，是異步的，通常會聽ready event，才會call 他的global symbol(執行)
 
 
 
