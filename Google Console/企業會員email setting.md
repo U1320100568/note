@@ -36,4 +36,5 @@
 # 注意事項
 沒有收到backend寄到的信，檢查backend configuration 是否將此email列在 bcc list
 
-note. dns(domain name service)
+### note. 
+dns(domain name service)
