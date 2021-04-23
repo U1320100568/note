@@ -1,3 +1,14 @@
+### 2020 04 25
+- react-images deprecated > react-responsive-carousel
+- message.loading
+
+### 2020 04 23
+- OAuth
+  authentication 身份認證 who r u 
+  authorization 授權 what can you do
+  Open authorization 授權什麼程式可以用這個權限
+  為了解釋第三方程式可以代理，存取的權限，而不是直接給漲密
+
 ### 2020 04 14
 - [設定企業帳號gmail](https://github.com/U1320100568/note/blob/master/Google%20Console/%E4%BC%81%E6%A5%AD%E6%9C%83%E5%93%A1email%20setting.md)
 - EventEmitter e.emit(“name”, data) or e.on / e.off / e.one
