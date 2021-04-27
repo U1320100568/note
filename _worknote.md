@@ -1,6 +1,6 @@
 ### 2020 04 25
 - react-images deprecated > react-responsive-carousel
-- message.loading
+- message.loading create dispatch flow
 
 ### 2020 04 23
 - OAuth
