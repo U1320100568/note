@@ -1,6 +1,33 @@
 ### 2020 04 25
 - react-images deprecated > react-responsive-carousel
 - message.loading create dispatch flow
+- react-pdf
+ReactPDF.render(不能用), ReactPDF.renderToStream(不能用), < PDFViewer />, PDFDownloadLink
+- 不用class 寫 物件導向(object-orientation)
+`return Object.freeze({ name, eat })`  
+外部不能修改要透過setter  
+繼承的function 覆寫, 改寫
+  - Extend 原本class沒有 
+  - overwrite 覆寫原本的function
+  - Delegate 基於原本的function，還要做額外的事
+  ```
+  Function eat() {
+	base.eat();
+	console.log(“extra action”)
+  }
+  ```
+
+- get resource 前端有需要轉換成 custom object嗎？（class）.     
+  1. 不推薦 
+      - 無法 Object spread（freeze）
+      - State management > render (class instacne沒辦法偵測有無改變).  
+  2. 可使用狀況
+  如果有backend 比較慢的情況，可能可以做class getter setter。   
+  3. compute property.  
+  如果有個compute property可以建立一個util在get list 附加上每個instance上.  
+  x.name = function getName() {return this.first + this.last }    
+  Ps. Normal function this = 當下的closure instance(involking pattern)，不能是arrow function.  
+
 
 ### 2020 04 23
 - OAuth
