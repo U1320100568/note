@@ -21,5 +21,26 @@ export default function KeyboardAvoiding(props) {
         {props.children}
     </KeyboardAvoidingView>
     </ScrollView>
+
+    /* DKSH
+    <KeyboardAvoidingView
+              style={{flex: 1}}
+              keyboardVerticalOffset={25}
+              {...(Platform.OS === 'ios' ? {behavior: 'padding'} : {})}>
+              <ScrollView contentContainerStyle={{padding: 10}}>
+                <CmsForm
+                  FieldComp={CmsInputField}
+                  model={model}
+                  instance={instance}
+                  getFieldStyle={getFieldStyle}
+                  // theme={InputThemes.DARK}
+                >
+                  {({values, resetValues, renderFields}) => (
+                    <>
+                      {renderFields()}
+                      <Text style={{color: 'red', marginBottom: 5}}>
+                        {error}
+                      </Text>
+                      */
   );
 }
