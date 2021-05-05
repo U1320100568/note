@@ -1,3 +1,14 @@
+### 2020 05 05
+- GitHub actions
+  - actions/setup-node@v2 <  other repo
+  - ${{ variable }} < 變數
+  - run |   < multi line   
+    npm xx  
+    npm xx   
+  - cron < 定時做的排程 
+  - workflow_dispatch < 外部系統 或是 GitHub trigger action
+  - input.article.name < 可以取得input value
+
 ### 2020 04 25
 - react-images deprecated > react-responsive-carousel
 - message.loading create dispatch flow
