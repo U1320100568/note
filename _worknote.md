@@ -1,5 +1,5 @@
 ### 2020 05 05
-- gatsby-node page path recommend: `/customers/` tailing slash   
+- gatsby-node page path recommend: `/customers/` tailing slash(不確定)   
   navigate(-1) 若是 `/customers` > page not found.  
 - GitHub actions
   - actions/setup-node@v2 <  other repo
