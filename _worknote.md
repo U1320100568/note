@@ -1,6 +1,18 @@
+### 2020 05 10
+- sorting by another array
+  ```js
+  var a = ["b", "c", "a", "d", "e", "f"];
+  var sortingArr = ["a", "b", "c", "d" ];
+  var lng = a.length;
+  a.sort((x,y) => { 
+    let xIdx = sortingArr.indexOf(x) ; 
+    let yIdx = sortingArr.indexOf(y); 
+    return (xIdx === -1 ?  lng : xIdx) - (yIdx === -1 ?  lng : yIdx)});
+    
+  a = [ 'a', 'b', 'c', 'd', 'e', 'f' ];
+  ```
+
 ### 2020 05 05
-- gatsby-node page path recommend: `/customers/` tailing slash(不確定)   
-  navigate(-1) 若是 `/customers` > page not found.  
 - GitHub actions
   - actions/setup-node@v2 <  other repo
   - ${{ variable }} < 變數
