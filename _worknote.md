@@ -1,3 +1,5 @@
+
+
 ### 2020 05 10
 - sorting by another array
   ```js
@@ -11,6 +13,12 @@
     
   a = [ 'a', 'b', 'c', 'd', 'e', 'f' ];
   ```
+- seo
+Title, description, image, alt  
+Url 不要用id =1 之類的，盡量用有效文字（如商品名稱）（商品不多的情況下）.  
+直接給Site route robot.txt or sitemap..txt(gatsby) ??  
+Light house 評分工具.  
+
 
 ### 2020 05 05
 - GitHub actions
