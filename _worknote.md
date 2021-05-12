@@ -18,6 +18,7 @@ Title, description, image, alt
 Url 不要用id =1 之類的，盡量用有效文字（如商品名稱）（商品不多的情況下）.  
 直接給Site route robot.txt or sitemap..txt(gatsby) ??  
 Light house 評分工具.  
+[Sam seo, ga, pixel 分享](https://www.evernote.com/shard/s236/sh/74e2ea33-3236-222b-ab50-0800aef94b94/188e03b74595b57d443869ce18064671)
 
 
 ### 2020 05 05
