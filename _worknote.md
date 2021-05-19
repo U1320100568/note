@@ -1,4 +1,5 @@
-
+### 2020 05 19
+[article reference](https://rick38yip.medium.com/testflight-not-showing-the-latest-build-of-ios-app-2020-may-33735b0380d6) add this setting into ios info.plist App Uses Non-Exempt Encryption = NO
 
 ### 2020 05 10
 - sorting by another array
