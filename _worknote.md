@@ -16,18 +16,6 @@
      ```
 
 ### 2020 05 10
-- sorting by another array
-  ```js
-  var a = ["b", "c", "a", "d", "e", "f"];
-  var sortingArr = ["a", "b", "c", "d" ];
-  var lng = a.length;
-  a.sort((x,y) => { 
-    let xIdx = sortingArr.indexOf(x) ; 
-    let yIdx = sortingArr.indexOf(y); 
-    return (xIdx === -1 ?  lng : xIdx) - (yIdx === -1 ?  lng : yIdx)});
-    
-  a = [ 'a', 'b', 'c', 'd', 'e', 'f' ];
-  ```
 - seo
 Title, description, image, alt  
 Url 不要用id =1 之類的，盡量用有效文字（如商品名稱）（商品不多的情況下）.  
