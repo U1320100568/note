@@ -1,6 +1,19 @@
 ### 2020 05 19
 - [article reference](https://rick38yip.medium.com/testflight-not-showing-the-latest-build-of-ios-app-2020-may-33735b0380d6) add this setting into ios info.plist App Uses Non-Exempt Encryption = NO
 - run mongo instance on docker and db aggregation syntax [tutorial](https://github.com/revtel/revteltech.dev/tree/main/src/_drafts/mongodb-aggregation-intro-by-example)
+- user custom ordering
+   - sort by other field
+   - set priority field
+   - mapping array [賽斯]
+     ```
+     list.sort((a, b) => sorting(a, b, ["賽斯小學堂", "許醫師講座", "最新熱播"], maxlength))
+     
+     function sorting(x, y, order = [], lng = 0) {
+	  let xIdx = order.indexOf(x.name);
+	  let yIdx = order.indexOf(y.name);
+	  return (xIdx === -1 ? lng : xIdx) - (yIdx === -1 ? lng : yIdx);
+     }
+     ```
 
 ### 2020 05 10
 - sorting by another array
