@@ -14,6 +14,11 @@
 	  return (xIdx === -1 ? lng : xIdx) - (yIdx === -1 ? lng : yIdx);
      }
      ```
+- SQS simple queue service
+  separate action 某事件觸發另外一個action
+  SNS simple notification service
+- csv to string `=“”${order.id}””`
+- css sticky: 黏住某個部份，讓其他部分可以滾動，常用於 two column layout
 
 ### 2020 05 10
 - seo
