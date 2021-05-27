@@ -1,10 +1,10 @@
 ### 2020 05 26
 - [functional HOC](https://github.com/U1320100568/note/blob/master/React/functional%20HOC.md)
-- [react-jsonschema](https://dashboard-stg-eculture.netlify.app/)
-   適合結構不複雜的dashboard(不在意style)
-   太多層的結構，很難custom
-   ArrayTemplate, Custom Field, Custom Object
-
+- [react-jsonschema](https://dashboard-stg-eculture.netlify.app/)  
+   適合結構不複雜的dashboard(不在意style)  
+   太多層的結構，很難custom  
+   ArrayTemplate, Custom Field, Custom Object  
+  
 ### 2020 05 19
 - [article reference](https://rick38yip.medium.com/testflight-not-showing-the-latest-build-of-ios-app-2020-may-33735b0380d6) add this setting into ios info.plist App Uses Non-Exempt Encryption = NO
 - run mongo instance on docker and db aggregation syntax [tutorial](https://github.com/revtel/revteltech.dev/tree/main/src/_drafts/mongodb-aggregation-intro-by-example)
