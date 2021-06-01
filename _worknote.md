@@ -1,5 +1,8 @@
 ### 2020 05 28
 - [apply article service](https://github.com/revtel/rev-dashboard-web/wiki/Apply-Article-Service) 
+- gatsby navigate(-1) page not found
+  ![image](https://user-images.githubusercontent.com/35591116/120282232-7a02b400-c2ec-11eb-96c5-7cdaa528dc6c.png)
+
 
 ### 2020 05 26
 - [functional HOC](https://github.com/U1320100568/note/blob/master/React/functional%20HOC.md)
