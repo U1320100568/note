@@ -2,6 +2,7 @@
 - [apply article service](https://github.com/revtel/rev-dashboard-web/wiki/Apply-Article-Service) 
 - gatsby navigate(-1) page not found
   ![image](https://user-images.githubusercontent.com/35591116/120282232-7a02b400-c2ec-11eb-96c5-7cdaa528dc6c.png)
+- [scroll container's absolute child](https://codesandbox.io/s/overflow-and-absolute-issue-kx3ub?file=/index.css)
 
 
 ### 2020 05 26
