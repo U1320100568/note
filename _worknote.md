@@ -4,6 +4,7 @@
   ![image](https://user-images.githubusercontent.com/35591116/120282232-7a02b400-c2ec-11eb-96c5-7cdaa528dc6c.png)
 - [scroll container's absolute child](https://codesandbox.io/s/overflow-and-absolute-issue-kx3ub?file=/index.css)
   其他child過多造成container scroll， 其他 absolute child 會跟著滾動。
+- [](https://github.com/U1320100568/note/blob/master/React/Component%20Re-render%20and%20Re-Mount.md)
 
 
 ### 2020 05 26
