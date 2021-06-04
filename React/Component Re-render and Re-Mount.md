@@ -3,7 +3,7 @@
 > react's diff algorithm  
 > re-render 時為了效能，不需re-mount多餘的且不必要的 children。
 
-1. 不同type的element，會產生不同tree  
+1. 不同element.type，會產生不同tree  
    type: (built-in: `div`, `span` ... | or composit component: `<OrderTable/>`, `<Title/>`...)
 2. 不同key 也視為不同的element
 
