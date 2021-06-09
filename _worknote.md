@@ -1,3 +1,10 @@
+### 2020 06 09
+- Set : membership testing  
+  塞進一個  iterable => `new Set ( [ 1, 2, 3 ] )`  
+  distinct element   
+  [js] Common Operation : `has` , `add` , `delete` , `clear` 只支援單個element 操作.  
+  [js] 不能用`for in`, not Object   
+
 ### 2020 05 28
 - [apply article service](https://github.com/revtel/rev-dashboard-web/wiki/Apply-Article-Service) 
 - gatsby navigate(-1) page not found
@@ -15,6 +22,12 @@
    適合結構不複雜的dashboard(不在意style)  
    太多層的結構，很難custom  
    ArrayTemplate, Custom Field, Custom Object  
+- starter project.  
+  npm revtel > init app  
+  開發：npm start , node cli or node cli.js 
+  npx  
+  cli template resource table search and paging  
+  nodejs 專用library，gatsby v2 web pack 有特別處理，v3 沒有需特別注意  
   
 ### 2020 05 19
 - [article reference](https://rick38yip.medium.com/testflight-not-showing-the-latest-build-of-ios-app-2020-may-33735b0380d6) add this setting into ios info.plist App Uses Non-Exempt Encryption = NO
