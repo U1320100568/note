@@ -23,9 +23,9 @@
    太多層的結構，很難custom  
    ArrayTemplate, Custom Field, Custom Object  
 - starter project.  
-  npm revtel > init app  
-  開發：npm start , node cli or node cli.js 
-  npx  
+  npm revtel > init app    
+  開發：npm start , node cli or node cli.js   
+  npx   
   cli template resource table search and paging  
   nodejs 專用library，gatsby v2 web pack 有特別處理，v3 沒有需特別注意  
   
