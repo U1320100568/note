@@ -14,6 +14,9 @@
 - [re-mount issue](https://github.com/U1320100568/note/blob/master/React/Component%20Re-render%20and%20Re-Mount.md)
 - `console.trace()`：debug 可以追到哪一層報錯
 - 拿到children 對children element 沒有支配權，想要帶入其他props 可以使用 `React.cloneElement`
+- Husky v6.  
+  Husky 整lint 工具  
+  lint-staged   
 
 
 ### 2020 05 26
