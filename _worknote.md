@@ -1,3 +1,10 @@
+### 2021 06 16
+- [unicode & utf8](https://github.com/U1320100568/note/issues/16)
+- bytes 應用
+  `Charset`: Unicode standard
+  `Character Encoding`: UTF8 standard
+  
+
 ### 2020 06 09
 - Set : membership testing  
   塞進一個  iterable => `new Set ( [ 1, 2, 3 ] )`  
