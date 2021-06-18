@@ -3,6 +3,9 @@
 - bytes 應用
   `Charset`: Unicode standard
   `Character Encoding`: UTF8 standard
+- node dev require: 
+  - require package: `var moment = require("moment")`
+  - require my-util: `var {getDeadline} = require("./src/Utils/billingUtil")`
   
 
 ### 2020 06 09
