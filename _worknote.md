@@ -1,3 +1,7 @@
+### 2021 06 25
+- fb developer 提供 檢查分享og data 的功能 [link](https://developers.facebook.com/tools/debug/)
+- $0.scroll > $0 可以直接 access 選到的 html element DOM，可以對他操作web api
+
 ### 2021 06 16
 - [unicode & utf8](https://github.com/U1320100568/note/issues/16)
 - bytes 應用
