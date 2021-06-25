@@ -1,6 +1,10 @@
 ### 2021 06 25
 - fb developer 提供 檢查分享og data 的功能 [link](https://developers.facebook.com/tools/debug/)
 - $0.scroll > $0 可以直接 access 選到的 html element DOM，可以對他操作web api
+- 綠界可以支援 四大超商 物流（但是不能超商互相送），問凹豆 這個可以嗎？
+- import x from "y/z or y.z"; 可以減輕 bundle size, import { w, u } 不一定可以減輕
+- run web on mobile > gatsby develop -H 0.0.0.0
+- RPC remote procedure call: 一個概念， 延伸應用 json rpc
 
 ### 2021 06 16
 - [unicode & utf8](https://github.com/U1320100568/note/issues/16)
