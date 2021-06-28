@@ -1,5 +1,9 @@
 ### 2021 06 28 
-- mime type
+- mime type.  
+  資料的媒體型別，瀏覽器可決定如何呈現資料  
+  `text/HTML` `application/json` `application/pdf`   
+  multi part file upload 支援 帶入body `Content-type: {type}`.  
+  http response Content-Type `binary/octet-stream`(無設定是什麼類型) or `image/png`（有設定）   
 - porting gatsby-ssr https://github.com/revtel/sensationsprint/commit/da8da3ea9f5f505b10254056ed147f02731b01ce  
   `wrapPageElement`, `wrapRootElement` of `gatsby-ssr` & `gatsby-browser`  
   `pageContainer` 包 layout, page 邏輯  
