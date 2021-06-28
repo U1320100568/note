@@ -1,3 +1,20 @@
+### 2021 06 28 
+- mime type
+- porting gatsby-ssr https://github.com/revtel/sensationsprint/commit/da8da3ea9f5f505b10254056ed147f02731b01ce  
+  `wrapPageElement`, `wrapRootElement` of `gatsby-ssr` & `gatsby-browser`  
+  `pageContainer` 包 layout, page 邏輯  
+  `AppRoot` 包 Provider, root 邏輯  
+  所有舊的 withPage 都拿掉  
+- refactor with `reconnect.js` https://github.com/revtel/sensationsprint/commit/a4dae5e49d322ae4986188ad8b2056d12e71a581  
+  token, profile 問題：原本 redux 範圍太廣，所以在autologin & login時也把profile token 存到 reconnect裡  
+  `ActionCreator`, class component 無法使用hook: 所以要用 `getOutlet` or `getNewOutlet`（class component 還是建議改成 function ）.  
+  global state & actions 有兩種 寫法:  
+  1. 寫成 primitive js   
+     create js file and use `getNewOutlet` configure state & actions， import this file into root file(AppRoot)  
+  2. 包成 function component  
+     use `useOutlet` configure state & actions ，actions先用 useRef 存成 object，import and wrap AppRoot.  
+    
+
 ### 2021 06 25
 - fb developer 提供 檢查分享og data 的功能 [link](https://developers.facebook.com/tools/debug/)
 - $0.scroll > $0 可以直接 access 選到的 html element DOM，可以對他操作web api
