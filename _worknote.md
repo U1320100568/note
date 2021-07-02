@@ -18,6 +18,11 @@
      create js file and use `getNewOutlet` configure state & actions， import this file into root file(AppRoot)  
   2. 包成 function component  
      use `useOutlet` configure state & actions ，actions先用 useRef 存成 object，import and wrap AppRoot.  
+- gatsby-plugin 
+  1. onCreateNode wrap fields into node
+  2. gatsby-node graphql fields on createPage get $slug or other field put into pageContext
+  3. graphql in component > export pageQuery > $slug  get static contnet
+
     
 
 ### 2021 06 25
