@@ -1,4 +1,5 @@
 ### 2021 06 28 
+- ant.table column: 有帶dataIndex `render: value => {}` v.s. 沒帶dataIndex `render: record => {}`
 - mime type.  
   資料的媒體型別，瀏覽器可決定如何呈現資料  
   `text/HTML` `application/json` `application/pdf`   
