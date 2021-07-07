@@ -1,3 +1,7 @@
+### 2021 07 07
+- nosql relative data use embeded or reference.  
+  reference 怎麼刪除？，沒有transaction 怎麼 handle?
+
 ### 2021 06 28 
 - ant.table column: 有帶dataIndex `render: value => {}` v.s. 沒帶dataIndex `render: record => {}`
 - mime type.  
