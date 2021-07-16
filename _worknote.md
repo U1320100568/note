@@ -3,6 +3,8 @@
   reference 怎麼刪除？，沒有transaction 怎麼 handle?
 - 免費photoshop https://medibangpaint.com/zh_TW/
 - `<WebView renderLoading={jsx} initalSetLoading={true}/>`
+- GitHub markdown archor `(){here}` 裡面要slugify，可在GitHub上看
+- Imperative vs. declarative loop
 
 ### 2021 06 28 
 - ant.table column: 有帶dataIndex `render: value => {}` v.s. 沒帶dataIndex `render: record => {}`
