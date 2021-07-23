@@ -1,6 +1,6 @@
 ### 2021 07 20 
-- react-player 有包含list 資料可能會載入錯誤，最保險的是extract v 也就是 video id 在組一個url
-`https://www.youtube.com/watch?v=dKgntR1PTVM&list=PL5j0Z03RRUGl89vf-VcHK4z28ByJHblQ_&ab_channel=SethTVLove`
+- react-player 有包含list 資料可能會載入錯誤，最保險的是extract v 也就是 video id 在組一個url.  
+`https://www.youtube.com/watch?v=dKgntR1PTVM&list=PL5j0Z03RRUGl89vf-VcHK4z28ByJHblQ_&ab_channel=SethTVLove`  
 
 ### 2021 07 07
 - nosql relative data use embeded or reference.  
