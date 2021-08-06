@@ -1,3 +1,25 @@
+### 2021 08 07
+- gatsby v2 to v3 [官方文件](https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/)
+  1. `npm i gatsby@latest`
+  2. 看哪些plugin 需要更新 `npm outdated`
+  3. 更新這些 library npm install xxx@latest 
+  4. 重新載入  `gatsby clean && rm -r node_module && rm package-lock.json && npm i`
+  5. webpack error `less-loader Inline JavaScript is not enabled.` > options 結構不一樣，要多一層lessOptions
+  ```
+  {
+	resolve: "gatsby-plugin-less",
+	options: {
+		lessOptions: {
+			modifyVars: { //direct child node of lessOptions
+	  			"primary-color": "#C53333", //your preferred color
+			},
+			javascriptEnabled: true, //direct child node of lessOptions
+		},
+	},
+  },
+  ```
+  5. webpack error `@react-pdf Can't resolve 'util' Can't resolve 'stream' ....` 
+
 ### 2021 08 06
 - 播放youtube可能會被下架：違反裝置與網路濫用行為政策，舉例來說，您的應用程式可以讓閒置的裝置在背景播放 YouTube 影片，即便使用者以電源按鈕關閉螢幕後，影片仍可繼續播放。請仔細確認您應用中所有的版本都符合我們的規定。您可參考附件的螢幕截圖瞭解詳情。
 - react-native-youtube
