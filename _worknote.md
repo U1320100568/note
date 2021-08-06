@@ -9,7 +9,7 @@
 - React 匯出excel  library: xlsx
 - iOS 測試群組 mylio
 - Starter custom Form: section render & fileld render (customType )
-- Pure function deterministic / non side effect
+- Pure function 1. deterministic 有明確可預期的輸出 2. non side effect
 
 ### 2021 07 20 
 - react-player 有包含list 資料可能會載入錯誤，最保險的是extract v 也就是 video id 在組一個url.  
