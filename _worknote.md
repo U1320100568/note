@@ -1,3 +1,11 @@
+### 2021 08 06
+- 播放youtube可能會被下架：違反裝置與網路濫用行為政策，舉例來說，您的應用程式可以讓閒置的裝置在背景播放 YouTube 影片，即便使用者以電源按鈕關閉螢幕後，影片仍可繼續播放。請仔細確認您應用中所有的版本都符合我們的規定。您可參考附件的螢幕截圖瞭解詳情。
+- react-native-youtube
+  Android  
+  - `The Android implementation of this component needs to have the official YouTube app installed on the device.`
+  - 要去申請 youtube developer apikey
+  - 不能覆蓋東西
+
 ### 2021 07 20 
 - react-player 有包含list 資料可能會載入錯誤，最保險的是extract v 也就是 video id 在組一個url.  
 `https://www.youtube.com/watch?v=dKgntR1PTVM&list=PL5j0Z03RRUGl89vf-VcHK4z28ByJHblQ_&ab_channel=SethTVLove`  
