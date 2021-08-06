@@ -5,6 +5,11 @@
   - `The Android implementation of this component needs to have the official YouTube app installed on the device.`
   - 要去申請 youtube developer apikey
   - 不能覆蓋東西
+- Backend: Json Storage  datetime type support, projection(輸出哪些欄位), aws step function service-
+- React 匯出excel  library: xlsx
+- iOS 測試群組 mylio
+- Starter custom Form: section render & fileld render (customType )
+- Pure function deterministic / non side effect
 
 ### 2021 07 20 
 - react-player 有包含list 資料可能會載入錯誤，最保險的是extract v 也就是 video id 在組一個url.  
