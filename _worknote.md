@@ -18,7 +18,10 @@
 	},
   },
   ```
-  5. webpack error `@react-pdf Can't resolve 'util' Can't resolve 'stream' ....` 
+  5. webpack error `@react-pdf Can't resolve 'util' Can't resolve 'stream' ....` : 分好三塊 node library, node build-in symbol (polyfill), built-in parameter
+- swap: revtel cli apply in eculture
+  - npx revtel swap src/Components/Spinner src/Components/Spinner/Line.js 
+  - execa revtel cli 可以傳 pairs of array 
 
 ### 2021 08 06
 - 播放youtube可能會被下架：違反裝置與網路濫用行為政策，舉例來說，您的應用程式可以讓閒置的裝置在背景播放 YouTube 影片，即便使用者以電源按鈕關閉螢幕後，影片仍可繼續播放。請仔細確認您應用中所有的版本都符合我們的規定。您可參考附件的螢幕截圖瞭解詳情。
