@@ -23,6 +23,15 @@
   - npx revtel swap src/Components/Spinner src/Components/Spinner/Line.js 
   - execa revtel cli 可以傳 pairs of array 
 
+- cli tool library
+  - package.json `main`: main function entry
+  - package.json `bin`: 使用此cli的人，npm run 會將此cli的symbol放到環境變數
+  - 補充bin: npm i 會產生`.bin`，npm run 會將bin檔放進環境變數，才能使用這些command
+
+- npm publish
+  - 需要先 build 過（通常entry會export build folder）(npm start會起nodemon，會監控如果有更動會auto build)
+  - use `release-it`: 自動 publish 到 npm
+
 ### 2021 08 06
 - 播放youtube可能會被下架：違反裝置與網路濫用行為政策，舉例來說，您的應用程式可以讓閒置的裝置在背景播放 YouTube 影片，即便使用者以電源按鈕關閉螢幕後，影片仍可繼續播放。請仔細確認您應用中所有的版本都符合我們的規定。您可參考附件的螢幕截圖瞭解詳情。
 - react-native-youtube
