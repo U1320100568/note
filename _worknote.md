@@ -32,6 +32,15 @@
   - 需要先 build 過（通常entry會export build folder）(npm start會起nodemon，會監控如果有更動會auto build)
   - use `release-it`: 自動 publish 到 npm
 
+- Js invocation pattern
+  如果沒有new 
+  this. Binding 要看context，應該會是外部的 scope
+  如果有 new  f()
+  會有一個empty object { } 傳進(function)class 存進(function)class 裡面的 this，默默傳 this
+- npm install @type/xxx-library. it can type definition auto fill(intelligence)
+- 用static folder and json file 可以實現 http request api 
+- Netlify function (類似aws lambda) 打太多要錢
+
 ### 2021 08 06
 - 播放youtube可能會被下架：違反裝置與網路濫用行為政策，舉例來說，您的應用程式可以讓閒置的裝置在背景播放 YouTube 影片，即便使用者以電源按鈕關閉螢幕後，影片仍可繼續播放。請仔細確認您應用中所有的版本都符合我們的規定。您可參考附件的螢幕截圖瞭解詳情。
 - react-native-youtube
