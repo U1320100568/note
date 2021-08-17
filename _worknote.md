@@ -19,6 +19,7 @@
   },
   ```
   5. webpack error `@react-pdf Can't resolve 'util' Can't resolve 'stream' ....` : 分好三塊 node library, node build-in symbol (polyfill), built-in parameter
+  6. gatsby-image-plugin https://github.com/U1320100568/note/blob/master/React/Gatsby%20v2%20to%20v3.md
 - swap: revtel cli apply in eculture
   - npx revtel swap src/Components/Spinner src/Components/Spinner/Line.js 
   - execa revtel cli 可以傳 pairs of array 
