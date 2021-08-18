@@ -91,6 +91,26 @@ ex. graphql`query  { allFile: relativePath: { eq: ${filename} } }`
 import {graphql, StaticQuery} from 'gatsby';
 import {GatsbyImage} from 'gatsby-plugin-image';
 
+const query = graphql`
+    query MyQuery {
+      allFile {
+        nodes {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+          extension
+          publicURL
+        }
+      }
+    }
+  `;
+
+
 return (
     <StaticQuery
       query={query}
@@ -117,3 +137,6 @@ if (!image.childImageSharp && image.extension === 'svg') {
   return <img src={image.publicURL} alt={alt} style={extraStyle} />;
 }
 ```
+
+### Error handle
+1. RWD image 有時會一直是blurred，可以嘗試 format 支援 [AUTO, WEBP, AVIF]（只有auto時發生此錯誤）
