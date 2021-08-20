@@ -1,3 +1,13 @@
+### 2021 08 20
+- 怎麼看 this on js
+	- Arrow function  (會自動bind this)
+	- Anonymous function 
+	- 有沒有手動bind
+	- Normal function  => invocation pattern 
+
+- GitHub codespace: 可以在GitHub 上開發
+- Tensorflow : google 上的機器學習相關產品
+
 ### 2021 08 07
 - gatsby v2 to v3 [官方文件](https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/)
   1. `npm i gatsby@latest`
