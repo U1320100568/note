@@ -1,3 +1,21 @@
+### 2021 08 25 
+- sdk testing
+  - unit case testing: algorithm or 邏輯
+  - example: compoennt 
+  - import to another wrokspace: 
+	  1. npm start > build 
+	  2. npm pack
+	  3. 去別的project > `npm i rev.sdk.js@../rev.sdk.js/rev.sdk.js-x.x.x.tgz`: 到相對路徑安裝pack 的 output
+- npm install resolution
+	1. npm install > 先看有無 package-lock.json 並安裝裡面設定的
+	2. 若沒有 則看package.json 哪些dependency，並看這些library底下有無其他dependency，以及peerDependency有無相容 > 下載需要用的 library > 並建立package-lock.json  
+	ps. 注意有時候dependency 在build error 或是在 only netlify build error，可能是package-lock.json 有衝突，可以刪掉在重新 `npm i` 解決.  
+	ps. sdk的dependency需要考慮，是否要裝在   
+		1. dependency: 較獨特library，所有複雜邏輯打包在此sdk，使用者不用再處理library 的東西，ex: react-slate, slate，注意：如果其他地方也裝指定版本，可能造成衝突
+		2. peerDependency: 沿用各project使用的library，不是只有此sdk才會用到的library，ex. antd, styled-components
+		3. devDependency: 開發時需要的library，ex: eslint, babel，或是peerDependency開發時也需要的library
+
+
 ### 2021 08 20
 - 怎麼看 this on js
 	- Arrow function  (會自動bind this)
