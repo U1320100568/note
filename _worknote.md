@@ -14,7 +14,10 @@
 		1. dependency: 較獨特library，所有複雜邏輯打包在此sdk，使用者不用再處理library 的東西，ex: react-slate, slate，注意：如果其他地方也裝指定版本，可能造成衝突
 		2. peerDependency: 沿用各project使用的library，不是只有此sdk才會用到的library，ex. antd, styled-components
 		3. devDependency: 開發時需要的library，ex: eslint, babel，或是peerDependency開發時也需要的library
-
+- netlify deploy error `Plugin "@netlify/plugin-gatsby" failed`  
+  Plugins > Essential Gatsby 預設會裝這個（以前的site沒有），
+  他會pre deploy，gatsby-config 會先被檢查出找不到data.json，因為pre deploy沒有跑build script，我的解法是刪掉plugin
+  
 
 ### 2021 08 20
 - 怎麼看 this on js
