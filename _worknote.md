@@ -17,6 +17,11 @@
 - netlify deploy error `Plugin "@netlify/plugin-gatsby" failed`  
   Plugins > Essential Gatsby 預設會裝這個（以前的site沒有），
   他會pre deploy，gatsby-config 會先被檢查出找不到data.json，因為pre deploy沒有跑build script，我的解法是刪掉plugin
+- Unit8Array js 內建的 type array > 對到連續記憶體.  
+	web: > Blob > CreateObjectUrl  
+	uint8Array = unsign int 8 bit array  
+- Google api 可以帶 callback 放 global function   
+	<script src=“” async /> 不會等他load完才完成頁面，通常設計會搭配 callback function  
   
 
 ### 2021 08 20
