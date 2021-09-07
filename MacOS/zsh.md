@@ -1,3 +1,4 @@
+完成設定後的長相
 # zprofile
 ```
 eval "$(/opt/homebrew/bin/brew shellenv)"
