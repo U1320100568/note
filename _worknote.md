@@ -1,3 +1,12 @@
+### 2021 10 04
+- library : bundle-webpack-analyzer 分析bundle js 有多大，新的project 可以 npm run stat 
+- Nav link component 處理跳頁轉圈，還有js engine loading 時，換成href，UX 不會卡住
+- 三種資料結構 array, list (linked), hash table
+- 資料庫都可以對table. Indexing ，其實就是做 Hash (table) 
+- 可以讓搜尋效率更高
+- 每次insert 都會update indexing table ，會有 cost，hash table 也會佔空間 
+
+
 ### 2021 09 06
 - react-native ios in m1 error
 	- pod install error SDK "iphoneos" cannot be located https://stackoverflow.com/a/62992835/13797221
