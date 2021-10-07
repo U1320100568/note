@@ -35,3 +35,11 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 - copy `.aws` for `credentials`
 - copy some sample `.env` for api projects
 - install `docker desktop` from [here](https://docs.docker.com/desktop/mac/apple-silicon/)
+
+
+## Trouble shooting
+react-native ios in m1 error  
+	- pod install error SDK "iphoneos" cannot be located https://stackoverflow.com/a/62992835/13797221
+	- Xcode cannot initial nsarray，新rn可解決，就rn可以workaround https://github.com/facebook/react-native/issues/31412
+	- React-native-apple-authentication Duplicate interface https://github.com/invertase/react-native-apple-authentication/issues/130
+	- fire-base 似乎還沒支援m1 所以用rosseta 開Xcode https://stackoverflow.com/a/65744082/13797221
