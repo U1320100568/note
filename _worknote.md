@@ -1,3 +1,17 @@
+### 2021 10 08
+- wrapper 某個thirdparty ，例如wrapping promisify
+```
+Function A (obj) {
+	Return {
+		write: promisify(obj.write.bind(obj));
+	}
+}
+```
+- termux android: 跑linux 寫 code 
+- local ssh 共享 > 遠端登入，這是ssh 登入某台電腦，在用tmux 可以開多個terminal，大多用在backend 開發
+- presigned url  帶 unique_key = false > BE 不會自動加timestamp 
+- public_read  = true 要有admin management 的group 帳號才可以read
+
 ### 2021 10 04
 - library : bundle-webpack-analyzer 分析bundle js 有多大，新的project 可以 npm run stat 
 - Nav link component 處理跳頁轉圈，還有js engine loading 時，換成href，UX 不會卡住
