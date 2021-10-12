@@ -1,3 +1,6 @@
+### 2021 10 12 
+- rjsf required : 輸入後刪掉，就不會validate，要在手動做一次
+
 ### 2021 10 08
 - wrapper 某個thirdparty ，例如wrapping promisify
 ```
