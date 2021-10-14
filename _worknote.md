@@ -4,6 +4,7 @@
 	- 是隸屬auth的功能，為何不是notification?，因為他是驗證身份相關功能，只是借用notification功能
 	- 
 - rev.console 可以修改密碼
+- json parse online 替代品：https://codebeautify.org/json-parser-online
 
 ### 2021 10 08
 - wrapper 某個thirdparty ，例如wrapping promisify
