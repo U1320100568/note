@@ -1,5 +1,7 @@
 ### 2021 10 12 
 - rjsf required : 輸入後刪掉，就不會validate，要在手動做一次
+- rev.console issuer 可以在console 編輯
+- rev.console 可以修改密碼
 
 ### 2021 10 08
 - wrapper 某個thirdparty ，例如wrapping promisify
