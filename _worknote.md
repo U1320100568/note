@@ -1,6 +1,8 @@
 ### 2021 10 12 
 - rjsf required : 輸入後刪掉，就不會validate，要在手動做一次
 - rev.console issuer 可以在console 編輯
+	- 是隸屬auth的功能，為何不是notification?，因為他是驗證身份相關功能，只是借用notification功能
+	- 
 - rev.console 可以修改密碼
 
 ### 2021 10 08
