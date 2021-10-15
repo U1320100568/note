@@ -1,5 +1,5 @@
 ### 2021 10 12 
-- rjsf required : 輸入後刪掉，就不會validate，要在手動做一次
+- rjsf required : 輸入後刪掉，就不會validate，要用minLength workaround
 - rev.console issuer 可以在console 編輯
 	- 是隸屬auth的功能，為何不是notification?，因為他是驗證身份相關功能，只是借用notification功能
 	- 
