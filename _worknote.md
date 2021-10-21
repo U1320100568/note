@@ -1,5 +1,5 @@
 ### 2021 10 21
-netlify 
+- netlify node version
 
 ### 2021 10 12 
 - rjsf required : 輸入後刪掉，就不會validate，要用minLength workaround
