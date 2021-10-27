@@ -11,7 +11,7 @@
 - `git fetch --all` + `cat .git/config` or `git remote -v` 可以看到已經連動到別人的repo `upstream/xxx`
 - 也可以看到 `git branch -r`
 - contribute 一般會開在另一個 origin.branch 上避免 origin.main 髒掉 `git checkout -b feature1`
-- 之後只要`git checkout upstream/xxx && git pull && git checkout feature1 && git merge upstream/xxx` 就可同步到最新的code
+- 之後只要`git pull upstream/origin` or `git checkout upstream/origin && git pull && git checkout feature1 && git merge upstream/origin` 就可同步到最新的code
 
 
 # Manual Fork
