@@ -1,7 +1,7 @@
 
 ### 2021 11 01
 - frontend deploy cli
-- article service insert html 
+- article service insert html rev.sdk.js@0.0.90
 - 新的用法 圖片連結
 ```
 <a href="https://d3p0usplrt5r65.cloudfront.net/cdc-hiv-circle-icon-tube-sample-swab-1635317370"><img src="https://d3p0usplrt5r65.cloudfront.net/cdc-hiv-circle-icon-tube-sample-swab-1635317370" alt=""/></a>
