@@ -6,6 +6,7 @@
 ```
 <a href="https://d3p0usplrt5r65.cloudfront.net/cdc-hiv-circle-icon-tube-sample-swab-1635317370"><img src="https://d3p0usplrt5r65.cloudfront.net/cdc-hiv-circle-icon-tube-sample-swab-1635317370" alt=""/></a>
 ```
+- `console.log(require('repl')._builtinLibs)` 看所有的 node built in lib, node-fetch 不是built in
 
 ### 2021 10 21
 - netlify node version
