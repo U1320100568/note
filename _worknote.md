@@ -7,6 +7,7 @@
 <a href="https://d3p0usplrt5r65.cloudfront.net/cdc-hiv-circle-icon-tube-sample-swab-1635317370"><img src="https://d3p0usplrt5r65.cloudfront.net/cdc-hiv-circle-icon-tube-sample-swab-1635317370" alt=""/></a>
 ```
 - `console.log(require('repl')._builtinLibs)` 看所有的 node built in lib, node-fetch 不是built in
+- img alt styling [1](https://stackoverflow.com/a/22051972/13797221) [2](https://stackoverflow.com/a/37192970/13797221)
 
 ### 2021 10 21
 - netlify node version
