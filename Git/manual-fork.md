@@ -19,4 +19,4 @@
 > 只要是 file diff 就一定是 conflict，除非他們有 common commit point，開 template 時沒有 common history，和複製專案砍掉git folder一樣。
 -  一開出來時，直接加一個 remote (ex, template url)，然後 merge 下來(下一行)，這時候就有 common entry 了（因為一開出來所以 code 一定一樣，以後merge不會嚴重conflict）
 -  `git merge -X theirs template/master --allow-unrelated-histories`
--  如果沒有一開始就merge，可以checkout 到最初的commit，merge upstream ，在checkout 最新 merge 
+-  如果沒有一開始就merge，可以checkout 到最初的commit，`git reset HARD 第一個commit`，merge upstream(上一行) ，拉最新的 `git pull`，此時可能會有conflict，因為和starter 不一樣，但只有少部分就手動resolve。
