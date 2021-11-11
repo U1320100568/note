@@ -1,3 +1,10 @@
+### 2021 11 11
+- vimeo 鎖domain，可參考公司帳號在general account
+  - global: setting > video > upload defaults > privacy > Who can watch your videos? & Where can your videos be embedded?
+  - individual: embeded > privacy > hide from vimeo & specific domain = sethtv.netlify.app
+- rjsf 會 submit 2次？ 原因：custom button and button type != "button"，如果沒有type or type=default 一樣會被rjsf自動觸發submit 
+  - debug 過程: event 觸發都可以用inspector 追朔call stack從哪裡來 dispatchDiscreteEvent 看詳細資訊
+- generic resource actions 的function 要包成 useCallback (如果parent render 就會一直call function)
 
 ### 2021 11 01
 - frontend deploy cli
