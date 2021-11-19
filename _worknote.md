@@ -9,6 +9,9 @@
 
 - js `symbol` 是一個primitive type，類似 const 
 - type Greeting = "hello" | "hi" define 是 Greeting, 只能是 hello, hi >  "hello" 不是字串，是literal type
+- homewrok: Setinvertal debugger view callstack, onClick view callstack
+- GitHub workflow to build and deploy to was s3 https://github.com/revtel/brickgo.web/blob/main/.github/workflows/deploy-stg.yml
+- 
 
 ### 2021 11 01
 - frontend deploy cli
