@@ -7,6 +7,9 @@
 - list page 一直反覆打api? generic resource actions 的function 要包成 useCallback (如果parent render 就會一直call function)
 - ant layout 會包 `<section>` ，chrome section h1 h2 font-size 會有預設跟其他不一樣。
 
+- js `symbol` 是一個primitive type，類似 const 
+- type Greeting = "hello" | "hi" define 是 Greeting, 只能是 hello, hi >  "hello" 不是字串，是literal type
+
 ### 2021 11 01
 - frontend deploy cli
 - article service insert html rev.sdk.js@0.0.90
