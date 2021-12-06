@@ -1,3 +1,5 @@
+
+
 ### 2021 11 11
 - vimeo 鎖domain，可參考公司帳號在general account
   - global: setting > video > upload defaults > privacy > Who can watch your videos? & Where can your videos be embedded?
@@ -11,7 +13,7 @@
 - type Greeting = "hello" | "hi" define 是 Greeting, 只能是 hello, hi >  "hello" 不是字串，是literal type
 - homewrok: Setinvertal debugger view callstack, onClick view callstack
 - GitHub workflow to build and deploy to was s3 https://github.com/revtel/brickgo.web/blob/main/.github/workflows/deploy-stg.yml
-- 
+- ngrok 讓外部可以連到 localhost
 
 ### 2021 11 01
 - frontend deploy cli
