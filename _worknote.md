@@ -1,5 +1,5 @@
 2021 12 23 
-- [react pdf font](https://github.com/revtel/sensationsprint/commit/354cbf56f2a5f021a61639de1a4cd0fba89dc38a)
+- [react pdf font](https://github.com/revtel/sensationsprint/commit/354cbf56f2a5f021a61639de1a4cd0fba89dc38a) 1. 要用繁體 2. 要用ttf檔
 - 
 
 ### 2021 12 13
