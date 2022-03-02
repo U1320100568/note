@@ -9,7 +9,7 @@
   }
   ```
 - [JS] 定義在function外面的object `Cannot access 'actions' before initialization`
-   - (function () { }()) 這個因為hoisting在所有定義最前面就定義此function，且因為IIFE所以會拿不到其他初始值，可改成(() => {}())，就不會hoisting
+   - `(function () { }())` 這個因為hoisting在所有定義最前面就定義此function，且因為IIFE所以會拿不到其他初始值，可改成`(() => {}())`，就不會hoisting
 - linux command comvention  
   
 | environment variable | command | sub-command | option                             | argument             |
