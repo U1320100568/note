@@ -1,3 +1,9 @@
+### 2022 03 10
+- UTC 時區問題
+  - new Date('2022-03-10') -> UTC 時間
+  - new Date('2022-03-10T00:00:00') -> 當地時間
+  - new Date('2022-03-10T00:00:00Z') -> UTC 時間
+
 ### 2022 03 04
 - [concept] virtual machine 
   - Virtual machine:  js runtime, EVM(以太幣), python	
