@@ -44,3 +44,32 @@ export default function KeyboardAvoiding(props) {
                       */
   );
 }
+
+// TODO: try this code from Guy
+const useKeyboardAvoid = ({scrollViewRef}) => {
+  useEffect(() => {
+    const showListener = Keyboard.addListener('keyboardDidShow', () => {
+      RNTextInput.State.currentlyFocusedInput().measure(
+        (x, y, width, height, pageX, pageY) => {
+          scrollViewRef.current.scrollResponderScrollNativeHandleToKeyboard(
+            RNTextInput.State.currentlyFocusedInput(),
+            height,
+            true,
+          );
+        },
+      );
+    });
+    const hideListener = Keyboard.addListener('keyboardDidHide', () => {});
+    return () => {
+      showListener.remove();
+      hideListener.remove();
+    };
+  }, [scrollViewRef]);
+};
+
+const styles = StyleSheet.create({
+  wrapper: {
+    flexGrow: 1,
+  }
+
+})
