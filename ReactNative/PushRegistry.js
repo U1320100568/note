@@ -6,6 +6,7 @@ import {Platform, Linking, Alert} from 'react-native';
 const AndroidSenderId = Constants.androidSenderId;
 let deviceToken = null;
 
+// called after reset to home and deeplinking on landing screen
 function register({appActions}) {
   try {
     PushNotification.configure({
