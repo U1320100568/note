@@ -73,3 +73,35 @@ const styles = StyleSheet.create({
   }
 
 })
+
+
+// guy's perfect version RN version after 64
+const useKeyboardAvoiding = offset => {
+  const ScrollViewRef = useRef(null);
+  useEffect(() => {
+    const DidShow = Keyboard.addListener('keyboardDidShow', e => {
+      ScrollViewRef.current.scrollResponderScrollNativeHandleToKeyboard(
+        TextInput.State.currentlyFocusedInput(),
+        offset,
+        false,
+      );
+      ScrollViewRef.current.getInnerViewRef().setNativeProps({
+        paddingBottom: offset,
+      });
+    });
+    const DidHide = Keyboard.addListener('keyboardDidHide', async e => {
+      ScrollViewRef.current.scrollTo({y: 0});
+      await delay(300);
+      ScrollViewRef.current.getInnerViewRef().setNativeProps({
+        paddingBottom: 0,
+      });
+    });
+    return () => {
+      DidShow.remove();
+      DidHide.remove();
+    };
+  }, [offset]);
+  return {
+    ScrollViewRef,
+  };
+};
