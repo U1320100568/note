@@ -1,3 +1,7 @@
+### 2022 04 13
+- Google model viewer ，將iOS, android native 支援 AR VR 包裝成統一介面.  
+  Web component  新型的html tag，react 支援 , ex. <model-viewer></model-viewer>
+
 ### 2022 03 10
 - UTC 時區問題
   - new Date('2022-03-10') -> UTC 時間
