@@ -12,3 +12,14 @@
   常見手法：element.innerHTML ＝ （惡意代碼）
   
 > React 可以避免某些injection attack，但有些攻擊還是需要注意，[example](https://stackoverflow.com/a/51852579)
+  
+  
+## query parameter 在 https 傳輸安全嗎？
+SSL/TLS 是加密在 **Transport Layer** under **Application Layer**，所以 query parameter also encrpto with SSL  
+但是web server會以明文儲存reqeust log (whole url)，所以重要資訊還是避免加在 query parameter  
+📌 Reference:   
+https://stackoverflow.com/a/2629241/13797221  
+https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/  
+  
+  
+  
