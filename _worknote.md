@@ -1,3 +1,13 @@
+### 2022 06 27
+- [js] `Object.assign(a, b)` = 可用來複製object或是覆寫欄位，相當於spread syntax `{ ...a, ...b }`
+```
+> var a = { name: '123', age: 123 }
+> Object.assign(a, {tel: "0101"})
+return = a
+a = { name: '123', age: 123, tel: '0101' }
+```
+
+
 ### 2022 04 13
 - Google model viewer ，將iOS, android native 支援 AR VR 包裝成統一介面.  
   Web component  新型的html tag，react 支援 , ex. <model-viewer></model-viewer>
