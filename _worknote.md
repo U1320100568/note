@@ -6,6 +6,8 @@
 return = a
 a = { name: '123', age: 123, tel: '0101' }
 ```
+- [js] state.selected 儲存 onClick 的 e.target 的 element ，並將上次、這次的element用classList 移除、新增class (特別的控制)
+- 
 
 
 ### 2022 04 13
