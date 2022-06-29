@@ -7,7 +7,10 @@ return = a
 a = { name: '123', age: 123, tel: '0101' }
 ```
 - [js] state.selected 儲存 onClick 的 e.target 的 element ，並將上次、這次的element用classList 移除、新增class (特別的控制)
-- 
+- [disc] static build web app 放在某地方，需要在架設 http server，才是serve 起來
+  - s3 放 file, aws 會自己起一個http server
+  - gatsby serve 會起一個 http server
+  - 也可以用其他的方式起，例如 nginx，也有處理performance traffic 的問題
 
 
 ### 2022 04 13
