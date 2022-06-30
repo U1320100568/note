@@ -11,6 +11,7 @@ a = { name: '123', age: 123, tel: '0101' }
   - s3 放 file, aws 會自己起一個http server
   - gatsby serve 會起一個 http server
   - 也可以用其他的方式起，例如 nginx，也有處理performance traffic 的問題
+- [mongo] backup cloud restore in local `run -it -p 27017:27017 -v ~/Downloads/restore-62bcf3f6c497023990928081:/data/db --name=smbbackup mongo`
 
 
 ### 2022 04 13
