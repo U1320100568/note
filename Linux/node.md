@@ -6,7 +6,9 @@
 ### 👇️ using curl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
-他會自動clones the nvm repository to ~/.nvm，然後加環境變數 add 2 lines of code to the correct profile (~/.bash_profile, ~/.zshrc, ~/.profile, ~/.bashrc) 
+他會自動clones the nvm repository to `~/.nvm`，  
+然後加環境變數 add 2 lines of code to the correct profile   
+(~/.bash_profile, ~/.zshrc, ~/.profile, ~/.bashrc) 
 
 2. sourcing
 ```
