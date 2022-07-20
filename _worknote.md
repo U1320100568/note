@@ -1,3 +1,8 @@
+### 2022 07 20
+1. js babel / webpack
+   - babel: 編譯成瀏覽器看得懂的語言，transplier 編譯 ES6 => ES5 , typescript => js 
+   - bundler 將需要的東西打包一個檔案 require/import dependency，線上的application 沒有module system，都要靠打包的bundle，例如 React Native metro bundler,  webpack or 其他
+
 ### 2022 06 27
 - [js] `Object.assign(a, b)` = 可用來複製object或是覆寫欄位，相當於spread syntax `{ ...a, ...b }`
 ```
