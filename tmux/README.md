@@ -9,6 +9,9 @@
 ### attach session
 `tmux a -t 'name'`
 
+### create new sessoion
+`tmux new -s 'name'`
+
 ### 進入 session 後，hotkey
 - ctrl + b,d -- 斷連session
 - ctrl + b,n -- 切換bash
