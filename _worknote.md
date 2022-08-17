@@ -1,3 +1,7 @@
+### 2022 08 17
+- 計畫停機演算法 array filter array
+- repeat-linear-gradient
+
 ### 2022 07 20
 1. js babel / webpack
    - babel: 編譯成瀏覽器看得懂的語言，transplier 編譯 ES6 => ES5 , typescript => js 
