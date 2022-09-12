@@ -1,3 +1,6 @@
+## reference
+https://dev.to/andrewbaisden/how-to-use-docker-in-your-node-and-react-applications-597e
+
 ## 1. get a gatsby project
 ex. `gatsby new gatsby-test && cd gatsby-test`
 ## 2. create docker file
