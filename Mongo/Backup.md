@@ -14,10 +14,10 @@
 
 2. dump
 ```
-mongodump -h 18.182.29.53 --port 27888 -u kyle -p 'kyletest' --authenticationDatabase admin -d dsa -o lathe-backup
+mongodump -h 18.182.29.53 --port 27888 -u kyle -p '****' --authenticationDatabase admin -d dsa -o lathe-backup
 ```
 
 3. restore
 ```
- mongorestore -h localhost --port 28777 -u roy -p '123' --authenticationDatabase admin  -d lathe  lathe-backup/dsa 
+ mongorestore -h localhost --port 28777 -u roy -p '****' --authenticationDatabase admin  -d lathe  lathe-backup/dsa 
 ```
