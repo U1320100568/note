@@ -1,5 +1,8 @@
 ### 2022 09 30
 - chrome jsonVue extension color editor
+- css: 暗色主題 dark theme `@media prefers-color-scheme: drak {`  
+  繼承系統使用的主題  
+  搭配 --css-variable 就可以輕鬆切換兩種主題
 
 ### 2022 08 19
 - use package from git fork repository `npm install xxxxx@{GitHub orginaze}/{repo}`  
