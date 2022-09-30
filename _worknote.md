@@ -1,3 +1,6 @@
+### 2022 09 30
+- chrome jsonVue extension color editor
+
 ### 2022 08 19
 - use package from git fork repository `npm install xxxxx@{GitHub orginaze}/{repo}`  
 - 如果有library 有小錯，只想改(蓋掉)在 local node_module package，且每次npm install or update 都會自動補上，可以使用小工具： **patch package** 
