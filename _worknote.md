@@ -3,7 +3,7 @@
 - css: 暗色主題 dark theme `@media prefers-color-scheme: drak {`  
   繼承系統使用的主題  
   搭配 --css-variable 就可以輕鬆切換兩種主題
-- ReportDialog highlight class design: (1) shared with pdf(use render ?) (2) reduce find loop(col.className, or onCell) > use onRow with col.className
+- _ReportDialog.js_ highlight class design: (1) shared with pdf(use render ?) (2) reduce find loop(col.className, or onCell) > use onRow with col.className
 
 ### 2022 08 19
 - use package from git fork repository `npm install xxxxx@{GitHub orginaze}/{repo}`  
