@@ -3,9 +3,31 @@ https://dev.to/andrewbaisden/how-to-use-docker-in-your-node-and-react-applicatio
 
 ## 1. get a gatsby project
 ex. `gatsby new gatsby-test && cd gatsby-test`
-## 2. create docker file
-vi Dockerfile
 
+## 2. create docker file
+`touch Dockerfile .dockerignore`  
+  
+_Dockerfile_
+```
+# Dockerfile
+FROM node:14.17.5-bullseye AS builder
+
+WORKDIR /app
+
+COPY package.json .
+# RUN npm cache clean --force
+RUN npm install
+
+COPY . . 
+RUN ["npm", "run", "start"]
+```
+
+_.dockerignore_
+```
+.cache/
+node_modules
+public/
+```
 
 ## 產生一個docker image
 ```
