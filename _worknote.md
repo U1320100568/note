@@ -1,3 +1,9 @@
+### 2022 10 27
+- safari on ios debug (1) 手機設定 > safari > 進階 > 網頁檢閱器 > 開啟要debug的網頁 (2)網頁 safari > preference > 開發 > 選裝置的某個網頁
+> 當電腦瀏覽器都沒問題，部分手機瀏覽器有問題  
+  
+- crypto.randomUUID 不支援 ios 15.4以下的 safari
+
 ### 2022 09 30
 - chrome jsonVue extension color editor
 - css: 暗色主題 dark theme `@media prefers-color-scheme: drak {`  
