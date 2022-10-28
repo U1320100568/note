@@ -3,7 +3,7 @@
 > 當電腦瀏覽器都沒問題，部分手機瀏覽器有問題  
   
 - crypto.randomUUID 不支援 ios 15.4以下的 safari
-- github action `on` > `push` > `branches` `branches-ignore`
+- github action `on` > `push` > `branches` `branches-ignore` 可使用filter pattern * or !
 
 ### 2022 09 30
 - chrome jsonVue extension color editor
