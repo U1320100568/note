@@ -9,3 +9,6 @@ https://www.timiguo.com/archives/223/
 - `ubuntu` 完整版 187MB
 - `alpine` linux 輕量型ubuntu 5MB
 - 其他如 `stretch`, `buster`, `jessie`, `slim`, `bullseye`
+
+# Question 
+- folder 是相對在 我的電腦 還是 container 裏面
