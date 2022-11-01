@@ -1,3 +1,18 @@
+### 2022 11 01
+- markdown delete [1]
+> html tag `pre` `code` `del`
+
+<pre><code><del>這是刪除號</del>
+這是修改
+</code></pre>
+- markdown delete [2]
+> code block + diff & `+` & `-`
+
+```diff
+- 這是原本
++ 這是修改
+```
+
 ### 2022 10 27
 - safari on ios debug (1) 手機設定 > safari > 進階 > 網頁檢閱器 > 開啟要debug的網頁 (2)網頁 safari > preference > 開發 > 選裝置的某個網頁
 > 當電腦瀏覽器都沒問題，部分手機瀏覽器有問題  
