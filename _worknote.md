@@ -1,3 +1,18 @@
+### 2022 11 11
+**Serverless**
+- 一個想要簡化 server management 概念，盡可能簡化 manage 的問題（physical server -> cloud server -> virtual machine -> conatainer -> serverless）
+- Serverless is function, not a server , FAAS (function as a service)
+- 其實在 aws lambda function (one of serverless)也是某個 server 跑 container ，只是我們不用 manage
+- 注意 Endpoint 單位：各別 api 都是一個 serverless function，也可以是一個app main 入口，通常 framework 控制，app 裡面有 route 控制
+- 可以由不同方式 trigger serverless function called `Event source` (ex. http apiGateway, step function...) 觸發 function 
+- serverless.ink 這是一家公司提供 open source 可以利用 sls cli 執行預寫好的 yml 檔 deploy lambda function
+  
+**小備註**
+  
+- serverless 也需要設置環境 ex. node version
+- frontend static build 的東西 run 在 browser 不需要 serverless，但 server render 也可以使用
+- step function 並非 serverless function，只是一個 event source 而已
+
 ### 2022 11 01
 - markdown delete [1]
 > html tag `pre` `code` `del`
