@@ -1,3 +1,8 @@
+### 2022 11 15 
+- update @rjsf/core 5.x.x (sens-dashboard 根本沒裝，是用rev.sdk.js裝的)
+- @rjsf/antd, @rjsf/utils, @rjsf/validator-ajv8
+- 多了一個templates的刻制interface, ArrayXXXTemplate等等的interface is removed
+
 ### 2022 11 11
 **Serverless**
 - 一個想要簡化 server management 概念，盡可能簡化 manage 的問題（physical server -> cloud server -> virtual machine -> conatainer -> serverless）
