@@ -1,7 +1,8 @@
 ### 2022 11 15 
 - update @rjsf/core 5.x.x (sens-dashboard 根本沒裝，是用rev.sdk.js裝的)
-- @rjsf/antd, @rjsf/utils, @rjsf/validator-ajv8
-- 多了一個templates的刻制interface, ArrayXXXTemplate等等的interface is removed
+  - @rjsf/antd, @rjsf/utils, @rjsf/validator-ajv8
+  - 多了一個templates的刻制interface, ArrayXXXTemplate等等的interface is removed
+- netlify build image Ubuntu Xenial 16.04 `After November 15, 2022, the Xenial build image will not be supported. To avoid build failure, select another build image.`
 
 ### 2022 11 11
 **Serverless**
