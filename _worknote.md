@@ -4,6 +4,7 @@
 - [css] sibling `~` 滿足條件的所有 、`+` 滿足條件的第一個
   - h4 ~ div
   - div ~ div 相同的
+- [mongo] 有 explain 測試，可以看有沒有hit indexing
 
 ### 2022 11 15 
 - update @rjsf/core 5.x.x (sens-dashboard 根本沒裝，是用rev.sdk.js裝的)
