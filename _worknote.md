@@ -5,6 +5,7 @@
   - h4 ~ div
   - div ~ div 相同的
 - [mongo] 有 explain 測試，可以看有沒有hit indexing，看看query效能及indexing 的效果
+- [react native] upgrade helper https://react-native-community.github.io/upgrade-helper/
 
 ### 2022 11 15 
 - update @rjsf/core 5.x.x (sens-dashboard 根本沒裝，是用rev.sdk.js裝的)
