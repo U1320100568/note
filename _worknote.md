@@ -1,5 +1,54 @@
 ### 2022 12 30
 - [css] grid 攤平的element結構，用flex就會有很多層，可能適用 footer or table, product grid(auto-fit, grid-auto-rows)
+  ```css
+    .grid {
+      max-width: 1024px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-rows: 80px 120px 400px 150px;
+      grid-template-columns: repeat(3, 1fr) 300px;
+      grid-gap: 10px;
+
+      & > * {
+        border: 1px solid pink;
+      }
+
+      & > .header {
+        grid-column: 1 / -1;
+      }
+
+      & > .side {
+        grid-row: 2 / -2;
+        grid-column: -2 / -1;
+      }
+
+      & > .content {
+        grid-row: 3 / 4;
+        grid-column: 1 / -2;
+      }
+
+      & > .footer {
+        grid-column: 1 / -1;
+      }
+    }
+  ```
+  ```css
+  .grid {
+      display: grid;
+      max-width: 1024px;
+      margin: 20px auto;
+      background-color: #eee;
+      grid-template-columns: repeat(auto-fit, 250px);
+      grid-auto-rows: 250px;
+      justify-content: center;
+      grid-gap: 10px;
+
+      & > * {
+        border: 1px solid pink;
+        background-color: white;
+      }
+    }
+  ```
 - [ts] 若宣告 `Number` or `Date` 做 operation 雖然run time ok，但ts會報錯 `The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.`，解法：`new Date().valueOf() - new Date().valueOf()`
 - social login
     - webview(embed browser) 比較多可刻制，但是比較多漏洞，google login 會擋  
