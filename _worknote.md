@@ -1,6 +1,10 @@
 ### 2022 12 30
 - [css] grid 攤平的element結構，用flex就會有很多層，可能適用 footer or table
 - [ts] 若宣告 `Number` or `Date` 做 operation 雖然run time ok，但ts會報錯 `The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.`，解法：`new Date().valueOf() - new Date().valueOf()`
+- social login
+    - webview(embed browser) 比較多可刻制，但是比較多漏洞，google login 會擋  
+    - inAppBrowser 比較多可刻制，但是比較多漏洞，google login 不會擋
+    - 
 
 ### 2022 11 22
 - mongoquery timestamp toISODate("xxxx-xx-xxTxx:xx:xx").getTime()
