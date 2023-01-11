@@ -1,4 +1,9 @@
 ### 2022 12 30
+- [css] grid rwd ratio
+  ```css
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-auto-rows: 250px;
+  ```
 - [css] grid 攤平的element結構，用flex就會有很多層，可能適用 footer or table, product grid(auto-fit, grid-auto-rows)
   ```css
     .grid {
