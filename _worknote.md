@@ -1,5 +1,6 @@
 ### 2023 02 23
 - [bash] find path --name "xxx"
+- [js] 金錢 formating `nunmber.toLocaleString('en-US', 'currency');`
 
 ### 2023 01 11
 - markdown collapse
