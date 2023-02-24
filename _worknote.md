@@ -1,3 +1,6 @@
+### 2023 02 23
+- [bash] find path --name "xxx"
+
 ### 2023 01 11
 - markdown collapse
 ```md
