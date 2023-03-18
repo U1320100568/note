@@ -1,5 +1,5 @@
 - 官方文件 https://docs.strapi.io/
 - headless cms
-- 語言nodejs
-- 不用管資料庫, 不用管backend api，只要處理前端
+- 語言nodejs （注意）version
+- 不用管資料庫(預設SQLite), 不用管backend api，只要處理前端
 - 
