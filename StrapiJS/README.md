@@ -10,3 +10,21 @@ just like build schema
 ## Content Manager
 create content by add new entry
 just like create and edit content
+don't forget to publish
+
+
+## Settings Permission
+### public
+user & permission plugin > Roles > Public
+
+## Docker
+https://razinj.dev/how-to-run-strapi-4-in-a-docker-container-using-docker-compose/
+> 目前失敗，process exit
+  
+docker compose strapi & sqlite
+
+
+## Deploy 
+免費api server render.com、Fly.io、Deta.sh、Google Cloud Run
+先暫定 google clode run
+
