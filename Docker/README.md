@@ -24,6 +24,9 @@ npm run config:cms-dev //產生一些docker file
 >  通常docker project 都會有DockerFile   
   
 `docker image ls` 完成後，可以看 image 是已建立  
+
+if fail due to require one argument  
+`docker build -t [image_name] .` add `.` after, means location here  
   
 ### 5. RUN DOCKER CONTAINER
 `docker run --name [container name] -p 8000:8000 -d [image name]` 以一個docker image run 一個 docker container    
