@@ -33,6 +33,9 @@ npm run config:cms-dev //產生一些docker file
   
 `docker ps` `docker container ls`  可看現在有哪些docker container 再跑   
 可以去 `localhost:8000` 就可以看到docker已經跑起來  
+
+### 5.1 STOP CONTAINER
+ `docker stop [container_name]`
   
 ### 6. BACKEND 環境設定
 此時還有可能是錯誤的，因為backend環境還沒有設定好（例如資料庫沒有initial），所以要進入docker做setting  
