@@ -28,6 +28,6 @@ docker compose strapi & sqlite
 
 
 ## Deploy 
-免費api server render.com、Fly.io、Deta.sh、Google Cloud Run
-先暫定 google clode run
+免費api server render.com、Fly.io、Deta.sh、Google Cloud Run  
+TODO: use render.com to deploy   
 
