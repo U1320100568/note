@@ -20,8 +20,10 @@ user & permission plugin > Roles > Public
 ## Docker
 https://razinj.dev/how-to-run-strapi-4-in-a-docker-container-using-docker-compose/
 > 目前失敗，process exit
+try to run docker only
+原Dockerfile `FROM starpi:base` 改成 `node:16`  > successful !
   
-docker compose strapi & sqlite
+docker compose strapi & sqlite  
 
 
 ## Deploy 
