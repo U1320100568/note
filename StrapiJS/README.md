@@ -19,15 +19,24 @@ user & permission plugin > Roles > Public
 
 ## Docker
 https://razinj.dev/how-to-run-strapi-4-in-a-docker-container-using-docker-compose/  
-> ，process exit  
+照著裡面做，process exit  
   
-try to run docker only  
+`resolved` try to run docker only  
 原Dockerfile `FROM starpi:base` 改成 `node:16`  > successful !
   
-docker compose strapi & sqlite  
+render 不支援docker-compose 只有 docker  
+docker-compose local run error  
 
+<span style="background-color:aquamarine;">docker</span>
+<span style="color:aquamarine;">strapi</span>
+<span style="color:aquamarine;">sqlite</span>
+  
+  
 
 ## Deploy 
 免費api server render.com、Fly.io、Deta.sh、Google Cloud Run  
 TODO: use render.com to deploy   
+TODO: 取消卡號
+TODO: 刪掉env/production
+TODO: 刪掉render.yaml 
 
