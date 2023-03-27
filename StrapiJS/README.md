@@ -35,8 +35,9 @@ docker-compose local run error
 
 ## Deploy 
 免費api server render.com、Fly.io、Deta.sh、Google Cloud Run  
-TODO: use render.com to deploy   
 TODO: 取消卡號
-TODO: 刪掉env/production
-TODO: 刪掉render.yaml 
+
+- use webserver `NOT` blueprint!!
+- env 的資料放在 `Environment Variable` 裡
+
 
