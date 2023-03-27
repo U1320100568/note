@@ -39,5 +39,6 @@ TODO: 取消卡號
 
 - use webserver `NOT` blueprint!!
 - env 的資料放在 `Environment Variable` 裡
+- 資料庫的資料不會轉移，只有
 
 
