@@ -12,6 +12,9 @@ create content by add new entry
 just like create and edit content
 don't forget to publish
 
+## Database
+- postgres command https://github.com/U1320100568/note/tree/master/PostgreSql
+
 
 ## Settings Permission
 ### public
