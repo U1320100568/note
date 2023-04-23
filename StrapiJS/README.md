@@ -28,6 +28,8 @@ don't forget to publish
 預設為sqlite 想要轉換為 postgres  https://strapi.io/blog/postgre-sql-and-strapi-setup
 ## Database
 - postgres command https://github.com/U1320100568/note/tree/master/PostgreSql
+- create role  (詳見上面command)
+- create db (詳見上面command)
 
 
 ## Settings Permission
