@@ -22,6 +22,7 @@ psql
   ALTER ROLE chris CREATEDB;
   ```
   `\du` -> to checkout create successful  
+  > 共用則不需再建立  
 - create database
   ```sql
   CREATE DATABASE xxx
