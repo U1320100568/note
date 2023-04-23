@@ -1,3 +1,4 @@
+## Introduction
 - 官方文件 https://docs.strapi.io/
 - open source headless cms
 - base on nodejs（注意）version
@@ -56,6 +57,8 @@ docker-compose local run error
 免費api server render.com、Fly.io、Deta.sh、Google Cloud Run  
 TODO: 取消卡號
 
+### Render.com
+- web service(NODE or DOCKER)
 - use webserver `NOT` blueprint!!
 - env 的資料放在 `Environment Variable` 裡
 - 資料庫的資料不會轉移，只有schema
