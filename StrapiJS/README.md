@@ -1,7 +1,7 @@
 - 官方文件 https://docs.strapi.io/
-- headless cms
-- 語言nodejs （注意）version
-- 不用管資料庫(預設SQLite), 不用管backend api，只要處理前端
+- open source headless cms
+- base on nodejs（注意）version
+- design api & manage content 不用管資料庫(預設SQLite), 不用管backend api，只要處理前端
 
 ## Content-Type builder
 a plugin to create a collection (resource)  
@@ -12,6 +12,20 @@ create content by add new entry
 just like create and edit content
 don't forget to publish
 
+### Folder Structure
+```
+    |---- config
+    |     |- api.js // 通用設定 for api
+    |     |- admin.js // admin 介面的設定
+    |     |- database.js // database 基本設定（預設 sqlite）
+    |     |- middleware.js
+    |     |- server.js // host server 基本設定
+    |     |- cron-tasks.js // 設定cron job
+    |     |- plugins.js
+```
+
+## Database
+預設為sqlite 想要轉換為 postgres  https://strapi.io/blog/postgre-sql-and-strapi-setup
 ## Database
 - postgres command https://github.com/U1320100568/note/tree/master/PostgreSql
 
