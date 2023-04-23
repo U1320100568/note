@@ -16,6 +16,11 @@ brew services restart postgresql
 ```
 psql
 ```
+- create ROLE
+```sql
+CREATE ROLE chris WITH LOGIN PASSWORD 'password';
+ALTER ROLE chris CREATEDB;
+```
 
 
 ### GUI: psequel
