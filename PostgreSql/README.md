@@ -17,10 +17,18 @@ brew services restart postgresql
 psql
 ```
 - create ROLE
-```sql
-CREATE ROLE chris WITH LOGIN PASSWORD 'password';
-ALTER ROLE chris CREATEDB;
-```
+  ```sql
+  CREATE ROLE chris WITH LOGIN PASSWORD 'password';
+  ALTER ROLE chris CREATEDB;
+  ```
+  `\du` -> to checkout create successful  
+- create database
+  ```sql
+  CREATE DATABASE xxx
+  ```
+  `\l` -> to check create successful  
+- enter db & check tables  
+  `\c xxx` `\dt`
 
 
 ### GUI: psequel
