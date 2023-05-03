@@ -90,8 +90,10 @@ Function A (obj) {
 	ps. 注意有時候dependency 在build error 或是在 only netlify build error，可能是package-lock.json 有衝突，可以刪掉在重新 `npm i` 解決.  
 	ps. sdk的dependency需要考慮，是否要裝在   
 		1. dependency: 較獨特library，所有複雜邏輯打包在此sdk，使用者不用再處理library 的東西，ex: react-slate, slate，注意：如果其他地方也裝指定版本，可能造成衝突
-		2. peerDependency: 沿用各project使用的library，不是只有此sdk才會用到的library，ex. antd, styled-components
-		3. devDependency: 開發時需要的library，ex: eslint, babel，或是peerDependency開發時也需要的library
+		2. peerDependency: 沿用各project使用的library，不是只有此sdk才會用到的library，ex. antd, styled-components，peer-dependency 不會主動安裝，自己的project 要自己放在dependency，peer 代表他會用到，但預設 project 裡已經有了。
+		3. devDependency: 開發時需要的library，ex: eslint, babel，或是peerDependency開發時也需要的library  
+		
+        ps. `npm list xxx-library` 看版本  
 - netlify deploy error `Plugin "@netlify/plugin-gatsby" failed`  
   Plugins > Essential Gatsby 預設會裝這個（以前的site沒有），
   他會pre deploy，gatsby-config 會先被檢查出找不到data.json，因為pre deploy沒有跑build script，我的解法是刪掉plugin
