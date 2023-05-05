@@ -1,3 +1,12 @@
+### 2023 05 05
+- 要捨棄已經上傳到local commit = 還原成 remote 的 branch
+  ```
+  git fetch origin
+  git reset --hard origin/master
+  ```
+- React Native upgraded 版本升級 Helper https://react-native-community.github.io/upgrade-helper/
+  看完diff後，手動patch
+  
 ### 2023 03 22
 - Unresolved symbol error & Duplicated symbol error  
   
