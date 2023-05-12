@@ -4,8 +4,10 @@
   - `async` 和html parser 同時載入，但是會暫停執行
   - `defer` 和html parser 同時載入，但是在html 處理完，才會執行
 - [css] 自己置中（有點trick）  
+  ```css
   width: min(720px, 100% - 40px);
   margin-inline: auto;
+  ```
 
 ### 2023 05 05
 - [git] 要捨棄已經上傳到local commit = 還原成 remote 的 branch
