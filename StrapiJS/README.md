@@ -32,6 +32,26 @@ don't forget to publish
 - create role  (詳見上面command)
 - create db (詳見上面command)
 
+## Env
+`.env` (local), `environment variable` (render.com)
+```
+HOST=0.0.0.0
+PORT=1337
+APP_KEYS=xxx
+API_TOKEN_SALT=xxx
+ADMIN_JWT_SECRET=xxx
+TRANSFER_TOKEN_SALT=xxx
+JWT_SECRET=xxx
+# Database
+DATABASE_CLIENT=postgres
+DATABASE_HOST=127.0.0.1
+DATABASE_PORT=5432
+DATABASE_NAME=xxx
+DATABASE_USERNAME=xxx
+DATABASE_PASSWORD=xxx
+
+```
+
 
 ## Settings Permission
 ### public
@@ -61,6 +81,18 @@ docker-compose local run error
 - use webserver `NOT` blueprint!!
 - env 的資料放在 `Environment Variable` 裡 (不要放在Secret file)
 - 資料庫的資料不會轉移，只有schema
-- 
-
+- env 注意事項
+  ```
+  HOST=不用放
+  PORT=不用放
+  DATABASE_HOST=由external url 中擷取host
+  DATABASE_PORT=from DB
+  DATABASE_NAME=from DB
+  DATABASE_USERNAME=from DB
+  DATABASE_PASSWORD=from DB
+  DATABASE_SSL=true
+  ```
+ 
+## Plugins
+- [cloudinary](./Cloudinary.md)
 
