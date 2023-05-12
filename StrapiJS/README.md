@@ -3,6 +3,7 @@
 - open source headless cms
 - base on nodejs（注意）version
 - design api & manage content 不用管資料庫(預設SQLite), 不用管backend api，只要處理前端
+- example https://strapi.io/blog/postgre-sql-and-strapi-setup
 
 ## Content-Type builder
 a plugin to create a collection (resource)  
@@ -26,8 +27,8 @@ don't forget to publish
 ```
 
 ## Database
-預設為sqlite 想要轉換為 postgres  https://strapi.io/blog/postgre-sql-and-strapi-setup
-## Database
+- default sqlite
+- sqlite to postgres  https://strapi.io/blog/postgre-sql-and-strapi-setup
 - postgres command https://github.com/U1320100568/note/tree/master/PostgreSql
 - create role  (詳見上面command)
 - create db (詳見上面command)
