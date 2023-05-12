@@ -1,3 +1,9 @@
+### 2023 05 12
+- link script 參數 `async`, `defer` https://html.spec.whatwg.org/multipage/scripting.html  
+  - 預設是暫停html parser，執行script
+  - `async` 和html parser 同時載入，但是會暫停執行
+  - `defer` 和html parser 同時載入，但是在html 處理完，才會執行
+
 ### 2023 05 05
 - 要捨棄已經上傳到local commit = 還原成 remote 的 branch
   ```
