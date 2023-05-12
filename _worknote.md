@@ -1,16 +1,19 @@
 ### 2023 05 12
-- link script 參數 `async`, `defer` https://html.spec.whatwg.org/multipage/scripting.html  (參考示意圖)
+- [js] link script 參數 `async`, `defer` https://html.spec.whatwg.org/multipage/scripting.html  (參考示意圖)
   - 預設是暫停html parser，執行script
   - `async` 和html parser 同時載入，但是會暫停執行
   - `defer` 和html parser 同時載入，但是在html 處理完，才會執行
+- [css] 自己置中（有點trick）  
+  width: min(720px, 100% - 40px);
+  margin-inline: auto;
 
 ### 2023 05 05
-- 要捨棄已經上傳到local commit = 還原成 remote 的 branch
+- [git] 要捨棄已經上傳到local commit = 還原成 remote 的 branch
   ```
   git fetch origin
   git reset --hard origin/master
   ```
-- React Native upgraded 版本升級 Helper https://react-native-community.github.io/upgrade-helper/
+- [react native] React Native upgraded 版本升級 Helper https://react-native-community.github.io/upgrade-helper/
   看完diff後，手動patch
   
 ### 2023 03 22
