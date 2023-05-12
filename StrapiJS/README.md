@@ -55,12 +55,12 @@ docker-compose local run error
 
 ## Deploy 
 免費api server render.com、Fly.io、Deta.sh、Google Cloud Run  
-TODO: 取消卡號
 
 ### Render.com
 - web service(NODE or DOCKER)
 - use webserver `NOT` blueprint!!
-- env 的資料放在 `Environment Variable` 裡
+- env 的資料放在 `Environment Variable` 裡 (不要放在Secret file)
 - 資料庫的資料不會轉移，只有schema
+- 
 
 
