@@ -19,6 +19,9 @@ application server (ex.python, nodejs, golang): 主要處理動態資料，也�
 分攤 server 的高流量  
 防止惡意攻擊  
 排除ㄧ些故障伺服器  
+config upstream block 可以起多個service
 
 ### Apache & nginx
 簡單的來說，可以較低資源（記憶體消耗低），效能卻比較好（處理 IO 並發與靜態文檔方面效能），設置也較簡單  
+
+
