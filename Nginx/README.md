@@ -1,4 +1,5 @@
 ## refs 
+https://medium.com/starbugs/web-server-nginx-1-cf5188459108
 https://medium.com/starbugs/web-server-nginx-2-bc41c6268646  
 
 # Web server
@@ -7,7 +8,14 @@ application server (ex.python, nodejs, golang): 主要處理動態資料，也�
 
 ### 反向代理
 > 代理伺服器替用戶發送請求，而後轉發至目的地 ??  (哈摟，請說中文  
-   
+  
+正向代理：client 透過 proxy 用別的身份，轉發到server
+反向代理：client 連到反向代理 server，但不知道背後是連到哪個真實server，背後可能有多台server在處理
+
+> 正向代理隐藏真實 Client，反向代理隱藏真實 Server
+
+> ME:  📨request 方向由 🙎client ->  🏢server
+> 🛂 反向代理server 面對 🙎 client 接收到  📨request，轉身向 🏢server forward request
    
 ### 提供緩存（不確定有沒有）
 
