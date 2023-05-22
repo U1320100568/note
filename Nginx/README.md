@@ -41,3 +41,11 @@ upstream api {
 ### Plugins 
 - gzip 將資源壓縮再傳輸
 - https 用Let's Encrypt 取得 90 天效期的 SSL certificate，並且可將http都轉向https
+
+
+### QA
+- 為什麼叫反向？是面向user所以叫反向嗎？
+- 反向代理 跟 cdn 一樣嗎？
+- 防惡意攻擊，難道代理伺服器不會過載？不過壞掉嗎？
+- dsa 這樣算是正向還是反向代理
+- Build api 算是正向代理嗎？
