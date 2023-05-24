@@ -1,3 +1,6 @@
+### 2023 05 24
+- [git] git log --grep="notification" 
+
 ### 2023 05 12
 - [js] link script 參數 `async`, `defer` https://html.spec.whatwg.org/multipage/scripting.html  (參考示意圖)
   - 預設是暫停html parser，執行script
