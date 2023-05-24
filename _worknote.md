@@ -1,5 +1,5 @@
 ### 2023 05 24
-- [git] git log --grep="notification" 
+- [git] 找到某關鍵字的 log history `git log --grep="notification"`
 
 ### 2023 05 12
 - [js] link script 參數 `async`, `defer` https://html.spec.whatwg.org/multipage/scripting.html  (參考示意圖)
