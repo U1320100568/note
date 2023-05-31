@@ -2,7 +2,7 @@
 - [aws] domain SSL certificate: ACM服務
 - [aws] 單獨測試AWS 推波 SNS > platform application (APP + apple or android) > endpoint(device token) > push msg > custom payload   
   (跟notification service 沒有關係)  
-  Payload: `notification`（google sdk 自己推） or `data`（由app 自己刻制） 選一個  
+  Payload: `notification`（google sdk 自己推，這個不會通知到app） or `data`（由app 自己刻制，app 的背景程式會聽到） 選一個  
 
 ### 2023 05 24
 - [git] 找到某關鍵字的 log history `git log --grep="notification"`
