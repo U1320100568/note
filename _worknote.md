@@ -1,3 +1,14 @@
+### 2023 06 14
+- [js] nullish `??` 判斷是否為 null undefined
+```
+(1) undefined ?? "123" = "123"
+(2) null ?? "123" = "123"
+(3) 0 ?? 22 = 0
+(4) "" ?? "123" = "" 
+```
+- [react] StrictMode 會 run twice，會造成clean up function 被觸發
+
+
 ### 2023 05 31
 - [aws] domain SSL certificate: ACM服務
 - [aws] 單獨測試AWS 推波 SNS > platform application (APP + apple or android) > endpoint(device token) > push msg > custom payload   
