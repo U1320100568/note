@@ -1,3 +1,6 @@
+### 2023 07 03
+- node 16  Cannot use import statement outside a module > 可在 script folder 加上 `package.json` `{ "type": "module" }`
+
 ### 2023 06 21
 - [infra] 近幾年可以`Lambda`(serverless) + `api gateway`(持續連線) 實作websocket，lambda 不用也無法處理connection  
   Ec2可以持續連線，但是一台機器無法handle 大量運算，如果5000同時搶購  
