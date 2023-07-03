@@ -1,5 +1,19 @@
 ### 2023 07 03
-- node 16  Cannot use import statement outside a module > 可在 script folder 加上 `package.json` `{ "type": "module" }`
+- node 16  `Cannot use import statement outside a module` > 可在 script folder 加上 `package.json` `{ "type": "module" }`
+- execa 要用 import `require is not defined in ES module scope`
+- execa.command 不能用的，直接用這個最簡單
+  ```
+  import {$} from "execa"
+  const $$ = $({stdio: "inherit});
+  $$`command here`
+  ```
+- 不能直接 require local json ` TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".json"`，可以下列方式解決
+  ```
+  import { createRequire } from 'module';
+  const require = createRequire(import.meta.url);
+  const exemple = require('./data/exemple.json');
+  ```
+  
 
 ### 2023 06 21
 - [infra] 近幾年可以`Lambda`(serverless) + `api gateway`(持續連線) 實作websocket，lambda 不用也無法處理connection  
