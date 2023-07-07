@@ -1,3 +1,10 @@
+### 2023 07 07 
+- CommonJS Module & ESModule
+  這是不同的js loader
+  - **Command Module**：舊的loader，`require` any module
+  - **ESModule**：較新，告訴loader 用es module 載入，自己的file 就可以用import module 的方式，這種狀況要定義自己的code 是 module，package.json {“type”: “module”}，在header掛 <script type=“module”/> 是一樣意思
+
+
 ### 2023 07 03
 - node 16  `Cannot use import statement outside a module` > 可在 script folder 加上 `package.json` `{ "type": "module" }`
 - execa 要用 import `require is not defined in ES module scope`
