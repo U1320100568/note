@@ -1,3 +1,15 @@
+### 2023 07 17
+- [android] publish signed app  
+  ![image](https://github.com/U1320100568/note/assets/35591116/4be795bd-1584-4b29-b9f7-c577534638dd)
+- `app signing key` 用來辨識能不能更新該app，重要不能丟失
+  - 2021/8 前自行管理，2021/8後由google plan管理在雲端，google 會自動產生
+- `upload key` 用來辨識上傳者是否可以上傳
+  - 第一次sign的key會成為指定upload key
+- upload key 不見可以重新產生，(1) 產生 keystore (2) 匯出 certificate (3) 上傳到 google console  
+  `keytool -export -rfc -keystore my-upload-key.keystore -alias my-key-alias -file public.cert`    
+  ps. 會覆蓋掉原本的
+
+
 ### 2023 07 07 
 - CommonJS Module & ESModule
   這是不同的js loader
