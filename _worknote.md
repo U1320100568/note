@@ -8,6 +8,7 @@
 - upload key 不見可以重新產生，(1) 產生 keystore (2) 匯出 certificate (3) 上傳到 google console  
   `keytool -export -rfc -keystore my-upload-key.keystore -alias my-key-alias -file public.cert`    
   ps. 會覆蓋掉原本的
+- reference https://developer.android.com/studio/publish/app-signing?hl=zh-tw#generate-key
 
 
 ### 2023 07 07 
