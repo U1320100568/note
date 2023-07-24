@@ -1,4 +1,18 @@
 ### 2023 07 17
+- [android][release] 客戶給 png 改副檔名 jpg，誤以為app icon，結果是所有的圖片
+- [android][release] android clean，會造成一些gradle找不到一些file，https://github.com/revtel/nfcbadge-app/commit/cb5e36bfbe4e38524c5a878ec784606ad09adb47，重新安裝並鎖版  
+- [android][release] google play 審查被拒含有permission QUERY_ALL_PACKAGES，https://stackoverflow.com/questions/70757094/this-permision-android-permission-query-all-packages-was-automatically-added-t  
+  add AndriodManifest.xml  
+  ```xml
+  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    ➕ xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.app">
+  ...
+  <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:node="remove" tools:ignore="QueryAllPackagesPermission" />
+  ```
+
+### 2023 07 17
 - [android] publish signed app  
   ![image](https://github.com/U1320100568/note/assets/35591116/4be795bd-1584-4b29-b9f7-c577534638dd)
 - `app signing key` 用來辨識能不能更新該app，重要不能丟失
