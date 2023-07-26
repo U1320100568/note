@@ -1,6 +1,6 @@
 ### 2023 07 17
 - [android][release] 客戶給 png 改副檔名 jpg，誤以為app icon，結果是所有的圖片
-- [android][release] android clean，會造成一些gradle找不到一些file，https://github.com/revtel/nfcbadge-app/commit/cb5e36bfbe4e38524c5a878ec784606ad09adb47 ，重新安裝並鎖版  
+- [android][release] android clean，會造成一些gradle resolve file error，https://github.com/revtel/nfcbadge-app/commit/cb5e36bfbe4e38524c5a878ec784606ad09adb47 ，重新安裝並鎖版  
 - [android][release] google play 審查被拒含有permission QUERY_ALL_PACKAGES，https://stackoverflow.com/questions/70757094/this-permision-android-permission-query-all-packages-was-automatically-added-t  
   add AndriodManifest.xml  
   ```xml
