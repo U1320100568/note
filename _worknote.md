@@ -1,3 +1,10 @@
+### 2023 07 26
+- seo 重點
+  - url path
+  - header title
+  - h1
+  - other website Sited	
+
 ### 2023 07 17
 - [android][release] 客戶給 png 改副檔名 jpg，誤以為app icon，結果是所有的圖片
 - [android][release] android clean，會造成一些gradle resolve file error，https://github.com/revtel/nfcbadge-app/commit/cb5e36bfbe4e38524c5a878ec784606ad09adb47 ，重新安裝並鎖版  
