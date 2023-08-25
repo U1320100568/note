@@ -1,5 +1,22 @@
+### 2023 08 25
+- [rjsf] string in array validate error `must be string` transform to nullable 
+  ```diff
+    "a": {
+      "type": "array",
+      "items": [
+        {
+  -       "type": "string"
+  +       "type": [
+  +         "string",
+  +         "null"
+  +       ]
+        }
+      ]
+    },
+  ```
+
 ### 2023 07 26
-- seo 重點
+- [seo] 重點
   - url path
   - header title
   - h1
