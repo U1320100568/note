@@ -1,3 +1,8 @@
+### 2023 08 31
+- [react-native]animated 搭配 safeareaview(react-native) 在全螢幕的手機(iphone8 不會)會一直震動，變lag，最後會當機
+  - 用react-native-safe-area-context 的 safeareaview or 固定 safearea 高度
+  - https://stackoverflow.com/a/66172684
+
 ### 2023 08 25
 - [rjsf] string in array validate error `must be string` transform to nullable 
   ```diff
