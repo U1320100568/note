@@ -1,4 +1,24 @@
 ### 2023 08 31
+- react-navigation modal
+  ```
+  <RootStack.Screen name="RelatedProduct" component={RelatedProduct} options={{ cardStyle: { backgroundColor: 'transparent', opacity: 0.99 }, presentation: 'transparentModal' }} />
+  ...
+  backdrop: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'flex-end',
+  },
+  container: {
+    height: '90%',
+    width: '100%',
+    backgroundColor: '#fff',
+    borderTopLeftRadius: 16,
+    borderTopRightRadius: 16,
+    shadowOffset: {height: -2},
+  },
+  ```
+
+### 2023 08 31
 - [react-native]animated 搭配 safeareaview(react-native) 在全螢幕的手機(iphone8 不會)會一直震動，變lag，最後會當機
   - 用react-native-safe-area-context 的 safeareaview or 固定 safearea 高度
   - https://stackoverflow.com/a/66172684
