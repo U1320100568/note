@@ -24,7 +24,8 @@
 - ARecord(name to ip): hwh.com -> 192.0...1
   通常設定為root domain: `hwh.com` or load-balance root
   ps. 有時設定custom domain in netlify project，有warning `Check Configuration`，可取得ip，填入 domains 設定即可。
-- MX(mail transaction): `xx@hwh.com` -> `xx@gmail.com`
+- MX(mail transaction): `xx@hwh.com` -> `xx@gmail.com` 指定郵件伺服器接收該域名的電子郵件
+- TXT: 用於驗證域名的身份和提供額外的配置信息
 
 ## netlify serve application or CDN
 - 如果再aws CDN代管，拿到ARecord ip，設定到aws route53
