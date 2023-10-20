@@ -10,6 +10,12 @@
   
 ② 填回去godaddy 設定 > 網域伺服器 > DNS 設定（告訴godaddy 這 domain 是netlify 哪些dns代管，並且導過去），有多個name servers可能是因為分流。  
   
+
+## DNS(Domain Name System) & Name Server  
+- DNS: 用來管理域名 & ip關係，browser輸入domain，透過DNS找到確切的ip
+- Name server: DNS 的伺服器，紀錄了不同紀錄對應的網路或ip，CNAME、MX、TXT...
+- 如果DNS要在別的服務商管理，就必須把網域供應商的Name server 指向服務商
+
   
 ## Record 類型
 在DNS 代管設定 records
