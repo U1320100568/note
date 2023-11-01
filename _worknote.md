@@ -1,3 +1,7 @@
+### 2023 11 01
+- [mongo] nest search { a: { age: 12, name: "andy" } } 這種寫法要完全相等； { "a.age": 12} 這種寫法可以 partial search
+- [mongo] array search 要用 `$elemMatch`
+
 ### 2023 08 31
 - react-navigation modal
   ```
