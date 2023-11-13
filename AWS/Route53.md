@@ -10,12 +10,19 @@
 # DNS Domain Name System:
 - 存在一些網域紀錄：a record, cname record, mx record(email)
 
+# 實際操作
+1. created hosted zone, hosted zone name 和 cloudfront 名稱一樣 like xxx.com
+2. record type = `A`, and turn on alias
+3. 選擇 `Alias to CloudFrontDistribution` 會自動連結至 cloudfront distribution
+
+
 # 題外：網域解析 domain lookup
 - 瀏覽器詢問某domain 會看緩存（瀏覽器、本機、路由器、城市路由器、總路由器）
 - 逐個上去看哪些地方有存在此domain 對應 ip
 - 如果都找不到就會去網域管理機構問name server在哪
 - 再到name server 取得ip
 - 找到ip 就會可以去web server 取得document
+
 
 ### reference
 https://www.wpandseo.tw/46/self-media-dns-introduction/
