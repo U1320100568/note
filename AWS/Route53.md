@@ -11,10 +11,17 @@
 - 存在一些網域紀錄：a record, cname record, mx record(email)
 
 # 實際操作
+### route53 associate to cloudfront
 1. created hosted zone, hosted zone name 和 cloudfront 名稱一樣 like xxx.com
 2. record type = `A`, and turn on alias
 3. 選擇 `Alias to CloudFrontDistribution` 會自動連結至 cloudfront distribution
-
+### 託管 DNS
+1. 將建立的 route 53 detail name servers 4筆 `ns-xxx` 貼到 goddady(or 其他registration) Name server 設定(注意 ns 最後面的 `.` 要移除)
+### 驗證 email 網域
+1. 前往google admin(需購買google workspace)
+2. in google, 網域驗證 > 建立帳號時，會有一組txt record，新增至route53 record type = txt
+3. 驗證 mail server > 複製 mx record
+4. 新增一筆route53 record: type = mx record, 5條都貼在同一筆 record value
 
 # 題外：網域解析 domain lookup
 - 瀏覽器詢問某domain 會看緩存（瀏覽器、本機、路由器、城市路由器、總路由器）
