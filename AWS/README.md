@@ -4,5 +4,5 @@
 3. route53
 4. ACM
 
-<img src="./AWS/截圖 2021-11-26 下午5.02.11.png"/>
+<img src="./image-1.png"/>
  
