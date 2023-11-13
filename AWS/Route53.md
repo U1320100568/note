@@ -17,6 +17,7 @@
 3. 選擇 `Alias to CloudFrontDistribution` 會自動連結至 cloudfront distribution
 ### 託管 DNS
 1. 將建立的 route 53 detail name servers 4筆 `ns-xxx` 貼到 goddady(or 其他registration) Name server 設定(注意 ns 最後面的 `.` 要移除)
+- godaddy 託管大概1hr, pchome 24~48hr
 ### 驗證 email 網域
 1. 前往google admin(需購買google workspace)
 2. in google, 網域驗證 > 建立帳號時，會有一組txt record，新增至route53 record type = txt, like `google-site-verification=xxxx` (若已完成驗證會找不到 txt record，只好重新驗證)
