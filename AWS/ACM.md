@@ -1,0 +1,4 @@
+- Fully qualified domain name: `*.xxx.com` `xxx.com`
+- Validation method: DNS validation - recommended
+- Key algorithm: 預設 (uncertain)
+- 一鍵產生 records in Route53 cname record
