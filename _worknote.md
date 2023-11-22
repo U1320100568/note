@@ -1,9 +1,14 @@
+### 2023 11 22
+- [mongo] projection 可以帶 nested `"store.name": 1`
+- [mongo] projection 要用全部都是 1 positive 或全部都是 0 nagetive
+- [js] toLocaleString(‘sv’, { hour12: false })  有時候系統會預設帶true 就會變成 “yyyy-MM-dd HH:mm:ss fm” (ios)
+
 ### 2023 11 01
 - [mongo] nest search { a: { age: 12, name: "andy" } } 這種寫法要完全相等； { "a.age": 12} 這種寫法可以 partial search
 - [mongo] array search 要用 `$elemMatch`
 
 ### 2023 08 31
-- react-navigation modal
+- [react-native] react-navigation modal
   ```
   <RootStack.Screen name="RelatedProduct" component={RelatedProduct} options={{ cardStyle: { backgroundColor: 'transparent', opacity: 0.99 }, presentation: 'transparentModal' }} />
   ...
