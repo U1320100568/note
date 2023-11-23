@@ -2,6 +2,11 @@
 - [mongo] projection 可以帶 nested `"store.name": 1`
 - [mongo] projection 要用全部都是 1 positive 或全部都是 0 nagetive
 - [js] toLocaleString(‘sv’, { hour12: false })  有時候系統會預設帶true 就會變成 “yyyy-MM-dd HH:mm:ss fm” (ios)
+- [mongo] ObjectId 結構
+  - `655d9dc5621f706268b43472` ( 24 digit hex = 2^4 x 24  = 2^8 x 12 =  12 bytes
+  - `655d9dc5` `621f706268` `b43472` ( 4 bytes timestamp + 5 bytes random value + 3 byte  incrementing counter
+  - This is unix timestamp format need to x 1000ms
+  - `655d9dc5` > hex to decimal x 1000 > `Wed Nov 22 2023 14:20:53 GMT+0800 (台北標準時間)`
 
 ### 2023 11 01
 - [mongo] nest search { a: { age: 12, name: "andy" } } 這種寫法要完全相等； { "a.age": 12} 這種寫法可以 partial search
