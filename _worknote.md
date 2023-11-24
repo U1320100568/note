@@ -7,6 +7,10 @@
   - `655d9dc5` `621f706268` `b43472` ( 4 bytes timestamp + 5 bytes random value + 3 byte  incrementing counter
   - This is unix timestamp format need to x 1000ms
   - `655d9dc5` > hex to decimal x 1000 > `Wed Nov 22 2023 14:20:53 GMT+0800 (台北標準時間)`
+- [js][react-native]
+  - android Date constructor 和 web nodejs 不一樣，一定要new Date('2024-11-11T14:00:00+08:00') 最保險
+  - android Date().toLocaleString('sv') 不會有期望的格式，所以用getFullMonth 之類的處理
+  
 
 ### 2023 11 01
 - [mongo] nest search { a: { age: 12, name: "andy" } } 這種寫法要完全相等； { "a.age": 12} 這種寫法可以 partial search
