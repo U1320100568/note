@@ -9,7 +9,8 @@ ps. 注意scheme 不是run release mode
 測試rebuild、重開Xcode、`R` hotkey reload都沒用  
 
 解決方式：
-- 關掉app，重新開啟app，不要用xcode觸發，不要用 `R` hotkey
-
+```
+關掉app，重新開啟app，不要用xcode觸發，不要用 `R` hotkey
+```
 
   
