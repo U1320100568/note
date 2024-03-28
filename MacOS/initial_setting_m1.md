@@ -43,3 +43,4 @@ react-native ios in m1 error
   - Xcode cannot initial nsarray，新rn可解決，就rn可以workaround https://github.com/facebook/react-native/issues/31412
   - React-native-apple-authentication Duplicate interface https://github.com/invertase/react-native-apple-authentication/issues/130
   - fire-base 似乎還沒支援m1 所以用rosseta 開Xcode https://stackoverflow.com/a/65744082/13797221
+
