@@ -15,7 +15,7 @@
 - customize zsh, for example, add `export PS1='%1d $ '` into `~/.zshrc` [link](https://superuser.com/questions/1108413/zsh-prompt-with-current-working-directory/1108504)
 - install XCode (because it will take a long time to download)
   * then, make sure `Command Line Tools` is installed (Preference -> Locations)
-- install Cocoapad `brew install cocoapods`
+- install Cocoapad `sudo gem install cocoapods`
 - install Android studio (find the M1 version)
   * remember to open SDK manager and download related sdk / sdk build tools
 - react native specific [link](https://reactnative.dev/docs/environment-setup)
