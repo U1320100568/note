@@ -8,7 +8,7 @@
     |-- stackNested2  
     └-- stackNested3
 ```
-```
+```js
 // navigate
 navigation.navigate('stackB', {screen: 'stackNested3'}) // go back will be stackNested1
 navigation.navigate('stackB', {screen: 'stackNested3', initial: false}) // go back will be stackNested2
