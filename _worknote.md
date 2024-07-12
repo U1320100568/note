@@ -1,7 +1,7 @@
 ### 2024 07 12
 - [git] `git fetch origin pull/{num}/head:{local branch name}`  
   想要把別人的fork(PR回自己的repo)拉到我電腦的local做測試，並且改一個branch name
-- [shell] homebrew unlink {tool_name}
+- [shell] homebrew unlink {tool_name}  
   例如homebrew自己裝了node，和n裝的node發生衝突，那就解除連結，shell找不到就會找回n裝的（不要自行修改環境變數）
 
 
