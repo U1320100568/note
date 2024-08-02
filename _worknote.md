@@ -1,3 +1,17 @@
+### 2024 08 02
+- [react-native] react native paper v5
+  - based on Google’s Material Design guidelines and provides components
+  - Color system : 26+ color roles mapped to Material Components
+    <img src="https://firebasestorage.googleapis.com/v0/b/design-spec/o/projects%2Fgm3sandbox%2Fimages%2Fln4letb9-all-color-roles-diagram.png?alt=media&token=020eaf3d-36bb-477a-8c6c-b588ace2b073"/>
+    - 選擇一種產生 color system  
+    - 1. [Figma MD3 build tool](https://www.figma.com/community/plugin/1034969338659738588/material-theme-builder) : 上傳一張圖片或者輸入key colors，產生自己app的color system，可以從plugin 匯出 json（注意 ）
+    - 2. [react-native-paper tool](https://callstack.github.io/react-native-paper/docs/guides/theming#creating-dynamic-theme-colors) : 輸入 key colors 產生color system
+    - react-native-paper theme.colors = {} 可以設定（可由上面json copy）
+    - 需注意產生出來的 key color會自動調整色調、彩度，從Button mode="contain" 就可以明顯看出
+  - [Surface colors](https://m3.material.io/styles/elevation/overview#31b94605-a9fc-4b16-b494-23a42cd6a26f): md3 用不同深淺的來區分 0 ~ 5  elevation (md2 是用陰影區分) ，雖然 react native paper surface 是結合兩種
+  - Typography 字體 分成5種roles: display, headline, title, body, label 每種角色各分成 small, medium, large
+
+
 ### 2024 07 12
 - [git] `git fetch origin pull/{num}/head:{local branch name}`  
   想要把別人的fork(PR回自己的repo)拉到我電腦的local做測試，並且改一個branch name
