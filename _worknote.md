@@ -7,7 +7,7 @@
     - 1. [Figma MD3 build tool](https://www.figma.com/community/plugin/1034969338659738588/material-theme-builder) : 上傳一張圖片或者輸入key colors，產生自己app的color system，可以從plugin 匯出 json（注意 ）
     - 2. [react-native-paper tool](https://callstack.github.io/react-native-paper/docs/guides/theming#creating-dynamic-theme-colors) : 輸入 key colors 產生color system
     - react-native-paper theme.colors = {} 可以設定（可由上面json copy）
-    - 需注意產生出來的 key color會自動調整色調、彩度，從Button mode="contain" 就可以明顯看出
+    - 若對比不夠的話，需注意產生出來的 key color會自動調整色調、彩度，從Button mode="contain" 就可以明顯看出
   - [Surface colors](https://m3.material.io/styles/elevation/overview#31b94605-a9fc-4b16-b494-23a42cd6a26f): md3 用不同深淺的來區分 0 ~ 5  elevation (md2 是用陰影區分) ，雖然 react native paper surface 是結合兩種
   - Typography 字體 分成5種roles: display, headline, title, body, label 每種角色各分成 small, medium, large
 
