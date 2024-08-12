@@ -1,3 +1,13 @@
+### 2024 08 12
+- 做了new feature and pull request 已經 merge準備上線，客戶突然說新功能先暫緩，要怎麼還原commit呢？
+- [git] 1.第一步 revert a PR merge ，注意看merge commit 會有兩個 parent commit，可以 log 看一下要回復成哪一個
+  - new branch
+  - `git revert 8f937c6 -m 1` 第一個parent，多數情況是這種，回復成原本的tree
+  - `git revert 8f937c6 -m 2` 第二個parent，要reinstate the tree
+- [git] 2.第二步 revert the revert
+  - new branch
+  - git revert <revert-commit-hash>
+
 ### 2024 08 02
 - [react-native] react native paper v5
   - based on Google’s Material Design guidelines and provides components
