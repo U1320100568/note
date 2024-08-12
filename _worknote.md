@@ -6,7 +6,7 @@
   - `git revert 8f937c6 -m 2` 第二個parent，要reinstate the tree
 - [git] 2.第二步 revert the revert
   - new branch
-  - git revert <revert-commit-hash>
+  - `git revert <revert-commit-hash>`
 
 ### 2024 08 02
 - [react-native] react native paper v5
