@@ -6,6 +6,7 @@
   - SOLUTION: import 全名包含副檔名 `import {req} from '../../Utils/ApiUtil';` -> `import {req} from '../../Utils/ApiUtil.js';`
   - **ERROR**: `TypeError [ERR_IMPORT_ASSERTION_TYPE_MISSING]: Module "xx../data.json" needs an import attribute of type "json"`
   - SOLUTION: `import Config from '../../../data.json' with { type: "json" };`
+  - 但是在run develop with type json 會error，改用 `npm install -D esm` & `node -r esm xxx.js`
 
 ### 2024 08 12
 - 做了new feature and pull request 已經 merge準備上線，客戶突然說新功能先暫緩，要怎麼還原commit呢？
