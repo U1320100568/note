@@ -1,4 +1,13 @@
 ### 2024 08 12
+- [node] node 18 test file 
+  - **ERROR**: `Cannot use import statement outside a module`
+  - SOLUTION: package.json { "type": "module" } 包含 import 的檔案也要
+  - **ERROR**: `[ERR_MODULE_NOT_FOUND]: Cannot find module 'xxx..' imported from xxx...`
+  - SOLUTION: import 全名包含副檔名 `import {req} from '../../Utils/ApiUtil';` -> `import {req} from '../../Utils/ApiUtil.js';`
+  - **ERROR**: `TypeError [ERR_IMPORT_ASSERTION_TYPE_MISSING]: Module "xx../data.json" needs an import attribute of type "json"`
+  - SOLUTION: `import Config from '../../../data.json' with { type: "json" };`
+
+### 2024 08 12
 - 做了new feature and pull request 已經 merge準備上線，客戶突然說新功能先暫緩，要怎麼還原commit呢？
 - [git] 1.第一步 revert a PR merge ，注意看merge commit 會有兩個 parent commit，可以 log 看一下要回復成哪一個
   - new branch
