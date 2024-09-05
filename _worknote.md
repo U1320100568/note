@@ -1,3 +1,17 @@
+### 2024 09 05
+- [mongodb] date type on playground `ISODate('2024-09-05')` or `ISODate()`, on js `{$toDate: new Date().toISOString()}`
+- [mongodb] aggragate $match compare (gt, eq...) 要用 `$expr`, ex. `$match: { $expr: { $gt: [$field1, $field2] } }`
+- [mongodb] aggregate compare to date string like 2024-09-05 11:00:00, use $dateToString convert date to string. ex.
+  ```
+  {
+    $dateToString: {
+      date: {$toDate: end_time.toISOString()},
+      format: '%Y-%m-%d %H:%M:%S',
+    },
+  },
+  ```
+
+
 ### 2024 08 12
 - [node] node 18 test file 
   - **ERROR**: `Cannot use import statement outside a module`
@@ -6,10 +20,11 @@
   - SOLUTION: import 全名包含副檔名 `import {req} from '../../Utils/ApiUtil';` -> `import {req} from '../../Utils/ApiUtil.js';`
   - **ERROR**: `TypeError [ERR_IMPORT_ASSERTION_TYPE_MISSING]: Module "xx../data.json" needs an import attribute of type "json"`
   - SOLUTION: `import Config from '../../../data.json' with { type: "json" };`
-  - 但是在run develop with type json 會error，改用 `npm install -D esm` & `node -r esm xxx.js`
+- [node] 但是在run develop with type json 會error，改用 `npm install -D esm` & `node -r esm xxx.js`
+
 
 ### 2024 08 12
-- 做了new feature and pull request 已經 merge準備上線，客戶突然說新功能先暫緩，要怎麼還原commit呢？
+- [git] 做了new feature and pull request 已經 merge準備上線，客戶突然說新功能先暫緩，要怎麼還原commit呢？
 - [git] 1.第一步 revert a PR merge ，注意看merge commit 會有兩個 parent commit，可以 log 看一下要回復成哪一個
   - new branch
   - `git revert 8f937c6 -m 1` 第一個parent，多數情況是這種，回復成原本的tree
