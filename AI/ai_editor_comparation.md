@@ -4,3 +4,4 @@
 ### copilot
 create file x
 inital component and import library v
+navigate to 3 screen refer to appnavigator x
