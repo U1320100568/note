@@ -2,6 +2,8 @@
 ### pos cart refactor [Cart.js](./Cart.js)
 
 ### copilot
-create file x
-inital component and import library v
-navigate to 3 screen refer to appnavigator x
+❎ create file  
+✅ inital component and import library  
+❎ navigate to 3 screen refer to appnavigator  
+✅ 2 row with switch and label is , 額外產生和其他component 一樣的bottom action buttons  
+❎ auto import   
