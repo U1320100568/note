@@ -1,3 +1,7 @@
+### 2024 09 18
+- [react-native] widget 在 ios 視為另一個小app，要另外產生Target & app identifier，android 就是在 內部了
+- [react-native][ios] app & widget 或是 app & app 間傳遞資料，需勾選permission `App Group`，並且使用 `User Identity`?? 分享資料
+
 ### 2024 09 05
 - [mongodb] date type on playground `ISODate('2024-09-05')` or `ISODate()`, on js `{$toDate: new Date().toISOString()}`
 - [mongodb] aggragate $match compare (gt, eq...) 要用 `$expr`, ex. `$match: { $expr: { $gt: [$field1, $field2] } }`
