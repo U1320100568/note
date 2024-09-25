@@ -1,3 +1,12 @@
+### 2024 09 25
+- [encrypt] 非對稱加密，適於組織對個體這類的階級關係，適用於大部分狀況，有兩種應用
+  - 組織以私鑰加密，個體以公鑰驗證資料正確度
+  - 個體以公鑰加密資料給組織，過程中其他人無法解開，組織以私鑰解開
+- [encrypt] certificate 證書，包含 metadata(content) + signature (簽名)
+  - sign by key，會產生一段signature
+  - 像jwt token 就類似一種 certificate，metadata以json格式儲存，可decode觀察metadata，及驗證signature by 公鑰
+    
+  
 ### 2024 09 18
 - [react-native] widget 在 ios 視為另一個小app，要另外產生Target & app identifier，android 就是在 內部了
 - [react-native][ios] app & widget 或是 app & app 間傳遞資料，需勾選permission `App Group`，並且使用 `User Identity`?? 分享資料
