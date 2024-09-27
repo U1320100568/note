@@ -1,3 +1,9 @@
+### 2024 09 27
+- [npm][release-it] `"release": "npm run build && dotenv release-it --"` in package.json scripts
+  - `npm run release` 平常使用的自動升級 minor version
+  - `npm run release major` 就會自動升2.x
+  - 補充：可加上 `--preRelease=beta` 版本補上beta版 2.x.x-beta.0 ( 可改成 alpha, rc 不同先行版，也可單獨升級先行版號)
+
 ### 2024 09 25
 - [encrypt] 非對稱加密，適於組織對個體這類的階級關係，適用於大部分狀況，有兩種應用
   - 組織以私鑰加密，個體以公鑰驗證資料正確度
