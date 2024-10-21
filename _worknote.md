@@ -1,3 +1,11 @@
+### 2024 10 21
+- [react-native] `reanimated + react-native-svg` 可以畫出跑馬燈、progress circle
+- [react-native] `react-native-svg` 可以畫出漸層色
+- [react-native-reanimated]
+- 將component 改造成 `createAnimatedComponent`
+- `useSharedValue` like `new Animated.Value`, `useDerivedValue` like `useMemo` but depends on  useSharedValue, `withTiming` like `Animated.timing`
+- `useAnimatedProps, useAnimatedStyle` 產生動畫變量的參數套用在 component 上
+
 ### 2024 09 27
 - [npm][release-it] `"release": "npm run build && dotenv release-it --"` in package.json scripts
   - `npm run release` 平常使用的自動升級 minor version
