@@ -10,7 +10,7 @@
 
   - Base64 to Blob
     1. atob(base64) return ACSII string
-    2. 逐個字元 string.charCodeAt(n) 放到 Uint8Array
+    2. 逐個字元 string.charCodeAt(n) 放到 Uint8Array ，取得code point 嗎？官方文件寫UTF-16 code unit value（待驗證）
     3. new Blob by Uint8Array
     
     
