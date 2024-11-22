@@ -1,3 +1,20 @@
+### 2024 11 22
+- objectURL / DataURL / UINT8Array
+  - 前提：chrome 會阻擋陌生的 media url preview, or download attribute，可使用`fetch.blob` `createDataUrl` 取得可過關的url download
+    
+    | - | createObjectUrl | readAsDataURL |
+    | - | - | - |
+    | input | `Blob` `File` | `Blob` `File` |
+    | output | 內存URL | base64 string |
+    | clean | 存在document，clean by upload() or revokeObjectUrl 多次使用須注意內存釋放 | auto clean by js mechanism
+
+  - Base64 to Blob
+    1. atob(base64) return ACSII string
+    2. 逐個字元 string.charCodeAt(n) 放到 Uint8Array
+    3. new Blob by Uint8Array
+    
+    
+
 ### 2024 10 21
 - [react-native] `reanimated + react-native-svg` 可以畫出跑馬燈、progress circle
 - [react-native] `react-native-svg` 可以畫出漸層色
