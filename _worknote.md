@@ -12,7 +12,7 @@
   - `ArrayBuffer` 是 Byte Array，宣告一段長度的記憶體空間，js不允許直接操作，**一個單元是 Byte**
   - `DataView` & `TypedArray`(Uint8Array, Uint16Array...) 是操作這段記憶體的介面
   - DataView 是有多種類型讀寫能力、但一次只能讀寫一個數字（例：`getInt8`, `getInt32`）
-  - TypedArray 是只能使用一種類型讀寫，但可以一次讀寫多個數字，單元由contructor決定
+  - TypedArray 是只能使用一種類型讀寫，但可以一次讀寫多個數字，**單元由contructor決定**
   - Uint8Array(3) = 8 bits * 3 = 1 byte * 3 
   - Uint32Array(3) = 32 bits * 3 = 4 bytes * 3
   - 測驗1  
