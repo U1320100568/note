@@ -8,8 +8,27 @@
     | output | 內存URL | base64 string |
     | clean | 存在document，clean by upload() or revokeObjectUrl 多次使用須注意內存釋放 | auto clean by js mechanism
 
-  - Base64 to Blob
-    1. atob(base64) return ACSII string
+- ArrayBuffer / Uint8Array
+  - `ArrayBuffer` 是 Byte Array，宣告一段長度的記憶體空間，js不允許直接操作，**一個單元是 Byte**
+  - `DataView` & `TypedArray`(Uint8Array, Uint16Array...) 是操作這段記憶體的介面
+  - DataView 是有多種類型讀寫能力、但一次只能讀寫一個數字（例：`getInt8`, `getInt32`）
+  - TypedArray 是只能使用一種類型讀寫，但可以一次讀寫多個數字，單元由contructor決定
+  - Uint8Array(3) = 8 bits * 3 = 1 byte * 3 
+  - Uint32Array(3) = 32 bits * 3 = 4 bytes * 3
+  - 測驗1  
+  <img src="https://blog.artyomliou.ninja/wp-content/uploads/2023/01/20230103-arraybuffer-1024x336.jpg" width="100%"></img>
+  - 測驗2  
+  ```js
+  var buf = new ArrayBuffer(12)
+  var view = new Uint32Array(buf)
+  console.log(view.byteOffset , view.byteLength , view.buffer.byteLength , view.length)
+  var sub = view.subarray(2)
+  console.log(sub.byteOffset , sub.byteLength , sub.buffer.byteLength , sub.length)
+  ```
+  - ref: https://blog.artyomliou.ninja/2023/01/js-%E7%9A%84-arraybuffer%E3%80%81uint8array%E3%80%81dataview%E3%80%81buffer-%E4%B9%8B%E9%96%93%E7%9A%84%E9%97%9C%E4%BF%82/ 
+
+- Base64 to Blob
+    1. `atob(base64)` return ACSII string (注：atob 是將base64解碼成ascii string)
     2. 逐個字元 string.charCodeAt(n) 放到 Uint8Array ，取得code point 嗎？官方文件寫UTF-16 code unit value（待驗證）
     3. new Blob by Uint8Array
     
