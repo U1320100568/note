@@ -1,6 +1,9 @@
+### 2024 12 11
+- [js] bitwise 
+
 ### 2024 11 22
-- objectURL / DataURL / UINT8Array
-  - 前提：chrome 會阻擋陌生的 media url preview, or download attribute，可使用`fetch.blob` `createDataUrl` 取得可過關的url download
+- [js] objectURL / DataURL / UINT8Array
+  - 前提：chrome 會阻擋陌生的 media url preview, or download attribute，可使用`fetch.blob` & `createDataUrl` 取得可過關的url download
     
     | - | createObjectUrl | readAsDataURL |
     | - | - | - |
@@ -8,7 +11,7 @@
     | output | 內存URL | base64 string |
     | clean | 存在document，clean by upload() or revokeObjectUrl 多次使用須注意內存釋放 | auto clean by js mechanism
 
-- ArrayBuffer / Uint8Array
+- [js] ArrayBuffer / Uint8Array
   - `ArrayBuffer` 是 Byte Array，宣告一段長度的記憶體空間，js不允許直接操作，**一個單元是 Byte**
   - `DataView` & `TypedArray`(Uint8Array, Uint16Array...) 是操作這段記憶體的介面
   - DataView 是有多種類型讀寫能力、但一次只能讀寫一個數字（例：`getInt8`, `getInt32`）
