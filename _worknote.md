@@ -1,5 +1,5 @@
 ### 2024 12 11
-- [js] bitwise 
+- [js] bitwise `(dur / 3600) | 0` 其中的 `|` 是bitwise or，利用這特性將小數點去除的延伸用法，相當於 parseInt
 
 ### 2024 11 22
 - [js] objectURL / DataURL / UINT8Array
