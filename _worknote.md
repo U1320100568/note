@@ -1,7 +1,8 @@
 ### 2024 12 18
 - [js] CommonJS `module.exports` `require` nodejs預設，運行時載入模組，全局作用域
 - [js] ESModule `export` `import` 瀏覽器預設，可混用CommonJS
-- [nodejs] express 之前是用 http.server 
+- [nodejs] 可用 built-in library `http.createServer`，也可以用 `express` 輕量化的framework
+  - 測試server: 開瀏覽器、`curl`
 
 ### 2024 12 11
 - [js] bitwise `(dur / 3600) | 0` 其中的 `|` 是bitwise or，利用這特性將小數點去除的延伸用法，相當於 parseInt
