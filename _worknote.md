@@ -3,6 +3,7 @@
 - [js] ESModule `export` `import` 瀏覽器預設，可混用CommonJS
 - [nodejs] 可用 built-in library `http.createServer`，也可以用 `express` 輕量化的framework
   - 測試server: 開瀏覽器、`curl`
+  - 可以以ejs 實作MVC的view, db 連線放在Model的部分（當然db connect 還是放在server.listen）
 
 ### 2024 12 11
 - [js] bitwise `(dur / 3600) | 0` 其中的 `|` 是bitwise or，利用這特性將小數點去除的延伸用法，相當於 parseInt
