@@ -10,5 +10,9 @@ RUN
 docker run --name some-mongo -d mongo:tag
 ```
 
-get connection string
+### Get connection string
+一開始建立時，預設可隨意登入
+```
+mongodb://localhost:27017
+```
 
