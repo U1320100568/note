@@ -15,6 +15,7 @@
     const document = parser.parseFromString(html, "text/html");
     document.querySelectorAll();
     ```
+- [node][express] app.get vs. app.use: get 特定route的處理，use middleware before arrive route
 
 ### 2024 12 11
 - [js] bitwise `(dur / 3600) | 0` 其中的 `|` 是bitwise or，利用這特性將小數點去除的延伸用法，相當於 parseInt
