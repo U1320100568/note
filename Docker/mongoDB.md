@@ -10,9 +10,22 @@ RUN
 docker run --name some-mongo -d mongo:tag
 ```
 
-### Get connection string
+### Compass with connection string 
 一開始建立時，預設可隨意登入
 ```
 mongodb://localhost:27017
 ```
 
+### Bash in Terminal
+```bash
+docker exec -it test-mongo mongosh
+# in mongosh below
+# switch db or create new db
+use {db name}
+# create collection
+db.createCollection("{name}");
+# insert
+db.{collection}.insert({...})
+# query
+db.{collection}.find();
+```
