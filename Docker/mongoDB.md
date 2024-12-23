@@ -29,3 +29,6 @@ db.{collection}.insert({...})
 # query
 db.{collection}.find();
 ```
+
+### connect in nodejs
+[example](https://github.com/U1320100568/note/blob/master/Mongo/Nodejs_connection.md)
