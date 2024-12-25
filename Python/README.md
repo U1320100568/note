@@ -41,6 +41,6 @@ if __name__ == "__main__":
   - next 第一個參數是generator，第二個參數可以帶入找不到的預設值 None，利用這個特性實現 js `.find`，若直接在找不到會 Error out of range
   - 相當於 `next(iter([it[1] for it in cmds if it[0] == action]), None)`
 - `("get_ppe", get_ppe)` Tuple
-- `print(f"{cmd[0]}:\t{str(inspect.signature(cmd[1]))}")` f"{variable}" 相當於 ``${varianble}``
+- `print(f"{cmd[0]}:\t{str(inspect.signature(cmd[1]))}")` f"{variable}" 相當於 `${varianble}`
 - `len()` 類似這種的global function，是會呼叫該物件的 len method，所以只要物件有就call得到
 
