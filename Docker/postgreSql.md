@@ -15,7 +15,7 @@ docker run --name test-postgres -p 5432:5432 -e POSTGRES_PASSWORD=123 -d postgre
 docker ps -a
 ```
 
-# 進入SQL via bash
+# 連線方式一：進入SQL via bash
 在container 裡環境跑bash：
 ```bash
 docker exec -it test-postgres bash
@@ -34,6 +34,12 @@ psql -U postgres
 ```
 \du
 ```
+  
+# 連線方式二：VSCODE SQL TOOLS
+https://www.rebellionrider.com/connect-postgresql-with-vs-code/  
+- install postgres driver at vscode market
+- create connect file (Connect using Server and Port) (password which is created container)
+
   
 # SQL 
 create DB:  
