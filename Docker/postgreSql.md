@@ -1,5 +1,5 @@
-[strapi with postgres](https://medium.com/dogus-tech-digital-solutions/creating-strapi-app-with-postgresql-e22f00d48b04)
-[docker postgres offical](https://hub.docker.com/_/postgres)
+- [strapi with postgres](https://medium.com/dogus-tech-digital-solutions/creating-strapi-app-with-postgresql-e22f00d48b04)
+- [docker postgres offical](https://hub.docker.com/_/postgres)
 
 # Docker
 啟動 container
@@ -15,6 +15,6 @@ docker run --name test-postgres -p 5432:5432 -e POSTGRES_PASSWORD=123 -d postgre
 docker ps -a
 ```
 
-連線方式＋SQL語法
-https://github.com/U1320100568/note/blob/master/PostgreSql/README.md
+# 連線方式＋SQL語法  
+https://github.com/U1320100568/note/blob/master/PostgreSql/README.md  
   
