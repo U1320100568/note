@@ -44,7 +44,7 @@ if __name__ == "__main__":
 - `print(f"{cmd[0]}:\t{str(inspect.signature(cmd[1]))}")` f"{variable}" 相當於 `${varianble}`
 - `len()` 類似這種的global function，是會呼叫該物件的 len method，所以只要物件有就call得到
 
-```
+```python
 import sys
 import os
 import secrets
