@@ -55,6 +55,9 @@ https://www.rebellionrider.com/connect-postgresql-with-vs-code/
 - create connect file (Connect using Server and Port) (password which is created container)
 
 ### 連線方式3：connection via node js 
+注意：實務上，會用 Pool of pg，管理多個client，而非 Client    
+注意：直接下raw SQL都要注意injection 的問題
+  
 ```js
 const express = require("express");
 const { Client } = require("pg");
