@@ -55,7 +55,7 @@ https://www.rebellionrider.com/connect-postgresql-with-vs-code/
 - create connect file (Connect using Server and Port) (password which is created container)
 
 ### 連線方式3：connection via node js 
-```
+```js
 const express = require("express");
 const { Client } = require("pg");
 
@@ -136,7 +136,7 @@ CREATE DATABASE db_name;
 進入到新的DB test，會看到command prompt 呈現 `test-# `  
   
 建立table  
-```
+```sql
 CREATE TABLE food (
    name varchar(80),
    price int 
