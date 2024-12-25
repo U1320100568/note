@@ -35,6 +35,12 @@ psql -U postgres
 \du
 ```
   
+建立user(共用則不需再建立)   
+```sql
+CREATE ROLE chris WITH LOGIN PASSWORD 'password';
+ALTER ROLE chris CREATEDB;
+```
+  
 # 連線方式二：VSCODE SQL TOOLS
 https://www.rebellionrider.com/connect-postgresql-with-vs-code/  
 - install postgres driver at vscode market
