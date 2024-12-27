@@ -6,6 +6,7 @@
     - `pyenv versions` 查看有安裝哪些 python 
 5. 安裝 python by pyenv (m1 使用 3.8.10, 3.8.9 無法安裝)
     -  `which python` 檢查是否使用 pyenv 安裝路徑 /Users/laijiajun/.pyenv/shims/python3
+    -  [Set up your shell environment for Pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#b-set-up-your-shell-environment-for-pyenv) 設定環境變數
 5. pip 會自動安裝
     - 類似npm安裝python dependency工具
     -  `which pip3` 檢查是否使用 pyenv 安裝路徑 /Users/laijiajun/.pyenv/shims/pip3
