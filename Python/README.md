@@ -93,5 +93,5 @@ python test.py arg1 arg2 arg3
   - `with as f:` 當區塊內有需要close時，會進行close
 - `is` 是same object,  `==` 是 equivalent
   - Left == right, 底層會去找left 有無實作 special method ，將right 丟進該method，所以能不能不同型別，或是會不會exception 完全取決於 left.special method
-  - None 通常都是用 is None
+  - None 通常都是用 `is None`
 
