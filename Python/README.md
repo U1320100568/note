@@ -61,4 +61,8 @@ import secrets
 ```
 lambda a, b: a + b
 (lambda a, b: a + b)(1 , 2) // IIFE
+
+list(filter(lambda x: x > 0 , [ ] )) // filter
+list(map(lambda x: x * 2 , [ ] )) // map
+// 也有reduce，但要引用 functool
 ```
