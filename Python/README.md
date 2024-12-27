@@ -6,7 +6,6 @@ python test.py arg1 arg2 arg3
 - python: interpreter
 - 執行一個檔案稱為一個module(跟js一樣)，例如test.py
 - sys.argv[0] = test.py, sys.argv[1] = arg1, 以此類推
-
 ```python
 if __name__ == "__main__":
     cmds = [
@@ -43,7 +42,6 @@ if __name__ == "__main__":
 - `("get_ppe", get_ppe)` Tuple
 - `print(f"{cmd[0]}:\t{str(inspect.signature(cmd[1]))}")` f"{variable}" 相當於 `${varianble}`
 - `len()` 類似這種的global function，是會呼叫該物件的 len method，所以只要物件有就call得到
-
 ```python
 import sys
 import os
@@ -59,3 +57,8 @@ import secrets
     - dictionary: dic.get(key, None)
     - function: func ( a = None )
 
+- lambda function:
+```
+lambda a, b: a + b
+(lambda a, b: a + b)(1 , 2) // IIFE
+```
