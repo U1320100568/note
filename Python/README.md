@@ -54,4 +54,8 @@ import secrets
 - array & list 差別
 - array 只能放一樣型態的element
     - array 看作是矩陣，array*4 = 每個元素*4，array+array = 各index element相加
+- default value
+    - iter: next(generator, None)
+    - dictionary: dic.get(key, None)
+    - function: func ( a = None )
 
