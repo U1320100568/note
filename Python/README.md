@@ -51,3 +51,7 @@ import secrets
 ```
 - standard library function : secrets.token_urlsafe(), math.sqrt() datetime.datetime.now() ，需要 import
 - built-in function : input, len, next, print
+- array & list 差別
+- array 只能放一樣型態的element
+    - array 看作是矩陣，array*4 = 每個元素*4，array+array = 各index element相加
+
