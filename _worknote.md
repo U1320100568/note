@@ -1,3 +1,14 @@
+### 2024 12 30
+- [演算法] 時間複雜度、空間複雜度
+  - 時間複雜度：需耗費的運算次數
+    - O(1): ex. arr[4]
+    - O(n): ex. 一層for loop
+    - O(log n): ex. 二元搜尋法
+    - O(n^2): ex. 兩層for loop
+  - 空間複雜度：需耗費的記憶體空間
+    - O(1): ex. for(let i = 0; i < arr.length; i++) { arr[i]; }  // 變數 i 的資料數量大小，永遠不會進行改變。
+    - O(n): ex. for(let i = 0; i < num; i++) {arr[i] = i;}
+
 ### 2024 12 25
 - [db] ORM 在 app & raw SQL 中間多一抽象層，不直接寫sql語法，防止injection，較好維護，但可能會有效能問題
 
