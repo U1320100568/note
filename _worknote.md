@@ -30,6 +30,8 @@
     document.querySelectorAll();
     ```
 - [node][express] app.get vs. app.use: get 特定route的處理，use middleware before arrive route
+  - app.use bodyParser (install body-parser) 轉 body 為 json or urlencoded
+  - app.use setHeader Access-Control-Allow-xx 設定不同的 allow access permission
 
 
 ### 2024 12 11
