@@ -95,4 +95,17 @@ python test.py arg1 arg2 arg3
 - `is` 是same object,  `==` 是 equivalent
   - Left == right, 底層會去找left 有無實作 special method ，將right 丟進該method，所以能不能不同型別，或是會不會exception 完全取決於 left.special method
   - None 通常都是用 `is None`
-
+- unpackaging:
+  ```python
+  a, b, *rest = list;
+  a, b, *rest = tuple;
+  
+  for tuple in enumerate(list):
+     print tuple; // index & value
+  for tuple in dictionary.items():
+     print tuple; // key & value
+  
+  a, b = b, a; // swipe
+  combined = [*arr1, *arr2, *arr3]; // list
+  combined = [**dic1, **dic2] // dictionary 注意是 **
+  ``` 
