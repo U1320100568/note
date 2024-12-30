@@ -2,6 +2,7 @@
 - 多個 Ref 且依照 Id 產生多個 list
   - `:ref="``columnsErrorList-${dataError.dataErrorListId}``"`
   - `this.$refs[``columnsErrorList-${dataErrorListId}``].find(x => x.cells[1].innerHTML === columnName);`
+--- 
 
 ### [Object.assign Polyfill](https://stackoverflow.com/questions/41144939/what-to-use-instead-of-object-assign-in-typescript)
 ```javascript
