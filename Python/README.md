@@ -12,6 +12,25 @@
     -  `which pip3` 檢查是否使用 pyenv 安裝路徑 /Users/laijiajun/.pyenv/shims/pip3
     -  和npm的區別是，pip 不是安裝在project local，而是安裝在 python installation 的地方，在project中會有 virtual environment 管理該專案的版本
 
+# 配置 
+- 創建 & 進入 visual env (只做一次 create ，之後進入都用activate) 
+  ```shell
+  poetry shell
+  ```
+- 離開 virtual env shell，因為進入時，會暫時把deactivate塞進path裡，所以可以直接用
+  ```shell
+  deactivate
+  ```
+- 再次進入 activate
+  ```shell
+  source .venv/bin/activate
+  ```
+- 安裝dependencies
+  ```shell
+  poetry install
+  ```
+  - pyproject.toml全部安裝
+  - 會安裝在venv folder 底下
 
 # 概要
 
@@ -45,7 +64,6 @@ python test.py arg1 arg2 arg3
                 print(f"{cmd[0]}:\t{str(inspect.signature(cmd[1]))}")
     ```
 - `if __name__ == "__main__":` 當module在最root執行時（非import的時候），可用在可被import ，也可單獨來測試的file，區分這兩種情況。
-- [ ] list
 - `action, *args = sys.argv[1:]` argv[1:] slicing from index 1, destructure as action & args, *args package as rest 像是 js ...rest
 - `it[1] for it in cmds if it[0] == action` Comprehension
   - List Comprehension: `[expression for item in iterable (if condition)]`
