@@ -1,3 +1,10 @@
+### 2025 01 13
+- revtel storage design:  
+  | - | write | read |
+  | - | - | - |
+  | public | public_client = 'True' 路人也可上傳 | (預設) upload carry `acl = 'public-read'` |
+  | private | （預設） | upload carry `acl: 'private'` 搭配custom api `private_upload/access` |
+
 ### 2025 01 08
 - [shell]
   - 測試條件
