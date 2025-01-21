@@ -4,6 +4,7 @@
 - [serverless] 為什麼要透過 serverless 部署lambda & step function : Serverless Framework 是 for serverless 的部署的框架，以cli 部署方式，其他平台的serverless 也可以處理。用nodeJS 編寫
 - [serverless] 除了 serverless 也可以使用原生的AWS Serverless Application Model
 - [serverless] serverless 可以透過github action 部署，也可以將resource 放在s3  再透過cloud formation
+- [python][fastel] 若是body data 就用type Class base on BaseModel, 其他欄位就是query parameter
 
 ### 2025 01 13
 - revtel storage design:  
