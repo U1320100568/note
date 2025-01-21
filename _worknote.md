@@ -1,3 +1,10 @@
+### 2025 01 21
+- [hishop] 為什麼沒有 SendBatchEmail step function > tda 工會系列才有  
+- [hishop] on_checkout_validate 為什麼需要step function  > 是用來檢查line pay 是否付款成功
+- [serverless] 為什麼要透過 serverless 部署lambda & step function : Serverless Framework 是 for serverless 的部署的框架，以cli 部署方式，其他平台的serverless 也可以處理。用nodeJS 編寫
+- [serverless] 除了 serverless 也可以使用原生的AWS Serverless Application Model
+- [serverless] serverless 可以透過github action 部署，也可以將resource 放在s3  再透過cloud formation
+
 ### 2025 01 13
 - revtel storage design:  
   | - | write | read |
