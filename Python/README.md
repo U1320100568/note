@@ -31,6 +31,9 @@
   ```
   - pyproject.toml全部安裝
   - 會安裝在venv folder 底下
+- 備註
+  - Virtual environment 可以用 `which` 來檢查是否開啟正確
+  - 若在vscode 裡的 terminal ，可以設置成每次開啟project時，都activate對應的virtual environment
 
 # 概要
 
