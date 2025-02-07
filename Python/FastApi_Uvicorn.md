@@ -8,6 +8,12 @@ Api gateway 是http server deploy lambda 只需要啟動 application server
 處理routing 可以在http server or application server，目前backend 選擇在 app server 處理
 因為lambda有自己的protocal，為了銜接這段，所以可以看到uvicorn帶入 api:main.app，而lambda 是帶入 api.main.handler
 
+### api/main.py
+```py
+# only used by serverless lambda
+handler = skip_warmup_call(Mangum(app))
+```
+
 ### local run http server by uvicorn
 ```python
 if __name__ == "__main__":
