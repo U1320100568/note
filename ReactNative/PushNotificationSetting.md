@@ -1,0 +1,20 @@
+# Create certificate
+## iOS
+1. 產生Certificate Signing Request
+  1. Go to keychain.access > 類別選「所有項目」> (滑到畫面右上角，顯示應用程式訊息)鑰匙圈存取 > 憑證輔助程式 > 從憑證授權要求憑證
+  2. 填寫email > 儲存到磁碟 > 修改檔名（optional） > 儲存
+2. 到 Console 產生 Certificate
+  1. Go to Apple Developer https://developer.apple.com/
+  2. identifiers > 進入該project 
+  3. push notification configure > Production SSL Certificate > create Certificate and upload 剛剛的 request file
+  4. download 憑證（aps.cer）
+  5. 點擊憑證加入keychain > 進入keychain 右鍵剛剛的憑證輸出 .p12 檔
+  6. 將p12檔 給 backend
+  
+> 將憑證備份，不可弄丟  
+  
+## Android
+1. Go to Firebase Console https://firebase.google.com/
+2. 如果已有專案 > 設定 > 雲端通訊  > 伺服器金鑰 > 複製憑證 給 backend
+（沒有專案就新建一個）
+
