@@ -20,6 +20,12 @@
 2. 如果已有專案 > 設定 > 雲端通訊  > 伺服器金鑰 > 複製憑證 給 backend
 （沒有專案就新建一個）
 
+### AWS
+以aws發送（也可以用firebase，但公司統一用aws）
+backend 進入aws SNS，mobile > push notification  > create platform application (建立兩個)
+1. select type ios or android
+2. upload certiface p12 (ios) or 填入token (android)
+
 ## Install library
 ```bash
 npm install --save react-native-push-notification
