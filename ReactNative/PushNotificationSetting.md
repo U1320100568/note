@@ -21,8 +21,8 @@
 （沒有專案就新建一個）
 
 ### AWS
-以aws發送（也可以用firebase，但公司統一用aws）
-backend 進入aws SNS，mobile > push notification  > create platform application (建立兩個)
+以aws發送（也可以用firebase，但公司統一用aws）  
+backend 進入aws SNS，mobile > push notification  > create platform application (建立兩個)  
 1. select type ios or android
 2. upload certiface p12 (ios) or 填入token (android)
 
