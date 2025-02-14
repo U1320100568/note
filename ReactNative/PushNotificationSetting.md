@@ -21,6 +21,7 @@
 
 
 ## AWS settings
+- aws sns https://ap-northeast-1.console.aws.amazon.com/sns/v3/home
 - 以aws發送（也可以用firebase，但公司統一用aws）  
 - backend 進入aws SNS，mobile > push notification  > create platform application (建立兩個)   
 - ios:
