@@ -130,3 +130,16 @@ python test.py arg1 arg2 arg3
   combined = [*arr1, *arr2, *arr3]; // list
   combined = [**dic1, **dic2] // dictionary 注意是 **
   ``` 
+- decorator
+  ```python
+  @classmethod
+  def create_user(cls, username: str, password: str,...
+  ```
+  這是built-in  
+  @classmethod default bind cls (相當於js 的 static method), cls 是 class本人
+  python 還有另外的 @staticmethod 不會 default bind cls
+  ```python
+  def _get_user_grp(self) -> List[str]:
+        return []
+  ```
+  這個是常見的instance method，self 是default bind self，也就是instance 本人
