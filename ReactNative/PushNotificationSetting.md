@@ -20,9 +20,9 @@
 2. 如果已有專案 > 設定 > 雲端通訊  > 伺服器金鑰 > 複製憑證 給 backend
 （沒有專案就新建一個）
 
-### AWS
+## AWS settings
 以aws發送（也可以用firebase，但公司統一用aws）  
-backend 進入aws SNS，mobile > push notification  > create platform application (建立兩個)  
+backend 進入aws SNS，mobile > push notification  > create platform application (建立兩個)   
 1. select type ios or android
 2. upload certiface p12 (ios) or 填入token (android)
 
@@ -41,6 +41,14 @@ https://github.com/react-native-push-notification/ios
 
 ### Android setting & React Native usage
 https://github.com/zo0r/react-native-push-notification?tab=readme-ov-file
+
+# 測試
+- Android 可以在development 模式測試，iOS 則要在testflight 測試
+- 1. 步驟：Application platform Detail > Endpoints tab(一個 device 一個record) > create application endpoint 填 device token 
+- 2. 在detail 點 publish > custom payload for each delivery protocol
+     - ios 預設payload
+     - android 要有title、body，因為frontend library有這限制，格式如下圖
+
 
 
 ## 注意
