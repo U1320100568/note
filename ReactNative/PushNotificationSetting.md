@@ -17,14 +17,21 @@
   
 ### Android
 1. Go to Firebase Console https://firebase.google.com/
-2. 如果已有專案 > 設定 > 雲端通訊  > 伺服器金鑰 > 複製憑證 給 backend
-（沒有專案就新建一個）
+2. 如果已有專案 > 設定 > 服務帳戶 > 產生一個私鑰檔案 > 上傳到 aws sns 選擇token(recommend)（舊版的棄用）伺服器金鑰 > 複製憑證 給 backend
+
 
 ## AWS settings
-以aws發送（也可以用firebase，但公司統一用aws）  
-backend 進入aws SNS，mobile > push notification  > create platform application (建立兩個)   
-1. select type ios or android
-2. upload certiface p12 (ios) or 填入token (android)
+- 以aws發送（也可以用firebase，但公司統一用aws）  
+- backend 進入aws SNS，mobile > push notification  > create platform application (建立兩個)   
+- ios:
+  - Push platform: Apple ios ,
+  - uses for development sandbox(不用勾選),
+  - push service ios
+  - upload certiface p12
+- android:
+  - Push platform: firebase cloud FCM
+  - token (recommended)
+  - upload file from firebase
 
 ## Install library
 ```bash
@@ -46,8 +53,13 @@ https://github.com/zo0r/react-native-push-notification?tab=readme-ov-file
 - Android 可以在development 模式測試，iOS 則要在testflight 測試
 - 1. 步驟：Application platform Detail > Endpoints tab(一個 device 一個record) > create application endpoint 填 device token 
 - 2. 在detail 點 publish > custom payload for each delivery protocol
-     - ios 預設payload
-     - android 要有title、body，因為frontend library有這限制，格式如下圖
+     - ios 使用預設payload
+     - android 使用下圖payload，要有title、body，因為frontend library有這限制，格式如下圖
+       <img src="./aws-sns-android-publish-payload.png"/>
+- 說明：android 會收到notification(in terminal)，但是手機通知列，是由前端native產生詳見可看node_module/react-native-push-notification/...RNPushNotification.java，ios 由system主動顯示通知列
+- 說明：也可以用 adb logcat grep TAG 觀察有沒有exception
+- 說明：idential 跟aws 有自訂的payload
+
 
 
 
