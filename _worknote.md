@@ -1,3 +1,57 @@
+### 2025 02 21
+- [js][python] Iterator, Generator, Yield
+  - Yield 會return generator(iterator) 保持closure，所以得到的instance 不是function call 的結果，是一個iterator，next取得該closure 執行的結果，下一個next會記得原本clousre執行下一個世代的結果，
+  - 到達最後再next，js會回傳空的，Python 會 exception ，除非有 custom implement next
+  ```js
+  function* generator() {
+    let i = 0;
+    while (i < 3) {
+      i++;
+      yield i;
+    }
+  }
+  
+  let gen = generator();
+  console.log(gen.next());
+  console.log(gen.next());
+  console.log(gen.next());
+  ```
+  ps. function 加上星字號就是generator function  
+  ps. generator 會回傳 value & done
+  ```
+  def generator () :
+    i = 0
+    while (i < 3):
+      i = i+1
+      yield i 
+  
+  gen = generator()
+  
+  print(next(gen))
+  print(next(gen))
+  print(next(gen))
+  ```
+  - 應用：pymongo，list時才會真正執行資料庫搜尋
+  ```python
+  list(XX.objects.find(query).sort().skip().limit())
+  ```
+  - 應用：node fs
+  ```js
+  run(function* () { 
+    var text = yield read('yieldFile.js');
+    yield write('yieldFile.bak', text);
+  });
+  ```
+  - 優點：減少callback function
+  - 有哪些方式可以遍歷 iterator :
+    - next()
+    - Array.from
+    - let [a, b, c] = gen; // destructure
+    - let values = [...gen]; // spread operator
+    - for...of loop
+
+  
+
 ### 2025 01 21
 - [hishop] 為什麼沒有 SendBatchEmail step function > tda 工會系列才有  
 - [hishop] on_checkout_validate 為什麼需要step function  > 是用來檢查line pay 是否付款成功
