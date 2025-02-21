@@ -18,7 +18,7 @@
   ```
   ps. function 加上星字號就是generator function  
   ps. generator 會回傳 value & done
-  ```
+  ```py
   def generator () :
     i = 0
     while (i < 3):
