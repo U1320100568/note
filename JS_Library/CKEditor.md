@@ -16,6 +16,23 @@
 2. Easy Image Upload Adapter 付費 (server-side connector )
 3. Simple Upload Adapter 用這個
 4. Base64 Upload Adapter
+   - Server 需要支援 XMLHttpRequest 
+   - Request POST, url, headers, withCredentials
+   - response:
+    ```
+    {
+        "url": "https://example.com/images/foo.jpg"
+    }
+    Or 
+    {
+        "urls": {
+            "default": "https://example.com/images/foo.jpg",
+            "800": "https://example.com/images/foo-800.jpg",
+            "1024": "https://example.com/images/foo-1024.jpg",
+            "1920": "https://example.com/images/foo-1920.jpg"
+        }
+    }
+    ```
 5. Uploadcare 整合dropbox google drive Facebook, oneDrive,  or 自己電腦，可以裁切圖片
 6. Custom upload adaptor 
 
