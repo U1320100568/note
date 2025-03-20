@@ -1,7 +1,7 @@
-- [CKEditor 5](#CKEditor%205)
-- [CKEditor 4](#CKEditor%204)
+- [CKEditor 5](#ckeditor-5)
+- [CKEditor 4](#ckeditor-4)
 
-# CKEditor 5
+<h1 id="ckeidtor-5">CKEditor 5</h1>
 完全重寫的，更易於現代框架嗎？  
 ### 免費版：
 1. GPL: GPL 授權、會有 Powered by CKEditor
@@ -39,7 +39,7 @@
 5. Uploadcare 整合dropbox google drive Facebook, oneDrive,  or 自己電腦，可以裁切圖片
 6. Custom upload adaptor 
 
-# CKEditor 4
+<h1 id="ckeidtor-4">CKEditor 4</h1>
 ### 簡介：
 - https://ckeditor.com/docs/ckeditor4/latest/guide/dev_easyimage_integration.html
 - 可以選擇 LGPL lisense
