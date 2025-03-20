@@ -128,6 +128,10 @@ import "ckeditor5/ckeditor5.css";
 - 需要刻制server upload api : filebrowserImageUploadUrl
 
 ### 範例：
+
+> put the ckeditor folder into public folder
+>
+  
 ```js
 import { CKEditor } from "ckeditor4-react";
 ...
