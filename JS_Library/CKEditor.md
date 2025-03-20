@@ -3,6 +3,7 @@
 
 <h1 id="ckeidtor-5">CKEditor 5</h1>
 完全重寫的，更易於現代框架嗎？  
+
 ### 免費版：
 1. GPL: GPL 授權、會有 Powered by CKEditor
 2. 免費 account: 
@@ -37,9 +38,68 @@
     }
     ```
 5. Uploadcare 整合dropbox google drive Facebook, oneDrive,  or 自己電腦，可以裁切圖片
-6. Custom upload adaptor 
+6. Custom upload adaptor
+
+### 範例：
+```js
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import {
+  ClassicEditor,
+  Essentials,
+  Paragraph,
+  Bold,
+  Italic,
+  Image,
+  ImageUpload,
+} from "ckeditor5";
+
+import "ckeditor5/ckeditor5.css";
+...
+<CKEditor
+  editor={ClassicEditor}
+  config={{
+    licenseKey: "GPL", // Or '<YOUR_LICENSE_KEY>'.
+    plugins: [Essentials, Paragraph, Bold, Italic, Image, ImageUpload],
+    toolbar: [
+      "undo",
+      "redo",
+      "|",
+      "bold",
+      "italic",
+      "|",
+      "imageUpload",
+    ],
+    initialData: "<p>Hello from CKEditor 5 in React!</p>",
+    simpleUpload: {
+      uploadUrl: "",
+      /// "https://storage.revtel-api.com/v4/storage/presigned/url?client_id=tda",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      withCredentials: false,
+    },
+  }}
+  onReady={(editor) => {
+    console.log("CKEditor ready", editor);
+  }}
+  onChange={(event, editor) => {
+    const data = editor.getData();
+    console.log("onChange", data);
+    console.log("editor.data", editor.data);
+  }}
+  onBlur={(event, editor) => {
+    const data = editor.getData();
+
+    console.log("onBlur", data);
+  }}
+  onError={(error, detail) =>
+    console.log("CKEditor error", error, detail)
+  }
+/>
+```
 
 <h1 id="ckeidtor-4">CKEditor 4</h1>
+  
 ### 簡介：
 - https://ckeditor.com/docs/ckeditor4/latest/guide/dev_easyimage_integration.html
 - 可以選擇 LGPL lisense
@@ -67,4 +127,59 @@
 - 圖片上傳有 Default, Enhancement, Easy ( 但是easy 和 CKeditor cloud service 強相關)(tda 舊的看起來是Default or enhance)
 - 需要刻制server upload api : filebrowserImageUploadUrl
 
+### 範例：
+```js
+import { CKEditor } from "ckeditor4-react";
+...
+<CKEditor
+  initData="<p>Hello from CKEditor 4!</p>"
+  onInstanceReady={(e) => {
+    console.log("event instance ready", e);
+  }}
+  editorUrl="http://localhost:3000/ckeditor/ckeditor.js" // 4.22.1
+  config={{
+    versionCheck: false,
+    removePlugins: "about,spellchecker",
+    removeButtons:
+      "About,Scayt,Anchor,SpecialChar,Blockquote,HorizontalRule,RemoveFormat,Maximize,Styles,Format,Font", //
+    // toolbarGroups: [
+    //   { name: "document", groups: ["mode", "document", "doctools"] },
+    //   { name: "clipboard", groups: ["clipboard", "undo"] },
+    //   // {
+    //   //   name: "editing",
+    //   //   groups: ["find", "selection", "spellchecker"],
+    //   // },
+    //   // { name: "forms" },
+    //   // "/",
+    //   { name: "basicstyles", groups: ["basicstyles", "cleanup"] },
+    //   {
+    //     name: "paragraph",
+    //     groups: ["list", "indent", "blocks", "align", "bidi"],
+    //   },
+    //   { name: "links" },
+    //   { name: "insert" },
+    //   "/",
+    //   { name: "styles" },
+    //   { name: "colors" },
+    //   { name: "tools" },
+    //   { name: "others" },
+    //   // { name: 'about' }
+    // ],
+    filebrowserImageUploadUrl: "/api/upload", // 您的伺服器上傳 URL
+    filebrowserUploadMethod: "form", // 上傳方法
+  }}
+  onChange={(e) => {
+    console.log("event", e);
+    const editor = e.editor;
+    const element = editor.element;
+    // console.log("element", element);
+    console.log("editor.getData", editor.getData());
+  }}
+  onBlur={(e) => {
+    const editor = e.editor;
+
+    console.log("onBlur editor.getData", editor.getData());
+  }}
+/>
+```
 
