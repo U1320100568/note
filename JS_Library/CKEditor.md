@@ -115,7 +115,7 @@ import "ckeditor5/ckeditor5.css";
       1. 4.22.1 選這個 4.25.1(LTS) 不要這個會壞掉
       2. 安裝，解壓縮後把整個folder放到web root domain，react為例，放到public folder
           ```
-          http:localhost:3000/ckeditor/ckeditor.js
+          http://localhost:3000/ckeditor/ckeditor.js
           ```
       3. 可開啟此網址測試是否安裝成功：http://localhost:3000/ckeditor/samples/index.html
       4. 在CKEditor editorUrl 填入 domain + /ckeditor/ckeditor.js，editorUrl 是 altered CKEditor script 的行為
