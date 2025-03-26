@@ -129,7 +129,7 @@ import "ckeditor5/ckeditor5.css";
 
 ### 範例：
 
-> put the ckeditor folder into public folder
+> put the folder of altered ckeditor.js into public folder
 >
   
 ```js
