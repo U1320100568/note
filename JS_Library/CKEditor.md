@@ -105,7 +105,7 @@ import "ckeditor5/ckeditor5.css";
 - 可以選擇 LGPL lisense
 - 2023 6 月就停止更新
 - React 17 必須使用 v3.x (current)
-- React 18 必須使用 v4.x (only) 最新的的是 v5.x (此版本非 CKEditor 5)
+- React 18 必須使用 v4.x (only) 最新的的是 v5.x (此 5 非 CKEditor 5)
 
 ### 套件：
 - Default buttons list https://stackoverflow.com/a/18637110
