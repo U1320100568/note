@@ -1,5 +1,6 @@
 - [CKEditor 5](#ckeditor-5)
 - [CKEditor 4](#ckeditor-4)
+- [CKEditor 4 file upload](./CKEditor_file_upload.md)
 
 <h1 id="ckeidtor-5">CKEditor 5</h1>
 完全重寫的，更易於現代框架嗎？  
