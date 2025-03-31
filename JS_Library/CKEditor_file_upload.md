@@ -8,9 +8,9 @@ filebrowserImageUploadUrl: uploadUrl, // "/api/upload" 您的伺服器上傳 URL
 1. Allow cors
 2. Form input name attribute = "upload"
 3. 回傳json:
-  - fileName: 取自req
-  - uploaded: 取自req query CKEditorFuncNum 
-  - url: 回傳結果
+    - fileName: 取自req
+    - uploaded: 取自req query CKEditorFuncNum 
+    - url: 回傳結果
 
 # Server - express
 
