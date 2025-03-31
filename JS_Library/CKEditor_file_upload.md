@@ -9,7 +9,7 @@ filebrowserImageUploadUrl: uploadUrl, // "/api/upload" 您的伺服器上傳 URL
 2. Form input name attribute = "upload"
 3. 回傳json:
   - fileName: 取自req
-  - uploaded: 1
+  - uploaded: 取自req query CKEditorFuncNum 
   - url: 回傳結果
 
 # Server - express
