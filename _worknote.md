@@ -1,3 +1,21 @@
+### 2025 04 09
+- [shell][filepath]
+  - `./path` 在目前的路徑
+  - `../path` 在parent的路徑
+  - `~/path` `~` = shorthand of `$HOME`，`$HOME` 相當於 `/home/you` or `/Users/you`
+  - `/path` 在root ，絕對路徑
+- [xcode] 使用舊版的Xcode
+  - https://xcodereleases.com/ (需注意macOS版本)
+  - 下載xip，點選即可使用
+  - Settings > Locations > Command Line Tools 切換版本
+  - 可在terminal檢查 `xcodebuild -version` 是否已切換
+- [xcode]  刪除xcode & 移除不必要的檔案
+  - Delete app from Applications
+  - Delete ~/Library/Developer
+  - Delete /Library/Developer
+  - Delete ~/Library/Caches/com.apple.dt.*
+  - ps. simulator platform. They are installed to /Library/Developer/CoreSimulator/Profiles/Runtimes (Not ~/Library!)
+
 ### 2025 02 21
 - [js][python] Iterator, Generator, Yield
   - Yield 會return generator(iterator) 保持closure，所以得到的instance 不是function call 的結果，是一個iterator，next取得該closure 執行的結果，下一個next會記得原本clousre執行下一個世代的結果，
