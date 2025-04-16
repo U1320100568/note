@@ -2,6 +2,7 @@
 - [xcode] xcode from 15.0 to 16.2
   - Error: No type named 'terminate_handler' in namespace 'std' upgrade Sentry 5.32.0 https://github.com/getsentry/sentry-react-native/issues/3883#issuecomment-2704585741
   - Pod > excluded architectures > 改成 arm64
+  - release warning `The archive did not include a dSYM for the hermes.framework with the UUIDs ` issue https://github.com/facebook/react-native/issues/49059 ， 官方說是xcode 16 的 bug
 
 ### 2025 04 09
 - [shell][filepath]
