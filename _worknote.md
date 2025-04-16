@@ -3,6 +3,7 @@
   - Error: No type named 'terminate_handler' in namespace 'std' upgrade Sentry 5.32.0 https://github.com/getsentry/sentry-react-native/issues/3883#issuecomment-2704585741
   - Pod > excluded architectures > 改成 arm64
   - release warning `The archive did not include a dSYM for the hermes.framework with the UUIDs ` issue https://github.com/facebook/react-native/issues/49059 ， 官方說是xcode 16 的 bug
+  - <img style="width:200px;" src="https://private-user-images.githubusercontent.com/51951532/373963702-feb6e7e3-52df-49d2-a566-88505e2ceac3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ3NzI1NzMsIm5iZiI6MTc0NDc3MjI3MywicGF0aCI6Ii81MTk1MTUzMi8zNzM5NjM3MDItZmViNmU3ZTMtNTJkZi00OWQyLWE1NjYtODg1MDVlMmNlYWMzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDE2VDAyNTc1M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVlNmI4YjU4NjRmNjg4NTcxNjA1YTI4N2U2MWMzYTcyNGRlYmQ5Yjc4MWZhODc1Njg4NzkzNmNkMTY0NzE0YjImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.p8PBn7JdjNk79FBeQst4wyQo4MAO51AMYPNl4-h2O4o"/>
 
 ### 2025 04 09
 - [shell][filepath]
