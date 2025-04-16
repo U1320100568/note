@@ -1,3 +1,8 @@
+### 2025 04 16
+- [xcode] xcode from 15.0 to 16.2
+  - Error: No type named 'terminate_handler' in namespace 'std' upgrade Sentry 5.32.0 https://github.com/getsentry/sentry-react-native/issues/3883#issuecomment-2704585741
+  - Pod > excluded architectures > 改成 arm64
+
 ### 2025 04 09
 - [shell][filepath]
   - `./path` 在目前的路徑
@@ -15,6 +20,7 @@
   - Delete /Library/Developer
   - Delete ~/Library/Caches/com.apple.dt.*
   - ps. simulator platform. They are installed to /Library/Developer/CoreSimulator/Profiles/Runtimes (Not ~/Library!)
+- [xcode] 安裝Xcode 時要求安裝iOS 18.+ component，可在 `Settings > Components` 查看並刪除，也可以看到Show in Finder他是被安裝在 `/Library/Developer/CoreSimulator/Volumes/iOS 18.3.1 simulator` 裡
 
 ### 2025 02 21
 - [js][python] Iterator, Generator, Yield
