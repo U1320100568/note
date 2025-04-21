@@ -1,6 +1,6 @@
 ### 2025 04 21
 - [js] 發生Global State改變，parent not changed
-   <img width="975" alt="截圖 2025-04-21 下午2 57 39" src="https://github.com/user-attachments/assets/96c60162-2933-4fe9-aca1-c2c33b4f9380" />
+   <img width="500" alt="截圖 2025-04-21 下午2 57 39" src="https://github.com/user-attachments/assets/96c60162-2933-4fe9-aca1-c2c33b4f9380" />
 
 ### 2025 04 16
 - [xcode] xcode from 15.0 to 16.2
