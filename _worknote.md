@@ -1,3 +1,39 @@
+### 2025 04 25
+- [react-native] 升級 RN 0.76.9 Android 開發環境問題
+  1. 更新JDK
+      - `brew update1`
+      - `brew upgrade`  
+      Follow step https://reactnative.dev/docs/0.76/set-up-your-environment   
+      - `brew install --cask zulu@17`
+      - `open /opt/homebrew/Caskroom/zulu@17/<version number>` 然後安裝
+      - 寫入環境變數 `export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home`
+  2. 更新 android SDK 
+      - 打開 android studio SDK manager （點選 Show Package Details）
+      - 安裝 Android SDK Platform 35
+      - 安裝 Google APIs ARM 64 v8a System Image
+      - 遇到ERROR >  Task :app:checkDebugAarMetadata FAILED  
+  	     \> Java heap space  
+        解：npm run android:clean
+  3. 測試 third party 以TDA當sample
+    - react-native-webview > 活動報名
+      -  iOS	ok
+      - android 閃退
+    - react-native-push-notification
+      - iOS dev mode 未收到remote 
+      - iOS release mode 有收到 remote	
+      - android dev mode 有收到，但比較慢
+    - react-native-barcode-builder > 沒在使用 可移除 
+    - react-native-vision-camera > 司法院律師QR Code > 綁定
+      - iOS	ok
+      - android	ok
+    - react-native-qrcode-svg > 司法院律師QR Code
+      - iOS	ok
+      - android	ok
+    - react-native-inappbrowser-reborn > profile > 問題回報
+      - iOS	ok
+      - iOS	ok
+
+
 ### 2025 04 21
 - [js] 發生Global State改變，parent not changed  
   <img width="500" alt="截圖 2025-04-21 下午2 57 39" src="https://github.com/user-attachments/assets/96c60162-2933-4fe9-aca1-c2c33b4f9380" />
