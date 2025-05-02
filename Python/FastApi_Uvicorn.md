@@ -1,9 +1,9 @@
-uvicorn 是 http server 
-Fast api 是 python application 框架
-Express 是 http server + application server 合併
-Lambda 用來放application server
-Api gateway 是http server deploy lambda 只需要啟動 application server
-所以在開發時，需要啟動uvicorn 作為 http server
+uvicorn 是 http server   
+Fast api 是 python application 框架  
+Express 是 http server + application server 合併  
+Lambda 用來放application server   
+Api gateway 是http server deploy lambda 只需要啟動 application server   
+所以在開發時，需要啟動uvicorn 作為 http server   
 
 處理routing 可以在http server or application server，目前backend 選擇在 app server 處理
 因為lambda有自己的protocal，為了銜接這段，所以可以看到uvicorn帶入 api:main.app，而lambda 是帶入 api.main.handler
