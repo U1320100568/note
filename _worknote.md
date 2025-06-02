@@ -1,3 +1,9 @@
+### 2025 06 02
+- [security] 解決zap弱掃的警告
+  - 原圖
+  - <img width="402" alt="image" src="https://github.com/user-attachments/assets/812f743e-80fe-4e51-b4c5-ee6fdd5c1211" />
+
+
 ### 2025 04 25
 - [react-native] 升級 RN 0.76.9 Android 開發環境問題
   1. 更新JDK
