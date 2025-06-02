@@ -52,6 +52,12 @@ https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/
   X-Content-Type-Options: nosniff
   ```
 
+## Strict-Transport-Security
+- 限制只能用https access
+- ```
+  Strict-Transport-Security: max-age=31536000; preload
+  ```
+
 
 
   
