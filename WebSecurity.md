@@ -26,12 +26,13 @@ https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/
 - 只允許載入白名單的來源
 - html, css, script, font, media...
 - 加在cloudfront
+- 📌 Reference: https://simplyexplained.com/blog/Content-security-policy-and-aws-s3-cloudfront/
 
 ## X-Frame-Options
 - 自己的網頁被嵌入惡意網頁，會有clickjacking的風險
 - 避免方式有兩種：（1）js 判斷window location是否一致，(2) response header x-frame-options (3) CSP frame-ancestors
 - 新的瀏覽器不支援 x-frame-options ALLOW-FROM，CSP level2 以上的瀏覽器才支援 CSP frame-ancestors，所以建議 (2)(3) 一起使用
-- refs: https://blog.huli.tw/2021/09/26/what-is-clickjacking/#x-frame-options
+- 📌 Reference: https://blog.huli.tw/2021/09/26/what-is-clickjacking/#x-frame-options
 - ```
   // 不允許
   Content-Security-Policy: frame-ancestors ‘none’
@@ -58,6 +59,8 @@ https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/
   Strict-Transport-Security: max-age=31536000; preload
   ```
 
+## X-XSS-Protection
+- Cross-site scripting attacks (XSS) 是防止
 
 
   
