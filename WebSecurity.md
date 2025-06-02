@@ -32,7 +32,7 @@ https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/
 - 避免方式有兩種：（1）js 判斷window location是否一致，(2) response header x-frame-options (3) CSP frame-ancestors
 - 新的瀏覽器不支援 x-frame-options ALLOW-FROM，CSP level2 以上的瀏覽器才支援 CSP frame-ancestors，所以建議 (2)(3) 一起使用
 - refs: https://blog.huli.tw/2021/09/26/what-is-clickjacking/#x-frame-options
-  ```
+- ```
   // 不允許
   Content-Security-Policy: frame-ancestors ‘none’
   X-Frame-Options: DENY
@@ -45,6 +45,13 @@ https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/
   Content-Security-Policy: frame-ancestors https://a.example.com https://b.example.com
   X-Frame-Options: ALLOW-FROM https://example.com/  <- 這個支援度不佳且只能一個
   ```
+  
+## X-Content-Type-Options
+- 當 resource 回傳不正確的 MIME type時，瀏覽器需要猜測(sniff) 哪種 MIME type，才能執行，當猜測的過程中，就有可能有漏洞
+- ```
+  X-Content-Type-Options: nosniff
+  ```
+
 
 
   
