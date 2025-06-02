@@ -21,5 +21,10 @@ SSL/TLS 是加密在 **Transport Layer** under **Application Layer**，所以 qu
 https://stackoverflow.com/a/2629241/13797221  
 https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/  
   
+## CSP Content Security Policy
+- 用來處理 XSS attack
+- 只允許載入白名單的來源
+- html, css, script, font, media...
+- 加在cloudfront
   
   
