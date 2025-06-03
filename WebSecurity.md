@@ -1,25 +1,28 @@
 # Web Security
-## [XSS attack (cross-site scripting)](https://forum.gamer.com.tw/Co.php?bsn=60292&sn=11267)
-帶入惡意程式碼攻擊
-1. Stored XSS(儲存型)  
-  使用者輸入任意文字沒有檢查，將惡意的程式碼存到資料庫
-  常見手法：留言、文章輸入<script>
-2. Reflected XSS(反射型) 
-  後端直接回傳使用者在前端的輸入，沒有檢查
-  常見手法：以get方式傳到後端，後端沒有檢查就將惡意程式嵌入前端，導向釣魚網站
-3. Dom-Based XSS  
-  直接用script產生DOM，沒有做檢查就插入DOM
-  常見手法：element.innerHTML ＝ （惡意代碼）
+## XSS attack (cross-site scripting)
+- 帶入惡意程式碼攻擊
+- 📌 Reference: https://forum.gamer.com.tw/Co.php?bsn=60292&sn=11267
+- 種類：
+  1. Stored XSS(儲存型) ：  
+    使用者輸入任意文字沒有檢查，將惡意的程式碼存到資料庫  
+    常見手法：留言、文章輸入<script>
+  2. Reflected XSS(反射型)：   
+    後端直接回傳使用者在前端的輸入，沒有檢查  
+    常見手法：以get方式傳到後端，後端沒有檢查就將惡意程式嵌入前端，導向釣魚網站
+  3. Dom-Based XSS：  
+    直接用script產生DOM，沒有做檢查就插入DOM  
+    常見手法：element.innerHTML ＝ （惡意代碼）
   
 > React 可以避免某些injection attack，但有些攻擊還是需要注意，[example](https://stackoverflow.com/a/51852579)
   
   
 ## Query parameter 在 https 傳輸安全嗎？
-SSL/TLS 是加密在 **Transport Layer** under **Application Layer**，所以 query parameter also encrpto with SSL  
-但是web server會以明文儲存reqeust log (whole url)，所以重要資訊還是避免加在 query parameter  
-📌 Reference:   
-https://stackoverflow.com/a/2629241/13797221  
-https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/  
+- SSL/TLS 是加密在 **Transport Layer** under **Application Layer**，所以 query parameter also encrpto with SSL  
+- 但是web server會以明文儲存reqeust log (whole url)，所以重要資訊還是避免加在 query parameter
+  
+### 📌 Reference:   
+- https://stackoverflow.com/a/2629241/13797221  
+- https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/  
   
 ## CSP Content Security Policy
 - 用來處理 XSS attack
@@ -114,4 +117,10 @@ https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/
 - ```
   Referrer-Policy: strict-origin-when-cross-origin
   ```
-  
+
+## CORS Cross-Origin Resource Sharing 同源政策
+- 同 domain, 同 protocal, 同 port 才是同源，custom domain 不算
+- 瀏覽器帶origin -> 伺服器回傳 -> 若非同源瀏覽器接收後，會攔截並報錯（注意：是擋在瀏覽器接收後）
+- preflight: 所以在non simple request，才會多打preflight，例如惡意的非同源delete request，就會在preflight 擋下避免真的刪除
+- 📌 Reference: https://www.explainthis.io/zh-hant/swe/what-is-cors
+
