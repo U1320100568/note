@@ -52,7 +52,7 @@
   // image, article image 可能包含別的網站的
   img-src 'self' www.google-analytics.com i.imgur.com data: ;
 
-  // 若是 inline ，請參考下面sha256 or unsafe-inline
+  // 不可使用unsafe-inline ，請參考下面sha256
   script-src 'self' 'unsafe-inline' www.google.com apis.google.com;
 
   // 若是 inline ，請參考下面sha256 or unsafe-inline
