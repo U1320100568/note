@@ -103,6 +103,7 @@ https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/
 ## X-XSS-Protection
 - Cross-site scripting attacks (XSS) 是injects script code攻擊，CSP inline scripts & unsafe resources 就可以防止，但舊的瀏覽器不支援就需要這個
 - 也可以增加report url
+- 檢查 dangerouslySetInnerHTML 是否會被擋掉
 - ```
   X-XSS-Protection: 1; mode=block; report=https://savjee.report-uri.com/r/d/xss/enforce
   ```
