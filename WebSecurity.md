@@ -68,6 +68,7 @@ https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/
   style-src: 'sha256-TBqllJlBMexSGRieFFU5KWd8G9KEcSOtCu0N0HD2OLQ=' ... ;
   ```
 - 📌 Reference: https://simplyexplained.com/blog/Content-security-policy-and-aws-s3-cloudfront/
+- 可在 CloudFront 增加或是在包一層 Lambda@Edge修改header
 
 ## X-Frame-Options
 - 自己的網頁被嵌入惡意網頁，會有clickjacking的風險
