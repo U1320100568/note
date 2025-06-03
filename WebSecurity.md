@@ -41,7 +41,7 @@
   frame-src www.youtube.com ... ;
 
   // 允許哪些網頁把我嵌入，避免clickjacking
-  frame-ancestors
+  frame-ancestors 'none';
 
   // 嵌入flash, pdf 這些比較少用了
   object-src 'none';
