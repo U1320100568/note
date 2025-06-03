@@ -24,8 +24,49 @@ https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/
 ## CSP Content Security Policy
 - 用來處理 XSS attack
 - 只允許載入白名單的來源
-- html, css, script, font, media...
 - 加在cloudfront
+- html, css, script, font, media...
+- ```
+  Content-Security-Policy: 
+  // fallback
+  default-src 'self';
+  
+  // 可以打哪些request, api, micro service, 
+  connect-src www.google-analytics.com ... ;
+
+  // 允許哪些iframe嵌入 like YouTube, ig , map, article youtube
+  frame-src www.youtube.com ... ;
+
+  // 允許哪些網頁把我嵌入，避免clickjacking
+  frame-ancestors
+
+  // 嵌入flash, pdf 這些比較少用了
+  object-src 'none';
+
+  // google , adobe
+  font-src 'self' fonts.gstatic.com;
+
+  // image, article image 可能包含別的網站的
+  img-src 'self' www.google-analytics.com i.imgur.com data: ;
+
+  // 會擋掉 inline ，請參考下面sha256
+  script-src 'self' www.google.com apis.google.com;
+
+  // 不能用inline
+  style-src 'self' 'unsafe-inline' fonts.googleapis.com;
+
+  // 自動將http upgrade https，沒有參數
+  upgrade-insecure-requests;
+
+  // 可填入 report servie 用來 log violations
+  report-uri https://savjee.report-uri.com/r/d/csp/enforce;
+
+
+  
+  // Inline style or script 需要用 base64 encoded SHA256 hash，記得單引號
+  script-src: 'sha256-TBqllJlBMexSGRieFFU5KWd8G9KEcSOtCu0N0HD2OLQ=' ... ;
+  style-src: 'sha256-TBqllJlBMexSGRieFFU5KWd8G9KEcSOtCu0N0HD2OLQ=' ... ;
+  ```
 - 📌 Reference: https://simplyexplained.com/blog/Content-security-policy-and-aws-s3-cloudfront/
 
 ## X-Frame-Options
@@ -60,7 +101,15 @@ https://blog.httpwatch.com/2009/02/20/how-secure-are-query-strings-over-https/
   ```
 
 ## X-XSS-Protection
-- Cross-site scripting attacks (XSS) 是防止
+- Cross-site scripting attacks (XSS) 是injects script code攻擊，CSP inline scripts & unsafe resources 就可以防止，但舊的瀏覽器不支援就需要這個
+- 也可以增加report url
+- ```
+  X-XSS-Protection: 1; mode=block; report=https://savjee.report-uri.com/r/d/xss/enforce
+  ```
 
-
+## Referrer policy
+- 當我的網站點擊外部連結，瀏覽器會send a `referrer`，從哪來的意思，若參數包含使用者資訊就會洩漏，所以增加這個
+- ```
+  Referrer-Policy: strict-origin-when-cross-origin
+  ```
   
