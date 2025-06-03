@@ -73,6 +73,7 @@
 - 📌 Reference: https://simplyexplained.com/blog/Content-security-policy-and-aws-s3-cloudfront/
 - 可在 CloudFront 增加或是在包一層 Lambda@Edge修改header
 - 測試：可以先用 `Content-Security-Policy-Report-Only` 搭配 `report-uri`，不會真的擋，但可以看 哪些不該擋的被擋掉了，然後再改回 Content-Security-Policy
+- 測試：也可以用 https://csp-evaluator.withgoogle.com/ 檢查格式正確
 - inline script 可以用 `nonce`, `hash` 方式處理
   - `nonce` 要搭配伺服器每次 request 更新nonce較難做
   - `hash` 整個inline區塊去做hash，但是要注意只要任何程式碼不一樣（包含空白多寡）都會造成hash 不一致
