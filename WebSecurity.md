@@ -52,10 +52,10 @@
   // image, article image 可能包含別的網站的
   img-src 'self' www.google-analytics.com i.imgur.com data: ;
 
-  // 會擋掉 inline ，請參考下面sha256
-  script-src 'self' www.google.com apis.google.com;
+  // 若是 inline ，請參考下面sha256 or unsafe-inline
+  script-src 'self' 'unsafe-inline' www.google.com apis.google.com;
 
-  // 不能用inline
+  // 若是 inline ，請參考下面sha256 or unsafe-inline
   style-src 'self' 'unsafe-inline' fonts.googleapis.com;
 
   // 自動將http upgrade https，沒有參數
