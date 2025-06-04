@@ -130,3 +130,16 @@
 - preflight: 所以在non simple request，才會多打preflight，例如惡意的非同源delete request，就會在preflight 擋下避免真的刪除
 - 📌 Reference: https://www.explainthis.io/zh-hant/swe/what-is-cors
 
+## require-trusted-types-for 'script'
+- Consider requiring Trusted Types for scripts to lock down DOM XSS injection sinks. You can do this by adding "require-trusted-types-for 'script'" to your policy.
+- 主要是用來防禦XSS攻擊，會強制所有的HTML DOM 注入都必須使用TrustedHTML方式。
+- workaround 在 root
+- ```js
+  if (window.trustedTypes && window.trustedTypes.createPolicy) {
+      window.trustedTypes.createPolicy('default', {
+          createHTML: string => string,
+          createScriptURL: string => string,
+          createScript: string => string,
+      });
+  }
+  ```
