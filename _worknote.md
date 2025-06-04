@@ -22,6 +22,8 @@
   - customLayout carousel-slick 包含 font 會有 src-font error
     - 測試拿掉？
       - 🅰️ error 消失
+  - customLayout 有許多 external script，尤其是admin
+    - 每個連結都透過 [hash generator](https://www.srihash.org/) 產生Subresource Integrity 增加 attibute & script-src
   - Sentry script-src-elem Blocked 'script' from 'inline:'
     - 在console 顯示為 `Refused to execute inline script because it violates the following Content Security Policy directive: "script-src ... Either the 'unsafe-inline' keyword, a hash ('sha256-FImjSsLrl1Uy8fYqm3+l4N7n8DwAqbnH3XMnlh71ayc='), or a nonce ('nonce-...') is required to enable inline execution.`
     - 應該是有inline script `document.createElement` or `<script>` 需要加上 hash or nonce
@@ -30,10 +32,15 @@
     - 但畫面正常
     - 討論如何處理？
       - 🅰️
-  - admin product 畫面整個被擋掉，懷疑是ckeditor inline script
-    - 測試 unsafe
+  - ckeditor 導致畫面壞掉
+    - trust-type-for TrustedHtml 恐怕要拿掉 require-trusted-types-for 'script' ？
       - 🅰️
-  
+    - inner script
+      - 直接用 'unsafe-inline' 也會被 `sha-` 影響並忽略，還是會被擋下，這部分衝突！！
+      - 可能解法 ckeditor host 在 s3 & cloudfront + integrity ?
+      - 🅰️
+  - error script-src bootstrap 使用 eval
+      - 🅰️ 直接用 'unsafe-eval'
 
 
 
