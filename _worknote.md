@@ -25,6 +25,14 @@
     - 在console 顯示為 `Refused to execute inline script because it violates the following Content Security Policy directive: "script-src ... Either the 'unsafe-inline' keyword, a hash ('sha256-FImjSsLrl1Uy8fYqm3+l4N7n8DwAqbnH3XMnlh71ayc='), or a nonce ('nonce-...') is required to enable inline execution.`
     - 應該是有inline script `document.createElement` or `<script>` 需要加上 hash or nonce
     - 打開console就會出現error msg 拿裡面的 hash 就可以了
+  - 改成 真正的 Content-Security-Policy時，會出現error Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'component---src-templates-product-list-index-js')
+    - 但畫面正常
+    - 討論如何處理？
+      - 🅰️
+  - admin product 畫面整個被擋掉，懷疑是ckeditor inline script
+    - 測試 unsafe
+      - 🅰️
+  
 
 
 
