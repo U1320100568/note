@@ -36,8 +36,7 @@
     - trust-type-for TrustedHtml 恐怕要拿掉 require-trusted-types-for 'script' ？
       - 🅰️
     - inner script
-      - 直接用 'unsafe-inline' 也會被 `sha-` 影響並忽略，還是會被擋下，這部分衝突！！
-      - 可能解法 ckeditor host 在 s3 & cloudfront + integrity ?
+      - 直接用 'unsafe-inline' 也會被 `sha-` 影響並忽略，還是會被擋下，這部分衝突！！?
       - 🅰️
   - error script-src bootstrap 使用 eval
       - 🅰️ 直接用 'unsafe-eval'
