@@ -7,6 +7,7 @@
       - 🅰️ error 消失
  	  - 測試 [workaround](https://github.com/zoosewu/PTTChatOnYoutube/issues/133#issuecomment-2700347682) 是否生效？
       - 🅰️ 確實有消失
+    - ckeditor 無法處理
   	- 討論是否要用這個csp？
       - 🅰️ 
   - media host tda-revtel2-com-prod.s3.ap-northeast-1.amazonaws.com or tda-api.revtel2.com 會有 connect-src error
