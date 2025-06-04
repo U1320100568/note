@@ -2,6 +2,30 @@
 - [security] 解決zap弱掃的警告
   - 原圖
   - <img width="402" alt="image" src="https://github.com/user-attachments/assets/812f743e-80fe-4e51-b4c5-ee6fdd5c1211" />
+  - require-trusted-types-for 'script'： error This document requires 'TrustedScriptURL' or 'TrustedHTML' assignment. 很多第三方套件都會觸發
+    - 測試先拿掉 require-trusted-types-for 'script'; trusted-types default;？
+      - 🅰️ error 消失
+ 	  - 測試 [workaround](https://github.com/zoosewu/PTTChatOnYoutube/issues/133#issuecomment-2700347682) 是否生效？
+      - 🅰️ 確實有消失
+  	- 討論是否要用這個csp？
+      - 🅰️ 
+  - media host tda-revtel2-com-prod.s3.ap-northeast-1.amazonaws.com or tda-api.revtel2.com 會有 connect-src error
+    - 討論如何處理？
+      - 🅰️
+  - 若有許多 external script 就要加上許多 script-src list
+  - useFacebook script 會出現 script-src error
+    - 測試將 useFacebook script print > hash 填入 script-src ？
+      - 🅰️ 確實有消失
+    - 但 script 包含 project id 不能共用，討論如何處理？
+      - 🅰️
+  - customLayout carousel-slick 包含 font 會有 src-font error
+    - 測試拿掉？
+      - 🅰️ error 消失
+  - Sentry script-src-elem Blocked 'script' from 'inline:'
+    - 在console 顯示為 `Refused to execute inline script because it violates the following Content Security Policy directive: "script-src ... Either the 'unsafe-inline' keyword, a hash ('sha256-FImjSsLrl1Uy8fYqm3+l4N7n8DwAqbnH3XMnlh71ayc='), or a nonce ('nonce-...') is required to enable inline execution.`
+    - 應該是有inline script `document.createElement` or `<script>` 需要加上 hash or nonce
+    - 打開console就會出現error msg 拿裡面的 hash 就可以了
+
 
 
 ### 2025 04 25
