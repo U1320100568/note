@@ -40,6 +40,9 @@
       - 🅰️
   - error script-src bootstrap 使用 eval
       - 🅰️ 直接用 'unsafe-eval'
+  - style-src unsafe-inline 移除後會出現
+    - 1. antd provider
+      2. gatsby style 
 
 
 
