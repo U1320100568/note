@@ -46,6 +46,7 @@
       2. gatsby style
       3. 嘗試用 gatsby-plugin-csp 是加在<meta>，效果更糟
       4. 嘗試用 gatsby-plugin-csp-nonce 只是幫 gatsby-plugin-image 增加nonce，並且還是要幫 nonce 加入到style-src
+      5. 其實應該是 styled-component 產生的 css-in-js，網路上只有文章說使用另一個export css file 的 linaria (callstack 開發)
        
 
 
