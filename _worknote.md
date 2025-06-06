@@ -42,7 +42,11 @@
       - 🅰️ 直接用 'unsafe-eval'
   - style-src unsafe-inline 移除後會出現
     - 1. antd provider
-      2. gatsby style 
+      - 🅰️ 用別的方式取代
+      2. gatsby style
+      3. 嘗試用 gatsby-plugin-csp 是加在<meta>，效果更糟
+      4. 嘗試用 gatsby-plugin-csp-nonce 只是幫 gatsby-plugin-image 增加nonce，並且還是要幫 nonce 加入到style-src
+       
 
 
 
