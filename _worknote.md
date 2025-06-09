@@ -1,3 +1,40 @@
+### 2025 06 09
+- [security] 總結
+  1. script-src 外部連結取得加密放到 integrity
+  2. Script-src 如果有用inline script 像是ga那樣，先使用 Content-Security-Policy-Report-Only 會跳出提示的sha- 把它加進去
+  3. Style-src Antd ConfigProvider.config 會違反 inline-style (已全開放，可不管)
+  4. Style-src styled-components違反 inline style
+  5. Connect-src &  img-src 依 client_id 修改
+  6. Admin web 用不同的policy
+  - web
+  ```
+  Content-Security-Policy:
+    default-src 'self' ; 
+    connect-src 'self' auth.revtel-api.com  jstorage.revtel-api.com  tda-api.revtel2.com tda-revtel2-com-prod.s3.ap-northeast-1.amazonaws.com www.google-analytics.com ; 
+    script-src 'self' connect.facebook.net 'sha256-X1bDPjOSAiF0R/pf+Tv/Iwcv7QP+ZcaHBfrcQGEGhZA=' 'sha256-FImjSsLrl1Uy8fYqm3+l4N7n8DwAqbnH3XMnlh71ayc='  'sha384-B3zToFsjmaWQbhiK7CS07elu8EflpSzj4tGAnThyy/UJM44H2i3j79U3D3IQQ9cs'  ; 
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com ; 
+    object-src 'none'; 
+    base-uri 'none'; 
+    img-src 'self' tda-revtel2-com-prod.s3.ap-northeast-1.amazonaws.com data:; 
+    frame-ancestors 'none'; 
+    frame-src www.youtube.com maps.google.com.tw https://www.google.com/maps/embed; 
+    form-action 'self';
+  ```
+  - admin
+  ```
+  Content-Security-Policy:
+    default-src 'self' ; 
+    connect-src 'self'  storage.revtel-api.com auth.revtel-api.com jstorage.revtel-api.com tda-api.revtel2.com tda-revtel2-com-prod.s3.ap-northeast-1.amazonaws.com ; 
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' *;
+    style-src 'self' 'unsafe-inline'  https://fonts.googleapis.com ;
+    object-src 'none'; 
+    base-uri 'none'; 
+    img-src 'self' tda-revtel2-com-prod.s3.ap-northeast-1.amazonaws.com data:; 
+    frame-ancestors 'none'; 
+    frame-src www.youtube.com; 
+    form-action 'self';
+  ```
+
 ### 2025 06 02
 - [security] 解決zap弱掃的警告
   - 原圖
