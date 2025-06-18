@@ -91,7 +91,7 @@
 ### 2025 04 25
 - [react-native] 升級 RN 0.76.9 Android 開發環境問題
   1. 更新JDK
-      - `brew update1`
+      - `brew update`
       - `brew upgrade`  
       Follow step https://reactnative.dev/docs/0.76/set-up-your-environment   
       - `brew install --cask zulu@17`
