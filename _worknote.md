@@ -1,3 +1,12 @@
+### 2025 07 11
+- [react-native] rn 69 是最後一版支援新舊架構 new architecture
+  - 多一個ReactNativeSpec folder，並且在package.json填spec 的 config
+  - codegen 時間點：ios pod install & npm run android
+  - codegen 結果在 native codegen 資料夾 可查看 import path
+  - ReactNativeSpec folder 包含 ts (真正在定義method的地方) & js 只會留著Turbo getEnforcing 後的 instance
+  - 注意若有定義method， android 一定要一一對應那些method，不然會compile error
+- [third-party] 開發library 小技巧，可以在一個 production project 裡開發，把該library 從node_module 手動移除，並在該資料夾clone from github，就可以方便開發library
+
 ### 2025 06 09
 - [security] 總結
   1. script-src 外部連結取得加密放到 integrity
