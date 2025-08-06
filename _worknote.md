@@ -1,3 +1,9 @@
+### 2025 08 06
+- Deep Link 定義
+  - https://zh.wikipedia.org/zh-tw/%E7%A7%BB%E5%8A%A8%E6%B7%B1%E5%BA%A6%E9%80%A3%E7%B5%90
+  - 行動應用conventional deeplink 就是 URI scheme
+  - 若要用universal link 需另外處理
+
 ### 2025 07 11
 - [react-native] rn 69 是最後一版支援新舊架構 new architecture
   - 多一個ReactNativeSpec folder，並且在package.json填spec 的 config
