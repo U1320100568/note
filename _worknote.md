@@ -1,5 +1,14 @@
+### 2025 08 18
+- [js][react-native] ResizeObserver 是瀏覽器 api，有時我們會透過 window.onload or window.onresize get body size，但 Android webview 很不穩定，用ResizeObserver較穩定
+  ```js
+  const observer = new ResizeObserver(() => {
+    window.ReactNativeWebView.postMessage(String(document.body.scrollHeight));
+  });
+  observer.observe(document.body);
+  ```
+
 ### 2025 08 06
-- Deep Link 定義
+- [react-native] Deep Link 定義
   - https://zh.wikipedia.org/zh-tw/%E7%A7%BB%E5%8A%A8%E6%B7%B1%E5%BA%A6%E9%80%A3%E7%B5%90
   - 行動應用conventional deeplink 就是 URI scheme
   - 若要用universal link 需另外處理
