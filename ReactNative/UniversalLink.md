@@ -17,6 +17,8 @@
     - 若有新增修改associate file 要去cloudfront invalid
     - Apple cache 會隔一段時間才更新，user 是在更新app 時候抓，所以如果有關universal link 功能都要app升版
     - Apple cache verify https://yurl.chayev.com/ios-results?url=https%3A%2F%2Flaya-next.revtel2.com&prefix=&bundle=
+    - (不確定)如果是開發中的App，後面要再加入”?mode=developer” (ios14 up)
+    - (不確定)開發者模式開啟associate domain link (ios14 up)
 
 
 
@@ -31,16 +33,30 @@
     - 取得play store SHA，登入google play console (就算local sign 過一次，上傳到play 還是會再sign 一次)
     - 檢查 `[domain]/.well-known/assetlinks.json`
 2. 加上這段 in AndroidManifest.xml
+   有幾個就要加幾個 intent-filter (不要蓋到原本的bundle id 的 intent-filter)
     ```xml
-    <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https"
-                      android:host="www.nfctogo.com" 
-                      android:pathPrefix="/applink" />
+    <intent-filter android:autoVerify="true" tools:targetApi="m">
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="https"
+              android:host="laya-next.revtel2.com"  />
+        <data android:path="/"/>
+        <data android:pathPrefix="/table"/>
+        <data android:pathPrefix="/products"/>
+        <data android:pathPrefix="/product"/>
     </intent-filter>
-    
+    <intent-filter android:autoVerify="true" tools:targetApi="m">
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="https"
+              android:host="now.laya.com.tw" />
+        <data android:path="/"/>
+        <data android:pathPrefix="/table"/>
+        <data android:pathPrefix="/products"/>
+        <data android:pathPrefix="/product"/>
+    </intent-filter>
     ```
 
 - 測試是否能開啟  
