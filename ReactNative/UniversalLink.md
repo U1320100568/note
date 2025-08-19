@@ -32,6 +32,7 @@
     - 取得local SHA `keytool -list -v -keystore [keystore_name].keystore -alias [your_alias] -storepass [your_keystore_pass] -keypass [your_keypass]`
     - 取得play store SHA，登入google play console (就算local sign 過一次，上傳到play 還是會再sign 一次)
     - 檢查 `[domain]/.well-known/assetlinks.json`
+    - google console verify https://developers.google.com/digital-asset-links/tools/generator?hl=zh-tw
 2. 加上這段 in AndroidManifest.xml
    有幾個就要加幾個 intent-filter (不要蓋到原本的bundle id 的 intent-filter)
     ```xml
