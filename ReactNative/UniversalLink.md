@@ -36,7 +36,7 @@
 2. 加上這段 in AndroidManifest.xml
    有幾個就要加幾個 intent-filter (不要蓋到原本的bundle id 的 intent-filter)
     ```xml
-    <intent-filter android:autoVerify="true" tools:targetApi="m">
+    <intent-filter android:autoVerify="true" >
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
@@ -47,7 +47,7 @@
         <data android:pathPrefix="/products"/>
         <data android:pathPrefix="/product"/>
     </intent-filter>
-    <intent-filter android:autoVerify="true" tools:targetApi="m">
+    <intent-filter android:autoVerify="true" >
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
@@ -64,4 +64,5 @@
     ```shell
     adb shell am start -a android.intent.action.VIEW -c android.intent.category.BROWSABLE -d "https://laya-next.revtel2.com/table" 
     ```
-    (可在最後+ <your.app.pkg> 指定某個app 開啟，不加就由系統競爭)  
+    (可在最後+ <your.app.pkg> 指定某個app 開啟，不加就由系統競爭)
+  - 一定要release才可以測，dev不行，要經過signing match to assetslink.json SHA256
