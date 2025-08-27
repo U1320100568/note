@@ -7,6 +7,19 @@
   observer.observe(document.body);
   ```
 - [deploy][s3] website deploy 安全問題，應該關閉 public static website，permission config 要加上cloudfront(詳細部分可以看tba-stg Kyle 設置)，github action s3-deploy也要加上 private upload（記得更新文件）
+- [mongodb] 後端連線分成兩種
+  - VPC peering: 適合用於兩個獨立的 VPC 需要頻繁互相溝通的場景，像是你自己買了一塊地，蓋了一棟房子，然後再想辦法和另一塊地的朋友家連一條私人的地下通道。
+  - AWS Private Link: mongo atlas(在aws上運營)，可直接建立VPC Endpoint，將服務串接在一起 （專為這個設計的，用這個好）
+- [DNS] Route 53 中建立一個 DNS 記錄
+  - A Record: 直接告訴你在哪裡 (IP)
+  - CName record: 告訴你去問誰 (別名網址)
+- [infra] authuntication 分成幾個模式
+  - cookie-based: session cookie (memory) + persist cookie (存在瀏覽器)
+    - 前端都不用處理
+    - 設定好參數就安全
+  - token-based: access token(memory) + refresh token(local storage)
+    - local storage 容易 xxs攻擊，可用CSP防禦
+  - hybrid （最推薦）: access token + persist cookie
 
 ### 2025 08 06
 - [react-native] Deep Link 定義
