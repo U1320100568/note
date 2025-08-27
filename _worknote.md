@@ -6,6 +6,7 @@
   });
   observer.observe(document.body);
   ```
+- [deploy][s3] website deploy 安全問題，應該關閉 public static website，permission config 要加上cloudfront(詳細部分可以看tba-stg Kyle 設置)，github action s3-deploy也要加上 private upload（記得更新文件）
 
 ### 2025 08 06
 - [react-native] Deep Link 定義
