@@ -1,4 +1,7 @@
-# React native bridge Android
+# Module Bridge Android 
+🤯 2025 新架構 忘記專有名詞了？
+
+
 ## Adnroid part
 1. create native module (android/app/java/com.appname/newModule.java)  
   
