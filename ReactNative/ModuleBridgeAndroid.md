@@ -1,5 +1,5 @@
 # Module Bridge Android 
-🤯 2025 新架構 忘記專有名詞了？ 可以異步執行的 native method
+🤯 2025 新架構 Turbo module，可以異步執行的 native method
 
 
 ## Adnroid part
