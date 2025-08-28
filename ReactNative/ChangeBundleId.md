@@ -27,9 +27,10 @@
 # iOS
 1. Change bundle id on Xcode
 2. Change team id on Xcode
-3. 可檢查 project.pbxproj PRODUCT_BUNDLE_IDENTIFIER 有無正確
-4. 檢查info.plist CFBundleURLName bundle id
-5. 檢查info.plist CFBundleURLSchemes bundle id
+3. deep link Target > RevtelApp > Info tab > (滑到最下面) URL Types > Change identifier & URL Scheme 
+4. 檢查 project.pbxproj PRODUCT_BUNDLE_IDENTIFIER 有無正確
+5. 檢查info.plist CFBundleURLName bundle id
+6. 檢查info.plist CFBundleURLSchemes bundle id
 
 # Javascript
 1. 修改config script的 bundle id
