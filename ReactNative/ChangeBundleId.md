@@ -39,4 +39,4 @@
 - universal link web apple-app-site-association 修改 team id & bundle id (需等待Cache更新後下載app)
 - universal link web assetlinks.json 修改 bundle id (需等待Cache更新後下載app)
 - ga firebase 修改後，重新下載 google-service.json (android)
-- ga 重新下載 GoogleService-info (ios)
+- ga firebase 修改後，重新下載 GoogleService-info.plist (ios)
