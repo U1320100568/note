@@ -1,3 +1,16 @@
+### 2025 09 05
+- [react-native] android play console Warning: alignment 16 bits
+  - 事由：project or thirdparty 底層語言有違反的情況
+  - 檢查：可用一個alignment.sh (詳情請看Richie npm script)
+  - 發現 rn 要升級 76.9 -> 77.3
+    - 可查看官方文件 Blog 有提到 和 Alignment 相關的
+    - ios new arch 要用swift (但是objective-c可以先照舊)，如果要照舊，需要修改（詳情見官方文件）
+  - 發現 rnscreen 要升major才會改，控制變因的情況下，先看他的patch修改
+    - 先手動修改native再檢查，確定ok
+    - install patch-package
+    - 注意create patch 要在沒有build過的情況下（會auto codegen），如果已build過，就 rm node_module/xxx & install
+  - 等Richie 的處理好camera後，再修改手上的project
+
 ### 2025 08 18
 - [js][react-native] ResizeObserver 是瀏覽器 api，有時我們會透過 window.onload or window.onresize get body size，但 Android webview 很不穩定，用ResizeObserver較穩定
   ```js
