@@ -1,3 +1,9 @@
+### 2025 09 11
+- [html] script tag 有分成三種載入方式
+  - normal: HTML parsing 會被 script 擋住，等載入+執行完才繼續。
+  - async: HTML parsing 和下載同時進行，但一旦下載完成，就會立刻執行 → 可能打斷 parsing。
+  - defer: HTML parsing 和下載同時進行，但等 HTML 全部解析完才執行，順序也會保證。 
+
 ### 2025 09 05
 - [react-native] android play console Warning: alignment 16 bits
   - 事由：project or thirdparty 底層語言有違反的情況
