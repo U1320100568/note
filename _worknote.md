@@ -1,3 +1,24 @@
+### 2025 09 30
+- [react][pdf] @react-pdf/renderer 中文不會換行
+  - 特殊處理每個character都拆成個別 Text component
+    ```jsx
+    import { Text as PdfText } from "@react-pdf/renderer";
+    ...
+    function Text({ children, style }) {
+      if (typeof children === "string") {
+        return (
+          <View style={[{ flexDirection: "row", flexWrap: "wrap" }, style]}>
+            {Array.from(children).map((char) => (
+              <PdfText>{char}</PdfText>
+            ))}
+          </View>
+        );
+      }
+      return <PdfText>{children}</PdfText>;
+    }
+    ```
+
+
 ### 2025 09 11
 - [html] script tag 有分成三種載入方式
   - normal: HTML parsing 會被 script 擋住，等載入+執行完才繼續。
