@@ -1,3 +1,7 @@
+### 2025 10 13
+- [js] `npm list <package>` `npm explain <package>` 可以檢查 package resolution，因為哪個package有多安裝
+- [js] @babel/runtime babel 是轉譯器 (ES6+, ts, jsx)，但如果在轉譯的過程中都用 inline helpers，就會造成bundle過大且重複的過多，改進成在runtime時再把helper function require 進來 `require('@babel/runtime/helpers/...')`，共享的概念
+
 ### 2025 09 30
 - [react][pdf] @react-pdf/renderer 中文不會換行
   - 特殊處理每個character都拆成個別 Text component
