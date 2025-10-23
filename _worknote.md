@@ -1,3 +1,7 @@
+### 2025 10 23
+- [react-native][android] build error Execution failed for task ':app:externalNativeBuildCleanDebug'. CMake Error in CMakeLists.txt: Imported target "ReactAndroid::jsi" includes non-existent path
+  resolve: `rm -rf android/app/.cxx`
+
 ### 2025 10 13
 - [js] `npm list <package>` `npm explain <package>` 可以檢查 package resolution，因為哪個package有多安裝
 - [js] @babel/runtime babel 是轉譯器 (ES6+, ts, jsx)，但如果在轉譯的過程中都用 inline helpers，就會造成bundle過大且重複的過多，改進成在runtime時再把helper function require 進來 `require('@babel/runtime/helpers/...')`，共享的概念
