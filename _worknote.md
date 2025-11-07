@@ -1,3 +1,14 @@
+### 2025 11 07
+- [js] JSDoc 標籤（如 @param, @returns）引用時可以提示，並非一定要用 ts!
+```js
+/**
+* 匯出一個 Utility 函數用於合併 Actions
+* @param {object} customActions - 來自專案層的客製化 Actions
+* @returns {object} 合併後的 Actions
+*/ 
+```
+
+
 ### 2025 10 23
 - [react-native][android] build error Execution failed for task ':app:externalNativeBuildCleanDebug'. CMake Error in CMakeLists.txt: Imported target "ReactAndroid::jsi" includes non-existent path
   resolve: `rm -rf android/app/.cxx`
