@@ -5,6 +5,7 @@
   ```js
   navigate(path, { state: { modal: true } })
   ```
+
   
 
 ### 2025 11 07
