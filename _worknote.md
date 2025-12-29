@@ -1,3 +1,12 @@
+### 2025 12 29
+- [js][gatsby] SPA but remain list page state 從詳細頁返回後維持 list 的狀態，優化 UX  
+  使用 gatsby **navigation state** + wrapPageElement  
+  在 wrapPageElement 判斷是否要用 modal 開啟，如果有，就wrap 一個 modal container  
+  ```js
+  navigate(path, { state: { modal: true } })
+  ```
+  
+
 ### 2025 11 07
 - [js] JSDoc 標籤（如 @param, @returns）引用時可以提示，並非一定要用 ts!
 ```js
