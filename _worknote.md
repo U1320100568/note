@@ -1,3 +1,10 @@
+### 2025 12 31
+- [js] element `scrollTop` 可以取得位移多少，或是強制讓他滾動多少
+- [css] Scroll Snap 捲動吸附，適合來做 Wheel Picker、Carousel
+  - `scroll-snap-type: y mandatory;` 用在容器，吸附在 y 垂直方向, mandatory 強制滾到到最近的吸附點
+  - `scroll-snap-align: center; ` 用在子項目，吸附的點在正中央
+
+
 ### 2025 12 29
 - [js][gatsby] SPA but remain list page state 從詳細頁返回後維持 list 的狀態，優化 UX  
   使用 gatsby **navigation state** + wrapPageElement  
