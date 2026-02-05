@@ -1,3 +1,37 @@
+# 新的
+☐ CloudFront Distribution 建立
+  
+☐ Origin 設定
+  ☐ Origin domain: <YOUR_BUCKET_NAME>.s3.<YOUR_AWS_REGION>.amazonaws.com
+     (注意：不含 http:// 或 https://)
+  ☐ Protocol: HTTP only（CloudFront 自動升級到 HTTPS）
+  ☐ Origin Access: Origin Access Identity (OAI) 或 Origin Access Control (OAC)
+  ☐ 建立新 OAI: <YOUR_OAI_NAME> (e.g., my-website-oai)
+  ☐ 複製生成的 OAI ID: <YOUR_CLOUDFRONT_OAI_ID>
+  
+☐ Viewer Protocol Policy
+  ☐ 選擇: Redirect HTTP to HTTPS
+  
+☐ Default Root Object
+  ☐ 設定為: index.html
+  
+☐ Caching Policy
+  ☐ 使用預設: CachingOptimized
+  
+☐ WAF
+  ☐ Do not enable
+  
+☐ Price Plan
+  ☐ Standard
+  
+☐ 建立 Distribution
+  ☐ CloudFront Distribution ID: <YOUR_CLOUDFRONT_DISTRIBUTION_ID>
+  ☐ CloudFront Domain Name: <YOUR_CLOUDFRONT_DOMAIN> (e.g., d123456.cloudfront.net)
+  
+☐ 等待 Status 從 "Deploying" 變成 "Enabled"（約 5-10 分鐘）
+
+
+# 舊的
 create distribution
 ### step
 - **Origin**
