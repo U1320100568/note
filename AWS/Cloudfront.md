@@ -10,13 +10,13 @@
 - Web Application Firewall (WAF): 選擇 Do not enable security protections (static web site不需要)。
 - Price Class (價格費率): pay as you go
 - Default Root Object (必填)：index.html
-  - 註解：當使用者直接輸入網域（如 https://example.com/）而沒有指定路徑時，CloudFront 必須知道要回傳哪一個檔案。若未填寫，CloudFront 會嘗試列出 Bucket 目錄（被禁止）而導致 403 Forbidden。
+  - 註解：當使用者直接輸入網域（如 `https://example.com/`），而沒有指定路徑時，CloudFront 必須知道要回傳哪一個檔案。若未填寫，CloudFront 會嘗試列出 Bucket 目錄（被禁止）而導致 403 Forbidden。
 
 ## 第二階段：權限加固
 
 - 更新 S3 Bucket Policy：
   - 建立完 Distribution 後，CloudFront 會顯示一個黃色橫幅。
-  - 點擊 Copy Policy，並依照 [S3 SOP 第二階段](./S3) 將其貼入 S3 的 Bucket Policy 中。
+  - 點擊 Copy Policy，並依照 [S3 SOP 第二階段](./S3.md) 將其貼入 S3 的 Bucket Policy 中。
 - 補充說明：權限控制（只能從 CloudFront 存取 S3 Bucket）
   - OAC (推薦)：新一代標準。支援頻繁的密鑰輪換、支援所有區域、支援 SSE-KMS 加密存取，並支援 POST/PUT 等所有 HTTP 方法。
   - OAI (舊版)：較基本。不支援 2022 年後推出的新 AWS 區域，僅支援 GET/HEAD 請求，且無法與 KMS 加密配合使用。
