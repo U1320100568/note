@@ -31,6 +31,11 @@
 ☐ 等待 Status 從 "Deploying" 變成 "Enabled"（約 5-10 分鐘）
 
 
+### 補充說明：權限控制（只能從cloudfront存取s3 bucket）
+- OAC(推薦)：支援頻繁的密鑰輪換，支援所有區域，支援 POST/PUT 等所有 HTTP 方法。
+- OAI(舊版)：較基本，不支援 2022 年後推出的新 AWS 區域，僅支援 GET/HEAD 請求。
+
+
 # 舊的
 create distribution
 ### step
