@@ -11,9 +11,11 @@
 - 權限控制：
 
     - Block Public Access: 全部 開啟 (Enabled)。
+    
+    - Object Ownership: ACLs disabled。
 
     - Static Website Hosting: 關閉 (Disabled)。
-
+    
 - Bucket Policy: (待 CloudFront OAC 建立後回頭貼上)
 
     - 從 CloudFront 控制台點擊 "Copy Policy"。
@@ -28,7 +30,10 @@
 
     - 若無現成 OAC，點擊 Create control setting。
 
+- WAF: Do not enable。
+
 - Default Root Object: index.html (必填)。
+
 
 ## 3. CloudFront Function (處理子目錄路由)
 
