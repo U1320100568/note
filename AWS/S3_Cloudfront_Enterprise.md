@@ -54,11 +54,9 @@ function handler(event) {
 
 ## 4. CloudFront Error Pages (處理 404)
 
-- 進入 Error pages 頁籤，新增兩條規則：
+- 進入 Error pages 頁籤，新增規則：
 
     - 403 Forbidden: → /404.html (Status: 404)
-
-    - 404 Not Found: → /404.html (Status: 404)
 
 ## 5. 驗證方式
 
